@@ -1,0 +1,11 @@
+new entry "Shade_Main_Passive"
+type "PassiveData"
+data "Properties" "IsHidden"
+data "DisplayName" "h3644f8331e50451f9ca322c9cbc0ee71cdad;1"
+data "Conditions" "not Self() and HasStatus('BACKSTABBING_TECHNICAL', context.Target) and IsWeaponAttack()"
+data "StatsFunctorContext" "OnDamage"
+data "StatsFunctors" "IF(not IsShadeSpell())"
+
+new entry "Shade_Backstabbing_Test"
+type "PassiveData"
+data "Boosts" "UnlockSpell(Target_Backstabbing_Test)"

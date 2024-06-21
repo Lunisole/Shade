@@ -1,0 +1,4 @@
+function IsShadeSpell()
+    return
+    SpellId('Target_Smite_Branding_ZarielTiefling')
+end

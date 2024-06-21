@@ -1,0 +1,7 @@
+{
+    "RequiredVersion": 17,
+    "ModTable": "Shade",
+    "FeatureFlags": [
+        "Lua"
+    ]
+}
