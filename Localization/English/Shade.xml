@@ -8,4 +8,12 @@
     <content contentuid="hf82f23950a1b4615813d3682f6cd8dbf9g1b" version="1">A class</content>
     <content contentuid="hecc7903e5f784e9486c400153d416825f085" version="1">Shade</content>
     <content contentuid="h3644f8331e50451f9ca322c9cbc0ee71cdad" version="1">Backstabbing</content>
+    <content contentuid="hcfc9d6f00ff54e5b93efc41c3dfb0780851e" version="1">Shadow Thirst</content>
+    <content contentuid="hd4af3dada84343b78e965dda910d91321e60" version="1">You absorb the shadow of foes who fall under your backstabbing strikes, which gives you &lt;LSTag Tooltip="TemporaryHitPoints"&gt;temporary hit points&lt;/LSTag&gt; based on the health of foe you killed.</content>
+    <content contentuid="h8524c95dfbec43cf8edba9c253bf7df0d351" version="1">Bleak Vigour</content>
+    <content contentuid="h24291da1a38f49189c3c6e5b0c89aa4aab04" version="1">Your &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hits&lt;/LSTag&gt; saps their target's life to feed your inner shadow, granting you [1].</content>
+    <content contentuid="h00a489a604684906868fa10f71ceb6eb100f" version="1">Dusk's Favor</content>
+	<content contentuid="h087812b53af049689ecc59bf91dd7e3696g6" version="1">Night gives you one of two gifts, both shielding you from harm.</content>
+    <content contentuid="hb89ba653a45348a2ac946db33b34d1d6f47d" version="1">Dual Blades</content>
+    <content contentuid="hb6947b990bc44b1c9e5dc67f5c13b0beb9gg" version="1">You're an innate master of dual-wielding. When you make an &lt;LSTag Tooltip="AttackRoll"&gt;attack&lt;/LSTag&gt; with your off-hand weapon, you can add your &lt;LSTag Tooltip="AbilityModifier"&gt;Ability Modifier&lt;/LSTag&gt; to the damage of the attack.</content>
 </contentList>

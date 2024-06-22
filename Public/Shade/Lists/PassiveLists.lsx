@@ -5,12 +5,36 @@
         <node id="root">
             <children>
                 <node id="PassiveList">
-                    <attribute id="Passives" type="LSString" value="Passive1,Passive2,Passive3"/> a list of passives separated with a comma
-                    <attribute id="UUID" type="guid" value="e6a6d53f-2f03-4e9b-ab4e-f45555555555"/> make a new UUID for each passive list. when selecting passive from list, refer to this UUID
+                    <attribute id="Passives" type="LSString" value="Shade_Bleak_Vigour_100003,Shade_Shadow_Thirst_100004"/>
+                    <attribute id="UUID" type="guid" value="f12b280c-434c-4879-85d7-abf692dfec6e"/>
                 </node>
 				<node id="PassiveList">
-                    <attribute id="Passives" type="LSString" value="Passive1,Passive2,Passive3"/> You can make more than 1 list. the same passive can be in different lists
-                    <attribute id="UUID" type="guid" value="e6a6d53f-2f03-4e9b-ab4e-f45555555555"/> make a new UUID for each passive list
+                    <attribute id="Passives" type="LSString" value="Passive1,Passive2,Passive3"/>
+                    <attribute id="UUID" type="guid" value="e6a6d53f-2f03-4e9b-ab4e-f45555555555"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="Passive1,Passive2,Passive3"/>
+                    <attribute id="UUID" type="guid" value="e6a6d53f-2f03-4e9b-ab4e-f45555555555"/>
+                </node>
+				<node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="Passive1,Passive2,Passive3"/>
+                    <attribute id="UUID" type="guid" value="e6a6d53f-2f03-4e9b-ab4e-f45555555555"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="Passive1,Passive2,Passive3"/>
+                    <attribute id="UUID" type="guid" value="e6a6d53f-2f03-4e9b-ab4e-f45555555555"/>
+                </node>
+				<node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="Passive1,Passive2,Passive3"/>
+                    <attribute id="UUID" type="guid" value="e6a6d53f-2f03-4e9b-ab4e-f45555555555"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="Passive1,Passive2,Passive3"/>
+                    <attribute id="UUID" type="guid" value="e6a6d53f-2f03-4e9b-ab4e-f45555555555"/>
+                </node>
+				<node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="Passive1,Passive2,Passive3"/>
+                    <attribute id="UUID" type="guid" value="e6a6d53f-2f03-4e9b-ab4e-f45555555555"/>
                 </node>
             </children>
         </node>

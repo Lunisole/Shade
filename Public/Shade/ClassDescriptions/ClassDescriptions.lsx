@@ -5,20 +5,19 @@
         <node id="root">
             <children>
                 <node id="ClassDescription">
-                    <attribute id="BaseHp" type="int32" value="8"/>
+                    <attribute id="BaseHp" type="int32" value="100"/>
                     <attribute id="CanLearnSpells" type="bool" value="false"/>
                     <attribute id="CharacterCreationPose" type="guid" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8"/>
                     <attribute id="Description" type="TranslatedString" handle="hf82f23950a1b4615813d3682f6cd8dbf9g1b" version="1"/>
                     <attribute id="DisplayName" type="TranslatedString" handle="hecc7903e5f784e9486c400153d416825f085" version="1"/>
-                    <attribute id="HpPerLevel" type="int32" value="5"/>
+                    <attribute id="HpPerLevel" type="int32" value="12"/>
                     <attribute id="LearningStrategy" type="uint8" value="1"/>
                     <attribute id="MustPrepareSpells" type="bool" value="false"/>
                     <attribute id="Name" type="FixedString" value="Shade"/>
-                    <attribute id="PrimaryAbility" type="uint8" value="4"/>
+                    <attribute id="PrimaryAbility" type="uint8" value="2"/>
                     <attribute id="ProgressionTableUUID" type="guid" value="8282ed5a-dda0-4484-8688-33a7f839afce"/>
                     <attribute id="SoundClassType" type="FixedString" value="Rogue"/>
                     <attribute id="SpellCastingAbility" type="uint8" value="4"/>
-					<attribute id="SpellList" type="guid" value="beb9389e-24f8-49b0-86a5-e8d08b6fdc2e"/>
                     <attribute id="UUID" type="guid" value="c7017dae-1f7d-429f-bfe5-fbbc777facdb"/>
 					<children>
                         <node id="Tags">
