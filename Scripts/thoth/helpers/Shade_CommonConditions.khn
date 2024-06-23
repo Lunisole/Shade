@@ -2,3 +2,14 @@ function IsShadeSpell()
     return
     SpellId('Target_Smite_Branding_ZarielTiefling')
 end
+
+function IsHeavyWeapon()
+    local weapon = context.AttackWeapon
+    local isHeavy = HasWeaponProperty(WeaponProperties.Heavy, weapon)
+    return isHeavy
+end
+
+function SuccessChance(threshold)
+    local random_num = math.random(1,100)
+    return ConditionResult(random_num >= threshold)
+end

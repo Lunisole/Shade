@@ -5,7 +5,7 @@
         <node id="root">
             <children>
                 <node id="PassiveList">
-                    <attribute id="Passives" type="LSString" value="Shade_Bleak_Vigour_100003,Shade_Shadow_Thirst_100004"/>
+                    <attribute id="Passives" type="LSString" value="Shade_Bleak_Vigour_100004,Shade_Shadow_Thirst_100005,Shade_Blood_Kin_100006"/>
                     <attribute id="UUID" type="guid" value="f12b280c-434c-4879-85d7-abf692dfec6e"/>
                 </node>
 				<node id="PassiveList">

@@ -1,4 +1,5 @@
--- The first core function of the class. Determine if a character (caster) is in the back of a target (target)
+--[[
+--The sad shade of my former function :( :( :( :( :(
 function BackstabbingCheck(target, caster, distance)
     local anglemin = ((3*math.pi)/4)
     local anglemax = ((5*math.pi)/4)
@@ -17,6 +18,27 @@ function BackstabbingCheck(target, caster, distance)
         print("Not Backstabbing")
     end
 end
+]]
+
+-- The absolute core function of the class. It's this function wich determines if a character is in the back of another one or not.
+function BackstabbingCheck(target, caster, distance)
+    local anglemin = (3*math.pi)/4
+    local anglemax = (5*math.pi)/4
+    targetzsteering = math.cos(Ext.Entity.Get(target).Steering.field_C)
+    targetxsteering = math.sin(Ext.Entity.Get(target).Steering.field_C)
+    orient = {targetxsteering,0,targetzsteering}
+    local normalized = Ext.Math.Normalize(distance)
+    local DP = Ext.Math.Dot(orient,normalized)
+    local result = Ext.Math.Acos(DP)
+    if (anglemin<=result and result<=anglemax) then
+        isbackstabbing = 1
+        print("Backstabbing")
+    else
+        isbackstabbing = 0
+        print("Not Backstabbing")
+    end
+end
+
 
 -- The second core function of the class. Iterates every entity in a combat with a character (shade) and calculates its distance to the character (shade).
 function BackstabbingApply(shade, backstabbingmaxdistance)
@@ -46,12 +68,12 @@ end)
 -- The listener for Shadow Thirst.
 Ext.Osiris.RegisterListener("KilledBy", 4, "after", function (killed, killer, _, _)
     -- Potential Additionnal Condition : and Osi.HasActiveStatus(killed,"BACKSTABBING_TECHNICAL_200001") == 1
-    if (HasPassive(killer,"Shade_Shadow_Thirst_100004") == 1) then
+    if (HasPassive(killer,"Shade_Shadow_Thirst_100005") == 1) then
         local maxhp = Ext.Entity.Get(killed).Health.MaxHp
         if (maxhp <= 20) then
             Osi.ApplyStatus(killer,"SHADOW_THIRST_3_200002",-1.0,1,killer)
         end
-        if (20 < maxhp and maxhp <= 50) then
+        if (21 <= maxhp and maxhp <= 50) then
             Osi.ApplyStatus(killer,"SHADOW_THIRST_6_200003",-1.0,1,killer)
         end
         if (51 <= maxhp and maxhp <= 150) then
@@ -65,3 +87,5 @@ Ext.Osiris.RegisterListener("KilledBy", 4, "after", function (killed, killer, _,
         end
     end
 end)
+
+-- 

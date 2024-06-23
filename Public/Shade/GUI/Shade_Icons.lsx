@@ -23,7 +23,7 @@
         <node id="root">
             <children>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="" />
+                    <attribute id="MapKey" type="FixedString" value="ShadeInfiltrate600001" />
                     <attribute id="U1" type="float" value="0.0" />
                     <attribute id="U2" type="float" value="0.03125" />
                     <attribute id="V1" type="float" value="0.0" />
@@ -478,42 +478,42 @@
                     <attribute id="V2" type="float" value="0.09375" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="ShadeBleakVigour100003" />
+                    <attribute id="MapKey" type="FixedString" value="ShadeBleakVigour100004" />
                     <attribute id="U1" type="float" value="0.03125" />
                     <attribute id="U2" type="float" value="0.0625" />
                     <attribute id="V1" type="float" value="0.0625" />
                     <attribute id="V2" type="float" value="0.09375" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="ShadeShadowThirst100004" />
+                    <attribute id="MapKey" type="FixedString" value="ShadeShadowThirst100005" />
                     <attribute id="U1" type="float" value="0.0625" />
                     <attribute id="U2" type="float" value="0.09375" />
                     <attribute id="V1" type="float" value="0.0625" />
                     <attribute id="V2" type="float" value="0.09375" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="" />
+                    <attribute id="MapKey" type="FixedString" value="ShadeBloodKin100006" />
                     <attribute id="U1" type="float" value="0.09375" />
                     <attribute id="U2" type="float" value="0.125" />
                     <attribute id="V1" type="float" value="0.0625" />
                     <attribute id="V2" type="float" value="0.09375" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="" />
+                    <attribute id="MapKey" type="FixedString" value="ShadeCruelty100007" />
                     <attribute id="U1" type="float" value="0.125" />
                     <attribute id="U2" type="float" value="0.15625" />
                     <attribute id="V1" type="float" value="0.0625" />
                     <attribute id="V2" type="float" value="0.09375" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="" />
+                    <attribute id="MapKey" type="FixedString" value="ShadeExploitWeakness100008" />
                     <attribute id="U1" type="float" value="0.15625" />
                     <attribute id="U2" type="float" value="0.1875" />
                     <attribute id="V1" type="float" value="0.0625" />
                     <attribute id="V2" type="float" value="0.09375" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="" />
+                    <attribute id="MapKey" type="FixedString" value="ShadeExquisiteHunter100009" />
                     <attribute id="U1" type="float" value="0.1875" />
                     <attribute id="U2" type="float" value="0.21875" />
                     <attribute id="V1" type="float" value="0.0625" />
@@ -919,7 +919,7 @@
                     <attribute id="V2" type="float" value="0.125" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="" />
+                    <attribute id="MapKey" type="FixedString" value="Infiltrate300001" />
                     <attribute id="U1" type="float" value="0.0" />
                     <attribute id="U2" type="float" value="0.03125" />
                     <attribute id="V1" type="float" value="0.125" />
