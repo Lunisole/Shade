@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="319"/>
+    <region id="DefaultValues">
+        <node id="root">
+            <children>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Shade_Shadow_Thirst_100005"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="8282ed5a-dda0-4484-8688-33a7f839afce"/>
+                    <attribute id="UUID" type="guid" value="3e8e2a12-67b9-42d0-a872-84f9ea309f4a"/>
+                </node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Shade_Cruelty_100007"/>
+                    <attribute id="Level" type="int32" value="4"/>
+                    <attribute id="TableUUID" type="guid" value="8282ed5a-dda0-4484-8688-33a7f839afce"/>
+                    <attribute id="UUID" type="guid" value="c0a98217-3b63-4009-aa28-0cd143df6879"/>
+                </node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value=""/>
+                    <attribute id="Level" type="int32" value=""/>
+                    <attribute id="TableUUID" type="guid" value="8282ed5a-dda0-4484-8688-33a7f839afce"/>
+                    <attribute id="UUID" type="guid" value="17954472-d946-4ab1-bbf5-cae16799c7d2"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

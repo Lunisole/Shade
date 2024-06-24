@@ -9,8 +9,8 @@
                     <attribute id="UUID" type="guid" value="f12b280c-434c-4879-85d7-abf692dfec6e"/>
                 </node>
 				<node id="PassiveList">
-                    <attribute id="Passives" type="LSString" value="Passive1,Passive2,Passive3"/>
-                    <attribute id="UUID" type="guid" value="e6a6d53f-2f03-4e9b-ab4e-f45555555555"/>
+                    <attribute id="Passives" type="LSString" value="Shade_Cruelty_100007,Shade_Exploit_Weakness_100008,Shade_Exquisite_Hunter_100010"/>
+                    <attribute id="UUID" type="guid" value="90ad594e-d738-4533-aea2-30c251e6e12c"/>
                 </node>
                 <node id="PassiveList">
                     <attribute id="Passives" type="LSString" value="Passive1,Passive2,Passive3"/>

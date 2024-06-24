@@ -11,12 +11,17 @@
                     <attribute id="Type" type="FixedString" value="Shade"/>
                     <attribute id="UUID" type="guid" value="8f3b2f9a-5f90-439f-a7ae-17853b89ee75"/>
                 </node>
-                
                 <node id="ProgressionDescription">
                     <attribute id="Description" type="TranslatedString" handle="h087812b53af049689ecc59bf91dd7e3696g6" version="1"/>
                     <attribute id="DisplayName" type="TranslatedString" handle="h00a489a604684906868fa10f71ceb6eb100f" version="1"/>
                     <attribute id="SelectorId" type="FixedString" value="Dusks_Favor"/>
                     <attribute id="UUID" type="guid" value="0529d24c-2572-47e6-93f7-e6c3ac75ac3c"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="TranslatedString" handle="h639974bf31854f0591ee35f8b6f28d4cb996" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h6bd84a65304c435f9e8896ae60ccb7bfe4e6" version="1"/>
+                    <attribute id="SelectorId" type="FixedString" value="Assassination_Method"/>
+                    <attribute id="UUID" type="guid" value="a2190f32-123d-48ed-a1ec-17d0acd2ffa6"/>
                 </node>
             </children>
         </node>

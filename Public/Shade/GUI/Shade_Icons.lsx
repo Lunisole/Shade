@@ -926,28 +926,28 @@
                     <attribute id="V2" type="float" value="0.15625" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="" />
+                    <attribute id="MapKey" type="FixedString" value="Haemorrhaging200013" />
                     <attribute id="U1" type="float" value="0.03125" />
                     <attribute id="U2" type="float" value="0.0625" />
                     <attribute id="V1" type="float" value="0.125" />
                     <attribute id="V2" type="float" value="0.15625" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="" />
+                    <attribute id="MapKey" type="FixedString" value="ExquisiteHunterStage1200017" />
                     <attribute id="U1" type="float" value="0.0625" />
                     <attribute id="U2" type="float" value="0.09375" />
                     <attribute id="V1" type="float" value="0.125" />
                     <attribute id="V2" type="float" value="0.15625" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="" />
+                    <attribute id="MapKey" type="FixedString" value="ExquisiteHunterStage2200018" />
                     <attribute id="U1" type="float" value="0.09375" />
                     <attribute id="U2" type="float" value="0.125" />
                     <attribute id="V1" type="float" value="0.125" />
                     <attribute id="V2" type="float" value="0.15625" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="" />
+                    <attribute id="MapKey" type="FixedString" value="ExquisiteHunterStage3200019" />
                     <attribute id="U1" type="float" value="0.125" />
                     <attribute id="U2" type="float" value="0.15625" />
                     <attribute id="V1" type="float" value="0.125" />

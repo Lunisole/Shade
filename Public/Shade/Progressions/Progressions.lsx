@@ -6,10 +6,10 @@
             <children>
                 <node id="Progression"> Shade Level 1
                     <attribute id="AllowImprovement" type="bool" value="false"/>
-                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Wisdom);Proficiency(SimpleWeapons)"/>
+                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Wisdom);Proficiency(SimpleWeapons);Proficiency(LightArmor)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Shade"/>
-                    <attribute id="PassivesAdded" type="LSString" value="Shade_Innate_Backstabbing_100001;Shade_Innate_Dual_Blades_100002;Shade_Innate_Burdened_100003;Shade_LUL_TEST"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Shade_Innate_Backstabbing_100001;Shade_Innate_Dual_Blades_100002;Shade_Innate_Burdened_100003;Shade_Infiltrate_F00001;Shade_LUL_TEST"/>
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="Selectors" type="LSString" value="SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);SelectPassives(f12b280c-434c-4879-85d7-abf692dfec6e,1,Dusks_Favor)"/>
@@ -61,7 +61,7 @@
                     <attribute id="PassivesAdded" type="LSString" value=""/>
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value=""/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(90ad594e-d738-4533-aea2-30c251e6e12c,1,Assassination_Method)"/>
 					<attribute id="TableUUID" type="guid" value="8282ed5a-dda0-4484-8688-33a7f839afce"/>
                     <attribute id="UUID" type="guid" value="69f78af7-bce3-48f9-b376-e4decbf4fc73"/>
                 </node>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="329"/>
+    <region id="DefaultValues">
+        <node id="root">
+            <children>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Stealth, Perception, Acrobatics, SleightOfHand, Investigation, Medicine, Deception, Insight, Arcana, History"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="8282ed5a-dda0-4484-8688-33a7f839afce"/>
+                    <attribute id="UUID" type="guid" value="94bd8687-e0bf-4881-831b-153ab244374f"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

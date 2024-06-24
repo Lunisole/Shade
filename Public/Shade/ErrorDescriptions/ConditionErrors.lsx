@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="3" revision="0" build="0"/>
+    <region id="ConditionErrors">
+        <node id="root">
+            <children>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="he39fa6480e3348f99c77fecb473652d2b43e" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="HasNotInfiltateCharge"/>
+                    <attribute id="UUID" type="guid" value="5d302330-84eb-4577-8aa2-9ad1eb41c32c"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

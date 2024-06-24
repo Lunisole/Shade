@@ -9,13 +9,16 @@
     <content contentuid="hf82f23950a1b4615813d3682f6cd8dbf9g1b" version="1">Shades are exiles, scions of a forbidden art too dangerous to be tolerated. They haunt the nights, moving through shadows with agility to murder their target, their gift allowing them to blend into the dark as if it was themselves. They are fleet-footed death, come to claim the blood of the living.</content>
 
     <!--Spells-->
+    <content contentuid="he532834a9e294966b775dae69c06f4f14ff9" version="1">Infiltrate</content>
+    <content contentuid="hb200975155454b3295d77aeecf9e62b82775" version="1">You dodge light and blend into obscurity, gaining &lt;LSTag Type="Status" Tooltip="INFILTRATE_300001"&gt;Infiltrated&lt;/LSTag&gt; for [1] turns.</content>
     <content contentuid="h5ce42e405428454ea3c6e5bc8e986627e22e" version="1"></content>
     <content contentuid="h7424c1cd34ea48c1b45d0416b3385a027f4a" version="1"></content>
 
     <!--Passives-->
     <content contentuid="h3644f8331e50451f9ca322c9cbc0ee71cdad" version="1">Backstabbing</content>
+    <content contentuid="h0954c7b854164c37b9c01d19ddae22a4ad75" version="1">Shades are marvelous murderers. When you attack a target from the back with a weapon, you deal [1] additionnal damage. Shade's unique actions have special effects when backstabbing.</content>
     <content contentuid="hcfc9d6f00ff54e5b93efc41c3dfb0780851e" version="1">Shadow Thirst</content>
-    <content contentuid="hd4af3dada84343b78e965dda910d91321e60" version="1">You absorb the shadow of foes who fall under your backstabbing strikes, which gives you &lt;LSTag Tooltip="TemporaryHitPoints"&gt;temporary hit points&lt;/LSTag&gt; based on the health of foe you killed.</content>
+    <content contentuid="hd4af3dada84343b78e965dda910d91321e60" version="1">You absorb the shadow of foes who fall under your strikes, which gives you &lt;LSTag Tooltip="TemporaryHitPoints"&gt;temporary hit points&lt;/LSTag&gt; based on the health of foe you killed.</content>
     <content contentuid="h8524c95dfbec43cf8edba9c253bf7df0d351" version="1">Bleak Vigour</content>
     <content contentuid="h24291da1a38f49189c3c6e5b0c89aa4aab04" version="1">Your &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hits&lt;/LSTag&gt; saps their target's life to feed your inner shadow, granting you [1].</content>
     <content contentuid="hb89ba653a45348a2ac946db33b34d1d6f47d" version="1">Dual Blades</content>
@@ -23,30 +26,42 @@
     <content contentuid="h2f2d52ff26e04dbe85d2bc65ac6f3359b6a3" version="1">Blood Kin</content>
     <content contentuid="h728398c10c6a4ca0be7436ff65acd8731gf1" version="1">Weakening your target grants you shadows's attention. When you &lt;LSTag Type="Status" Tooltip="POISONED"&gt;Poison&lt;/LSTag&gt; a target or make it &lt;LSTag Type="Status" Tooltip="BLEEDING"&gt;Bleed&lt;/LSTag&gt;, you regain [1] and gain [2].</content>
     <content contentuid="h6720abea3ddf4bb5b9fa975a25624ad0dbd8" version="1">Cruelty</content>
-    <content contentuid="hd59f546ca67147c88b10e98387be54abcg0f" version="1"></content>
+    <content contentuid="hd59f546ca67147c88b10e98387be54abcg0f" version="1">Your &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hits&lt;/LSTag&gt; are even more lethal and deal an additionnal [1], [2], [3] or [4] piercing damage at random.</content>
     <content contentuid="h0ccb59eecebb4311a92ba7cd407852ab097a" version="1">Exploit Weakness</content>
-    <content contentuid="h8974f1dc99724f81b462ff6be422a3dd9g7b" version="1"></content>
+    <content contentuid="h8974f1dc99724f81b462ff6be422a3dd9g7b" version="1">On hitting a &lt;LSTag Type="Status" Tooltip="POISONED"&gt;Poisoned&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="BLEEDING"&gt;Bleeding&lt;/LSTag&gt; target with a weapon attack, you apply [1] turns of &lt;LSTag Type="Status" Tooltip="HAEMORRHAGING_200013"&gt;Haemorrhaging&lt;/LSTag&gt;.</content>
     <content contentuid="h87d611db888146bc89c4b390e0246bb10e1c" version="1">Exquisite Hunter</content>
-    <content contentuid="h2ea5fa2e17164ef79526ac0b212c6a8106c9" version="1"></content>
+    <content contentuid="h2ea5fa2e17164ef79526ac0b212c6a8106c9" version="1">You're a true predator, never letting your prey get away from you. You gain bonuses by attacking the same target, and each consecutive turn spent attacking the same victim increases the potency of these bonuses. The bonus resets instantly when you change target.</content>
 
     <!--Status-->
-    <content contentuid="h5ce42e405428454ea3c6e5bc8e986627e22e" version="1"></content>
-    <content contentuid="h7424c1cd34ea48c1b45d0416b3385a027f4a" version="1"></content>
-    <content contentuid="h5ce42e405428454ea3c6e5bc8e986627e22e" version="1"></content>
-    <content contentuid="h7424c1cd34ea48c1b45d0416b3385a027f4a" version="1"></content>
-    <content contentuid="h5ce42e405428454ea3c6e5bc8e986627e22e" version="1"></content>
-    <content contentuid="h7424c1cd34ea48c1b45d0416b3385a027f4a" version="1"></content>
     <content contentuid="h3a541c53de7d430ab9615aaaed1fd52234c2" version="1">Infiltrated</content>
-    <content contentuid="he3170aac7d204f46a516e449d6e74bb6f378" version="1">You are &lt;LSTag Type="Status" Tooltip="INVISIBLE"&gt;Invisible&lt;/LSTag&gt; and your &lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; is increased by [1]. You automatically &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; on backstabbing and deal an additionnal [2].</content>
-    <content contentuid="he532834a9e294966b775dae69c06f4f14ff9" version="1">Infiltrate</content>
-    <content contentuid="hb200975155454b3295d77aeecf9e62b82775" version="1">You dodge light and blend into obscurity, gaining &lt;LSTag Type="Status" Tooltip="INFILTRATE_300001"&gt;Infiltrated&lt;/LSTag&gt; for [1] turns.</content>
+    <content contentuid="he3170aac7d204f46a516e449d6e74bb6f378" version="1">You are &lt;LSTag Type="Status" Tooltip="INVISIBLE"&gt;Invisible&lt;/LSTag&gt; and your &lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; is increased by [1]. You automatically &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; on &lt;LSTag Type="Passive" Tooltip="Shade_Innate_Backstabbing_100001"&gt;backstabbing&lt;/LSTag&gt; and deal an additionnal [2].</content>
+    <content contentuid="h6c742f5487ff43bc9e1343a9b3f4ba6ed04e" version="1">Haemorrhaging</content>
+    <content contentuid="h592fdb633a474405a76bd6670548f6892g18" version="1">You are deeply cut and bleeding profusely. &lt;LSTag Type="Passive" Tooltip="Shade_Innate_Backstabbing_100001"&gt;Backstabbing&lt;/LSTag&gt; attacks against you deal [1] additionnal Piercing or Slashing Damage.</content>
+    <content contentuid="haf638e10ee5a45bb85892d02a17fb27eg87a" version="1">Night's Prey</content>
+    <content contentuid="hf94b4c5f667f42ab95e9caab4b6b751e35c9" version="1">You're being preyed upon by a Shade. When it targets you, it has a bonus of +[1] to &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;.</content>
+    <content contentuid="hb58979be15b2440eb4b2c9b7855da17b73d1" version="1">You're being preyed upon by a Shade. When it targets you, it has a bonus of +[1] to &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; and deals an additionnal 1d6 damage.</content>
+    <content contentuid="h60ba2d64bcbc4510a886c025c7fbae5a26d6" version="1">You're being preyed upon by a Shade. When it targets you, it has a bonus of +[1] to &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;, deals an additionnal 2d4 damage and the number it needs to inflict a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; is reduced by [2].</content>
+
 
     <!--Progression Descriptions-->
     <content contentuid="h00a489a604684906868fa10f71ceb6eb100f" version="1">Dusk's Favor</content>
 	<content contentuid="h087812b53af049689ecc59bf91dd7e3696g6" version="1">Night gives you one of three gifts to protect you from harm.</content>
+    <content contentuid="h6bd84a65304c435f9e8896ae60ccb7bfe4e6" version="1">Assassination Method</content>
+    <content contentuid="h639974bf31854f0591ee35f8b6f28d4cb996" version="1">The way your kind fulfil a mission is always the same: it is by killing, but each shade has his own unique style of execution.</content>
 
     <!--Tooltip Extras-->
     <content contentuid="hfef462359ccf48a39227272f6d7f79366eb5" version="1">Invisibility ends early if the invisible entity attacks, casts another spell, takes an action, or takes damage.</content>
+
+
+
+    <!--Tags-->
+    <content contentuid="h0dd2ec02711d4506a9ce00b8a1993fa4ea2f" version="1">Shade</content>
+    <content contentuid="h2e3d8cf440434fa6b27fa709b88f220b814d" version="1">With both swords at hand, a Shade is always ready to satisfy Khaine's thirst with a glorious killing.</content>
     
-    
+    <!--Action Resources-->
+    <content contentuid="h946f0809d1484950b36fe208ce3a5e9c72d0" version="1">Infiltrate Charge</content>
+
+    <!--Errors-->
+    <content contentuid="h7493affbd8d74168b6e285c8e037c2a5eaed" version="1">You can't use infiltrate again until &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+    <content contentuid="he39fa6480e3348f99c77fecb473652d2b43e" version="1">Must take a &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
 </contentList>

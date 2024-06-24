@@ -22,6 +22,7 @@ end
 
 -- The absolute core function of the class. It's this function wich determines if a character is in the back of another one or not.
 function BackstabbingCheck(target, caster, distance)
+    -- If the character doesn't have backstab extended passive then use those anglemin/max
     local anglemin = (3*math.pi)/4
     local anglemax = (5*math.pi)/4
     targetzsteering = math.cos(Ext.Entity.Get(target).Steering.field_C)
@@ -38,7 +39,6 @@ function BackstabbingCheck(target, caster, distance)
         print("Not Backstabbing")
     end
 end
-
 
 -- The second core function of the class. Iterates every entity in a combat with a character (shade) and calculates its distance to the character (shade).
 function BackstabbingApply(shade, backstabbingmaxdistance)
@@ -88,4 +88,45 @@ Ext.Osiris.RegisterListener("KilledBy", 4, "after", function (killed, killer, _,
     end
 end)
 
--- 
+-- The listener for Cruelty
+Ext.Osiris.RegisterListener("UsingSpell", 5, "before", function (shade, spell, _, _, _)
+    if (HasPassive(shade,"Shade_Cruelty_100007") == 1) then
+        local random = math.random(20)
+        if (random <= 5) then
+            Osi.ApplyStatus(shade,"CRUELTY_MIN_200009",1.0,1,shade)
+        end
+        if (6 <= random and random <= 13) then
+            Osi.ApplyStatus(shade,"CRUELTY_LOW_200010",1.0,1,shade)
+        end
+        if (14 <= random and random <= 17) then
+            Osi.ApplyStatus(shade,"CRUELTY_HIGH_200011",1.0,1,shade)
+        end
+        if (18 <= random and random <= 20) then
+            Osi.ApplyStatus(shade,"CRUELTY_MAX_200012",1.0,1,shade)
+        end
+    end
+end)
+
+-- The listener for Exquisite Hunter
+Ext.Osiris.RegisterListener("UsingSpellOnTarget", 6, "before", function (shade, target, _, _, _, _)
+    if (HasPassive(shade,"Shade_Exquisite_Hunter_100010") == 1) then
+        for k, v in pairs(Osi.DB_Is_InCombat:Get(nil, Osi.CombatGetGuidFor(Ext.Entity.Get(shade).Uuid.EntityUuid))) do
+            if (v[1] ~= target) then 
+                Osi.RemoveStatus(v[1],"EXQUISITE_HUNTER_STAGE_1_200017")
+                Osi.RemoveStatus(v[1],"EXQUISITE_HUNTER_STAGE_2_200018")
+                Osi.RemoveStatus(v[1],"EXQUISITE_HUNTER_STAGE_3_200019")
+            end
+            if (v[1] == target and Osi.HasActiveStatus(shade,"EXQUISITE_HUNTER_TECHNICAL_200020") ~= 1) then
+                if (Osi.HasActiveStatus(target,"EXQUISITE_HUNTER_STAGE_2_200018") == 1) then
+                    Osi.ApplyStatus(v[1],"EXQUISITE_HUNTER_STAGE_3_200019",-1.0,1,shade)
+                end
+                if (Osi.HasActiveStatus(target,"EXQUISITE_HUNTER_STAGE_1_200017") == 1) then
+                    Osi.ApplyStatus(v[1],"EXQUISITE_HUNTER_STAGE_2_200018",-1.0,1,shade)
+                end
+                if (Osi.HasActiveStatus(target,"EXQUISITE_HUNTER_STAGE_2_200018") ~= 1 and Osi.HasActiveStatus(target,"EXQUISITE_HUNTER_STAGE_3_200019") ~= 1) then
+                    Osi.ApplyStatus(v[1],"EXQUISITE_HUNTER_STAGE_1_200017",-1.0,1,shade)
+                end
+            end
+        end
+    end
+end)

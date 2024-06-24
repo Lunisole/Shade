@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="0" build="58" lslib_meta="v1,bswap_guids,lsf_keys_adjacency" />
+	<region id="Tags">
+		<node id="Tags">
+			<attribute id="Description" type="LSString" value="A silent killer whose slaying is but a display of art." />
+			<attribute id="DisplayDescription" type="TranslatedString" handle="h2e3d8cf440434fa6b27fa709b88f220b814d" version="1" />
+			<attribute id="DisplayName" type="TranslatedString" handle="h0dd2ec02711d4506a9ce00b8a1993fa4ea2f" version="2" />
+			<attribute id="Icon" type="FixedString" value="" />
+			<attribute id="Name" type="FixedString" value="SHADE" />
+			<attribute id="UUID" type="guid" value="52bfcfe4-444e-4c77-9108-b91c6facc2fa" />
+			<children>
+				<node id="Categories">
+					<children>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Code" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Dialog" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Class" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="CharacterSheet" />
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

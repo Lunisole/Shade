@@ -13,3 +13,4 @@ function SuccessChance(threshold)
     local random_num = math.random(1,100)
     return ConditionResult(random_num >= threshold)
 end
+
