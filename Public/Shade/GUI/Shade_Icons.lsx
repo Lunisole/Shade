@@ -30,28 +30,28 @@
                     <attribute id="V2" type="float" value="0.03125" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="" />
+                    <attribute id="MapKey" type="FixedString" value="ShadeShimmerStrike600002" />
                     <attribute id="U1" type="float" value="0.03125" />
                     <attribute id="U2" type="float" value="0.0625" />
                     <attribute id="V1" type="float" value="0.0" />
                     <attribute id="V2" type="float" value="0.03125" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="" />
+                    <attribute id="MapKey" type="FixedString" value="ShadeHungryWind600003" />
                     <attribute id="U1" type="float" value="0.0625" />
                     <attribute id="U2" type="float" value="0.09375" />
                     <attribute id="V1" type="float" value="0.0" />
                     <attribute id="V2" type="float" value="0.03125" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="" />
+                    <attribute id="MapKey" type="FixedString" value="ShadeCloakofPain600004" />
                     <attribute id="U1" type="float" value="0.09375" />
                     <attribute id="U2" type="float" value="0.125" />
                     <attribute id="V1" type="float" value="0.0" />
                     <attribute id="V2" type="float" value="0.03125" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="" />
+                    <attribute id="MapKey" type="FixedString" value="ShadeShadowStride700001" />
                     <attribute id="U1" type="float" value="0.125" />
                     <attribute id="U2" type="float" value="0.15625" />
                     <attribute id="V1" type="float" value="0.0" />
@@ -513,70 +513,70 @@
                     <attribute id="V2" type="float" value="0.09375" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="ShadeExquisiteHunter100009" />
+                    <attribute id="MapKey" type="FixedString" value="ShadeExquisiteHunter1000010" />
                     <attribute id="U1" type="float" value="0.1875" />
                     <attribute id="U2" type="float" value="0.21875" />
                     <attribute id="V1" type="float" value="0.0625" />
                     <attribute id="V2" type="float" value="0.09375" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="" />
+                    <attribute id="MapKey" type="FixedString" value="ShadeUnseenBlade100012" />
                     <attribute id="U1" type="float" value="0.21875" />
                     <attribute id="U2" type="float" value="0.25" />
                     <attribute id="V1" type="float" value="0.0625" />
                     <attribute id="V2" type="float" value="0.09375" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="" />
+                    <attribute id="MapKey" type="FixedString" value="ShadeMurderousProwess100013" />
                     <attribute id="U1" type="float" value="0.25" />
                     <attribute id="U2" type="float" value="0.28125" />
                     <attribute id="V1" type="float" value="0.0625" />
                     <attribute id="V2" type="float" value="0.09375" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="" />
+                    <attribute id="MapKey" type="FixedString" value="ShadeNightsVeil100014" />
                     <attribute id="U1" type="float" value="0.28125" />
                     <attribute id="U2" type="float" value="0.3125" />
                     <attribute id="V1" type="float" value="0.0625" />
                     <attribute id="V2" type="float" value="0.09375" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="" />
+                    <attribute id="MapKey" type="FixedString" value="ShadeBloodDrinker100015" />
                     <attribute id="U1" type="float" value="0.3125" />
                     <attribute id="U2" type="float" value="0.34375" />
                     <attribute id="V1" type="float" value="0.0625" />
                     <attribute id="V2" type="float" value="0.09375" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="" />
+                    <attribute id="MapKey" type="FixedString" value="ShadeWraithShape100016" />
                     <attribute id="U1" type="float" value="0.34375" />
                     <attribute id="U2" type="float" value="0.375" />
                     <attribute id="V1" type="float" value="0.0625" />
                     <attribute id="V2" type="float" value="0.09375" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="" />
+                    <attribute id="MapKey" type="FixedString" value="ShadeGladerunner100017" />
                     <attribute id="U1" type="float" value="0.375" />
                     <attribute id="U2" type="float" value="0.40625" />
                     <attribute id="V1" type="float" value="0.0625" />
                     <attribute id="V2" type="float" value="0.09375" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="" />
+                    <attribute id="MapKey" type="FixedString" value="ShadeChainKiller100018" />
                     <attribute id="U1" type="float" value="0.40625" />
                     <attribute id="U2" type="float" value="0.4375" />
                     <attribute id="V1" type="float" value="0.0625" />
                     <attribute id="V2" type="float" value="0.09375" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="" />
+                    <attribute id="MapKey" type="FixedString" value="ShadeFocusedSlaying100020" />
                     <attribute id="U1" type="float" value="0.4375" />
                     <attribute id="U2" type="float" value="0.46875" />
                     <attribute id="V1" type="float" value="0.0625" />
                     <attribute id="V2" type="float" value="0.09375" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="" />
+                    <attribute id="MapKey" type="FixedString" value="ShadeSpringHeeledAssassin100021" />
                     <attribute id="U1" type="float" value="0.46875" />
                     <attribute id="U2" type="float" value="0.5" />
                     <attribute id="V1" type="float" value="0.0625" />
@@ -954,35 +954,35 @@
                     <attribute id="V2" type="float" value="0.15625" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="" />
+                    <attribute id="MapKey" type="FixedString" value="MurderousProwessPoison200022" />
                     <attribute id="U1" type="float" value="0.15625" />
                     <attribute id="U2" type="float" value="0.1875" />
                     <attribute id="V1" type="float" value="0.125" />
                     <attribute id="V2" type="float" value="0.15625" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="" />
+                    <attribute id="MapKey" type="FixedString" value="BloodShroud200024" />
                     <attribute id="U1" type="float" value="0.1875" />
                     <attribute id="U2" type="float" value="0.21875" />
                     <attribute id="V1" type="float" value="0.125" />
                     <attribute id="V2" type="float" value="0.15625" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="" />
+                    <attribute id="MapKey" type="FixedString" value="ShimmerStrike300002" />
                     <attribute id="U1" type="float" value="0.21875" />
                     <attribute id="U2" type="float" value="0.25" />
                     <attribute id="V1" type="float" value="0.125" />
                     <attribute id="V2" type="float" value="0.15625" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="" />
+                    <attribute id="MapKey" type="FixedString" value="HungryWind300003" />
                     <attribute id="U1" type="float" value="0.25" />
                     <attribute id="U2" type="float" value="0.28125" />
                     <attribute id="V1" type="float" value="0.125" />
                     <attribute id="V2" type="float" value="0.15625" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="" />
+                    <attribute id="MapKey" type="FixedString" value="CloakOfPain300004" />
                     <attribute id="U1" type="float" value="0.28125" />
                     <attribute id="U2" type="float" value="0.3125" />
                     <attribute id="V1" type="float" value="0.125" />

@@ -8,7 +8,33 @@ data "Boosts" "UnlockSpell(Target_Slash_New_Test);UnlockSpell(Target_Slash_New_T
 
 new entry "Shade_Infiltrate_F00001"
 type "PassiveData"
-data "Icon" "ShadeInfiltrate600001"
 data "DisplayName" "he532834a9e294966b775dae69c06f4f14ff9;1"
 data "Description" "hb200975155454b3295d77aeecf9e62b82775;1"
+data "Icon" "ShadeInfiltrate600001"
 data "Boosts" "UnlockSpell(Shade_Infiltrate_600001);ActionResource(InfiltrateRes,1,0)"
+
+new entry "Shade_Shimmer_Strike_F00002"
+type "PassiveData"
+data "DisplayName" "hca0a7bf8829940cfb76c4eb1b62e4a4b27af;1"
+data "Description" "hc2095064742343b9af8cdadcdf71203853f4;1"
+data "Icon" "ShadeShimmerStrike600002"
+data "Boosts" "UnlockSpell(Shade_Shimmer_Strike_600002);ActionResource(InfiltrateRes,1,0)"
+
+new entry "Shade_Hungry_Wind_F00003"
+type "PassiveData"
+data "DisplayName" "h8724100c62b54099af22af3dbb91669a5d7c;1"
+data "Description" "h4c291a7a96d8458aa81c2bf0b77a844af140;1"
+data "Icon" "ShadeHungryWind600003"
+data "Boosts" "UnlockSpell(Shade_Hungry_Wind_600003);ActionResource(InfiltrateRes,1,0)"
+
+new entry "Shade_Cloak_of_Pain_F00004"
+type "PassiveData"
+data "DisplayName" "h15061c65cc4041d18d70920360a744cc258g;1"
+data "Description" "hfb6cda713bf3481297634185f12d241af520;1"
+data "Icon" "ShadeCloakofPain600004"
+data "Boosts" "UnlockSpell(Shade_Cloak_of_Pain_600004);ActionResource(InfiltrateRes,2,0)"
+
+
+
+
+

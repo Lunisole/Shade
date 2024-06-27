@@ -23,6 +23,24 @@
                     <attribute id="SelectorId" type="FixedString" value="Assassination_Method"/>
                     <attribute id="UUID" type="guid" value="a2190f32-123d-48ed-a1ec-17d0acd2ffa6"/>
                 </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="TranslatedString" handle="haecb788189544d7f81d43789fbd19513db71" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h450c20eef15f481e940a80b3d98a9aae2e8c" version="1"/>
+                    <attribute id="SelectorId" type="FixedString" value="Khaines_Gift"/>
+                    <attribute id="UUID" type="guid" value="5dd45a44-c01a-4116-bd8d-efc1faadef23"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="TranslatedString" handle="h4373db4750474fb8a6f012e0966873050ffg" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h548b8125b61248f3a0a695c934da897745ad" version="1"/>
+                    <attribute id="SelectorId" type="FixedString" value="Killer_Prodigy"/>
+                    <attribute id="UUID" type="guid" value="42762b17-c7e1-4b92-ae20-70f94acbd51d"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="TranslatedString" handle="hdaa2f8e4553a4b1e9633526dedbb7943686a" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h43a410da7d504bd0b910f79d12a5374313d9" version="1"/>
+                    <attribute id="SelectorId" type="FixedString" value="Boon_of_Ladrielle"/>
+                    <attribute id="UUID" type="guid" value="e84982da-caf0-4868-80d3-d2e4677798f1"/>
+                </node>
             </children>
         </node>
     </region>

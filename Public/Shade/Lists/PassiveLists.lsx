@@ -13,16 +13,16 @@
                     <attribute id="UUID" type="guid" value="90ad594e-d738-4533-aea2-30c251e6e12c"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Passives" type="LSString" value="Passive1,Passive2,Passive3"/>
-                    <attribute id="UUID" type="guid" value="e6a6d53f-2f03-4e9b-ab4e-f45555555555"/>
+                    <attribute id="Passives" type="LSString" value="Shade_Blood_Drinker_100015,Shade_Wraith_Shape_100016,Shade_Gladerunner_100017"/>
+                    <attribute id="UUID" type="guid" value="1c8c030a-9fd7-47f5-b5cb-9d4998d96cc2"/>
                 </node>
 				<node id="PassiveList">
-                    <attribute id="Passives" type="LSString" value="Passive1,Passive2,Passive3"/>
-                    <attribute id="UUID" type="guid" value="e6a6d53f-2f03-4e9b-ab4e-f45555555555"/>
+                    <attribute id="Passives" type="LSString" value="Shade_Chain_Killer_100018,Shade_Focused_Slaying_100020,Shade_Spring_Heeled_Assassin_100021"/>
+                    <attribute id="UUID" type="guid" value="d9467caf-85a9-4616-878a-c0f8835cf48a"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Passives" type="LSString" value="Passive1,Passive2,Passive3"/>
-                    <attribute id="UUID" type="guid" value="e6a6d53f-2f03-4e9b-ab4e-f45555555555"/>
+                    <attribute id="Passives" type="LSString" value="Shade_Shimmer_Strike_F00002,Shade_Hungry_Wind_F00003,Shade_Cloak_of_Pain_F00004"/>
+                    <attribute id="UUID" type="guid" value="8ca7dea8-631e-4978-8fda-3ce1d3914c82"/>
                 </node>
 				<node id="PassiveList">
                     <attribute id="Passives" type="LSString" value="Passive1,Passive2,Passive3"/>

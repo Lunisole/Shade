@@ -14,3 +14,7 @@ function SuccessChance(threshold)
     return ConditionResult(random_num >= threshold)
 end
 
+function MaximumBloodShroudStackableStatus(entity, stringStatusGroupName)
+    local entity = entity or context.Target
+    return ConditionResult(GetStatusDuration(stringStatusGroupName, entity) > 6)
+end

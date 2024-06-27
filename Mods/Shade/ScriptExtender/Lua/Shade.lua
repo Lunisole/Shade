@@ -58,8 +58,28 @@ function BackstabbingApply(shade, backstabbingmaxdistance)
     end
 end
 
+function SpringHeeledAssassinApply(shade,posatturnstartx,posatturnstarty,posatturnstartz)
+    for k, v in pairs(Osi.DB_Is_InCombat:Get(nil, Osi.CombatGetGuidFor(Ext.Entity.Get(shade).Uuid.EntityUuid))) do
+        targetpostx,targetposty,targetpostz = Osi.GetPosition(v[1])
+        local distance = Ext.Math.Length({targetpostx-posatturnstartx,targetposty-posatturnstarty,targetpostz-posatturnstartz})
+        if (7 <= distance and distance <= 11) then
+            Osi.ApplyStatus(v[1],"SRING_HEELED_ASSASSIN_TECHNICAL_1_200029",5.0,1)
+        elseif (11 < distance and distance <= 16) then
+            Osi.ApplyStatus(v[1],"SRING_HEELED_ASSASSIN_TECHNICAL_2_200030",5.0,1)
+        elseif (16 < distance and distance <= 22) then
+            Osi.ApplyStatus(v[1],"SRING_HEELED_ASSASSIN_TECHNICAL_3_200031",5.0,1)
+        elseif (22 < distance and distance <= 29) then
+            Osi.ApplyStatus(v[1],"SRING_HEELED_ASSASSIN_TECHNICAL_4_200032",5.0,1)
+        elseif (29 < distance) then
+            Osi.ApplyStatus(v[1],"SRING_HEELED_ASSASSIN_TECHNICAL_5_200033",5.0,1)
+        end
+    end
+end
+
+
+
 -- The main listening. This is the one which applies backstabbing.
-Ext.Osiris.RegisterListener("UsingSpell", 5, "before", function (caster, spell, _, _, _)
+Ext.Osiris.RegisterListener("StartedPreviewingSpell", 4, "before", function (caster, spell, _, _, _)
     if HasPassive(caster,"Shade_Innate_Backstabbing_100001") == 1 then
         BackstabbingApply(caster,15)
     end
@@ -72,24 +92,20 @@ Ext.Osiris.RegisterListener("KilledBy", 4, "after", function (killed, killer, _,
         local maxhp = Ext.Entity.Get(killed).Health.MaxHp
         if (maxhp <= 20) then
             Osi.ApplyStatus(killer,"SHADOW_THIRST_3_200002",-1.0,1,killer)
-        end
-        if (21 <= maxhp and maxhp <= 50) then
+        elseif (20 < maxhp and maxhp <= 50) then
             Osi.ApplyStatus(killer,"SHADOW_THIRST_6_200003",-1.0,1,killer)
-        end
-        if (51 <= maxhp and maxhp <= 150) then
+        elseif (50 < maxhp and maxhp <= 150) then
             Osi.ApplyStatus(killer,"SHADOW_THIRST_12_200004",-1.0,1,killer)
-        end
-        if (151 <= maxhp and maxhp <= 400) then
+        elseif (150 < maxhp and maxhp <= 400) then
             Osi.ApplyStatus(killer,"SHADOW_THIRST_21_200005",-1.0,1,killer)
-        end
-        if (401 <= maxhp) then
+        elseif (400 < maxhp) then
             Osi.ApplyStatus(killer,"SHADOW_THIRST_33_200006",-1.0,1,killer)
         end
     end
 end)
 
 -- The listener for Cruelty
-Ext.Osiris.RegisterListener("UsingSpell", 5, "before", function (shade, spell, _, _, _)
+Ext.Osiris.RegisterListener("UsingSpell", 5, "before", function (shade, _, _, _, _)
     if (HasPassive(shade,"Shade_Cruelty_100007") == 1) then
         local random = math.random(20)
         if (random <= 5) then
@@ -128,5 +144,18 @@ Ext.Osiris.RegisterListener("UsingSpellOnTarget", 6, "before", function (shade, 
                 end
             end
         end
+    end
+end)
+
+Ext.Osiris.RegisterListener("TurnStarted", 1, "before", function(shade)
+    if (HasPassive(shade,"Shade_Spring_Heeled_Assassin_100021") == 1) then
+        posatstartx,posatstarty,posatstartz = Osi.GetPosition(shade)
+        _D(posatstartx,posatstarty,posatstartz)
+    end
+end)
+
+Ext.Osiris.RegisterListener("StartedPreviewingSpell", 4, "before", function (shade, _, _, _, _)
+    if HasPassive(shade,"Shade_Spring_Heeled_Assassin_100021") == 1 then
+        SpringHeeledAssassinApply(shade,posatstartx,posatstarty,posatstartz)
     end
 end)

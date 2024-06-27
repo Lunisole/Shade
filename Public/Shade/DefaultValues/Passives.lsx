@@ -17,8 +17,8 @@
                     <attribute id="UUID" type="guid" value="c0a98217-3b63-4009-aa28-0cd143df6879"/>
                 </node>
                 <node id="DefaultValue">
-                    <attribute id="Add" type="LSString" value=""/>
-                    <attribute id="Level" type="int32" value=""/>
+                    <attribute id="Add" type="LSString" value="Shade_Wraith_Shape_100016"/>
+                    <attribute id="Level" type="int32" value="8"/>
                     <attribute id="TableUUID" type="guid" value="8282ed5a-dda0-4484-8688-33a7f839afce"/>
                     <attribute id="UUID" type="guid" value="17954472-d946-4ab1-bbf5-cae16799c7d2"/>
                 </node>

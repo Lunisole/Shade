@@ -28,6 +28,32 @@
                         </node>
                     </children>
                 </node>
+                <node id="ClassDescription">
+                    <attribute id="CharacterCreationPose" type="guid" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8"/>
+					<attribute id="Description" type="TranslatedString" handle="h1bc4da228cc04ac9b3390346d633076250c5" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h86e7edab7581440097ec22f129090540d582" version="1"/>
+                    <attribute id="LearningStrategy" type="uint8" value="1"/>
+                    <attribute id="Name" type="FixedString" value="Khaines_Hand"/>
+                    <attribute id="ParentGuid" type="guid" value="c7017dae-1f7d-429f-bfe5-fbbc777facdb"/>
+                    <attribute id="PrimaryAbility" type="uint8" value="2"/>
+                    <attribute id="ProgressionTableUUID" type="guid" value="e5af91c0-31b1-4017-b94f-b72b58d63606"/>
+                    <attribute id="SoundClassType" type="FixedString" value="Rogue"/>
+                    <attribute id="SpellCastingAbility" type="uint8" value="4"/>
+                    <attribute id="UUID" type="guid" value="0126463f-d7c3-4409-9e37-325f3f23d100"/>
+                </node>
+                <node id="ClassDescription">
+                    <attribute id="CharacterCreationPose" type="guid" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8"/>
+					<attribute id="Description" type="TranslatedString" handle="h2d73609c9beb490bab54d7a75a8831eb3d47" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h92670ef443c8488fa2748b66d508e483613c" version="1"/>
+                    <attribute id="LearningStrategy" type="uint8" value="1"/>
+                    <attribute id="Name" type="FixedString" value="Umbral_Blade"/>
+                    <attribute id="ParentGuid" type="guid" value="c7017dae-1f7d-429f-bfe5-fbbc777facdb"/>
+                    <attribute id="PrimaryAbility" type="uint8" value="2"/>
+                    <attribute id="ProgressionTableUUID" type="guid" value="628d07da-c0c1-4893-a230-a4e713d586ed"/>
+                    <attribute id="SoundClassType" type="FixedString" value="Rogue"/>
+                    <attribute id="SpellCastingAbility" type="uint8" value="4"/>
+                    <attribute id="UUID" type="guid" value="18e5af40-b541-487b-95c7-541050a3a408"/>
+                </node>
             </children>
         </node>
     </region>
