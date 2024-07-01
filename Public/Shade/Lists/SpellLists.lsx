@@ -5,12 +5,12 @@
         <node id="root">
             <children>
 				<node id="SpellList">
-                    <attribute id="Spells" type="LSString" value="Spell1;Spell2;Spell3"/> a list of spell separated by a ;
-                    <attribute id="UUID" type="guid" value="91202cf0-eaf4-4e5d-9f55-f45555555555"/> make a new UUID. refer to this when selecting or adding spells
+                    <attribute id="Spells" type="LSString" value="Shade_Black_Lotus_Infusion_600005;Shade_Feint_Stabbing_E00001;Shade_Mortal_Blow_E00002;Shade_Surgical_Assault_E00003"/>
+                    <attribute id="UUID" type="guid" value="f16127f2-8307-4f85-9f25-ed27c6e2c152"/>
                 </node>
 				<node id="SpellList">
-                    <attribute id="Spells" type="LSString" value="Spell1;Spell2;Spell3"/> you can have multiple lists, and the same spell can be in different lists
-                    <attribute id="UUID" type="guid" value="91202cf0-eaf4-4e5d-9f55-f45555555555"/> make a new UUID
+                    <attribute id="Spells" type="LSString" value="Spell1;Spell2;Spell3"/>
+                    <attribute id="UUID" type="guid" value="91202cf0-eaf4-4e5d-9f55-f45555555555"/>
                 </node>
 			</children>
         </node>

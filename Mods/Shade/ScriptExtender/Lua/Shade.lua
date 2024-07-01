@@ -20,11 +20,21 @@ function BackstabbingCheck(target, caster, distance)
 end
 ]]
 
+-- Determines the min/max angle required to backstab, depending on the spell.
+function BackstabbingAngle(spell)
+    if (spell == "Shade_Feint_Stabbing_E00001" or spell == "Shade_Melee_MH_Feint_Stabbing_700002" or spell == "Shade_Melee_OH_Feint_Stabbing_700003" or spell == "Shade_Ranged_MH_Feint_Stabbing_800001" or spell == "Shade_Ranged_OH_Feint_Stabbing_800002") then 
+        anglemin = 0
+        anglemax = 2*math.pi
+    else
+        anglemin = (3*math.pi)/4
+        anglemax = (5*math.pi)/4
+    end
+    return anglemin, anglemax
+end 
+
 -- The absolute core function of the class. It's this function wich determines if a character is in the back of another one or not.
 function BackstabbingCheck(target, caster, distance)
     -- If the character doesn't have backstab extended passive then use those anglemin/max
-    local anglemin = (3*math.pi)/4
-    local anglemax = (5*math.pi)/4
     targetzsteering = math.cos(Ext.Entity.Get(target).Steering.field_C)
     targetxsteering = math.sin(Ext.Entity.Get(target).Steering.field_C)
     orient = {targetxsteering,0,targetzsteering}
@@ -41,7 +51,7 @@ function BackstabbingCheck(target, caster, distance)
 end
 
 -- The second core function of the class. Iterates every entity in a combat with a character (shade) and calculates its distance to the character (shade).
-function BackstabbingApply(shade, backstabbingmaxdistance)
+function BackstabbingApply(shade, spell, backstabbingmaxdistance)
     for k, v in pairs(Osi.DB_Is_InCombat:Get(nil, Osi.CombatGetGuidFor(Ext.Entity.Get(shade).Uuid.EntityUuid))) do
         local selfx = Ext.Entity.Get(shade).Bound.Bound.Translate[1]
         local selfz = Ext.Entity.Get(shade).Bound.Bound.Translate[3]
@@ -50,6 +60,7 @@ function BackstabbingApply(shade, backstabbingmaxdistance)
         local distance = {targetx-selfx,0,targetz-selfz}
         if Ext.Math.Length(distance) <= backstabbingmaxdistance then
             Osi.RemoveStatus(v[1],"BACKSTABBING_TECHNICAL_200001")
+            BackstabbingAngle(spell)
             BackstabbingCheck(v[1],shade, distance)
             if isbackstabbing == 1 then
                 Osi.ApplyStatus(v[1],"BACKSTABBING_TECHNICAL_200001",5.0,1)
@@ -81,7 +92,7 @@ end
 -- The main listening. This is the one which applies backstabbing.
 Ext.Osiris.RegisterListener("StartedPreviewingSpell", 4, "before", function (caster, spell, _, _, _)
     if HasPassive(caster,"Shade_Innate_Backstabbing_100001") == 1 then
-        BackstabbingApply(caster,15)
+        BackstabbingApply(caster,spell,15)
     end
 end)
 
@@ -157,5 +168,14 @@ end)
 Ext.Osiris.RegisterListener("StartedPreviewingSpell", 4, "before", function (shade, _, _, _, _)
     if HasPassive(shade,"Shade_Spring_Heeled_Assassin_100021") == 1 then
         SpringHeeledAssassinApply(shade,posatstartx,posatstarty,posatstartz)
+    end
+end)
+
+Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function (marked4death, status, _, _)
+	if status == "" then
+        startinghp = Ext.Entity.Get(marked4death).Health.Hp
+        startingthp = Ext.Entity.Get(marked4death).Health.TemporaryHp
+        startingvalue = startinghp + startingthp
+        _P(startinghp,startingthp,startingvalue)
     end
 end)

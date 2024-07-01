@@ -3,6 +3,20 @@ function IsShadeSpell()
     SpellId('Target_Smite_Branding_ZarielTiefling')
 end
 
+function IsMortalBlow()
+	return SpellId ('Shade_Melee_MH_Mortal_Blow_700004')
+    | SpellId ('Shade_Melee_OH_Mortal_Blow_700005')
+    | SpellId ('Shade_Ranged_MH_Mortal_Blow_800003')
+    | SpellId ('Shade_Ranged_OH_Mortal_Blow_800004')
+end
+
+function IsSurgicalAssault()
+	return SpellId ('Shade_Melee_MH_Surgical_Assault_700006')
+    | SpellId ('Shade_Melee_OH_Surgical_Assault_700007')
+    | SpellId ('Shade_Ranged_MH_Surgical_Assault_800005')
+    | SpellId ('Shade_Ranged_OH_Surgical_Assault_800006')
+end
+
 function IsHeavyWeapon()
     local weapon = context.AttackWeapon
     local isHeavy = HasWeaponProperty(WeaponProperties.Heavy, weapon)
@@ -17,4 +31,44 @@ end
 function MaximumBloodShroudStackableStatus(entity, stringStatusGroupName)
     local entity = entity or context.Target
     return ConditionResult(GetStatusDuration(stringStatusGroupName, entity) > 6)
+end
+
+function HasMeleeMainHand(entity)
+    local entity = entity or context.Source
+    local item = GetItemInEquipmentSlot(EquipmentSlot.MeleeMainHand, entity)
+    if item.IsValid then
+        return ConditionResult(true)
+    else 
+        return ConditionResult(false)   
+    end 
+end
+
+function HasMeleeOffHand(entity)
+    local entity = entity or context.Source
+    local item = GetItemInEquipmentSlot(EquipmentSlot.MeleeOffHand, entity)
+    if (item.IsValid and not HasShieldEquipped(entity).Result) then
+        return ConditionResult(true)
+    else 
+        return ConditionResult(false)   
+    end 
+end
+
+function HasRangedMainHand()
+    local entity = entity or context.Source
+    local item = GetItemInEquipmentSlot(EquipmentSlot.RangedMainHand, entity)
+    if item.IsValid then
+        return ConditionResult(true)
+    else 
+        return ConditionResult(false)   
+    end 
+end
+
+function HasRangedOffHand()
+    local entity = entity or context.Source
+    local item = GetItemInEquipmentSlot(EquipmentSlot.RangedOffHand, entity)
+    if item.IsValid then
+        return ConditionResult(true)
+    else 
+        return ConditionResult(false)   
+    end 
 end

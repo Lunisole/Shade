@@ -1,11 +1,3 @@
-new entry "Shade_LUL_TEST"
-type "PassiveData"
-data "DisplayName" "haee44862g25ebg4c9eg8db5g0ec7b105b627;1"
-data "Description" "h85459823g163dg4650gbda0g57d5cec1c411;1"
-data "Icon" "PassiveFeature_Land_Swamp"
-data "Properties" "Highlighted"
-data "Boosts" "UnlockSpell(Target_Slash_New_Test);UnlockSpell(Target_Slash_New_Test2)"
-
 new entry "Shade_Infiltrate_F00001"
 type "PassiveData"
 data "DisplayName" "he532834a9e294966b775dae69c06f4f14ff9;1"
@@ -34,6 +26,58 @@ data "Description" "hfb6cda713bf3481297634185f12d241af520;1"
 data "Icon" "ShadeCloakofPain600004"
 data "Boosts" "UnlockSpell(Shade_Cloak_of_Pain_600004);ActionResource(InfiltrateRes,2,0)"
 
+new entry "Shade_Vicious_Trickery_F00005"
+type "PassiveData"
+data "Properties" "IsHidden"
+data "Boosts" "ActionResource(ViciousTrickeryRes,2,0)"
+
+new entry "Shade_Vicious_Trickery_Lotus_Infusion_F00006"
+type "PassiveData"
+data "DisplayName" "h0153a514d61746049840667167d6e2b50157;1"
+data "Description" "hd052b443e1404c4ca42643bb3ce85925e131;1"
+data "DescriptionParams" "3"
+data "Boosts" "UnlockSpell(Shade_Black_Lotus_Infusion_600005)"
+
+new entry "Shade_Vicious_Trickery_Feint_Stabbing_F00007"
+type "PassiveData"
+data "DisplayName" "hc04525387bd34365999832320d65489fdcaa;1"
+data "Description" "h2267dcb79de24d1286f9e34a4dfbf5eca759;1"
+data "Boosts" "UnlockSpell(Shade_Feint_Stabbing_E00001)"
+
+new entry "Shade_Vicious_Trickery_Mortal_Blow_F00008"
+type "PassiveData"
+data "DisplayName" "h5c58f43e766b4ae1bda023d4560a5718a24a;1"
+data "Description" "hf000515b1c2947d8ba523ab26ecc4030fgc8;1"
+data "Boosts" "UnlockSpell(Shade_Mortal_Blow_E00002);IF(IsMortalBlow()):IgnoreResistance(Slashing,Resistant);IF(IsMortalBlow()):IgnoreResistance(Piercing,Resistant)"
+
+new entry "Shade_Vicious_Trickery_Surgical_Assault_F00009"
+type "PassiveData"
+data "DisplayName" "h8415926b9a74481b86b992f086119ab9cg2e;1"
+data "Description" "h050f1a7763c7441a81767c47564bde79aed7;1"
+data "DescriptionParams" "3;4"
+data "Boosts" "UnlockSpell(Shade_Surgical_Assault_E00003)"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "not Self() and not HasStatus('BACKSTABBING_TECHNICAL_200001',context.Target) and IsSurgicalAssault()"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, SourceSpellDC())):ApplyStatus(SURGICAL_ASSAULT_BLINDED_200037,100,3)"
+
+
+
+
+
+
+new entry "Shade_TEST"
+type "PassiveData"
+data "DisplayName" "h15061c65cc4041d18d70920360a744cc258g;1"
+data "Description" "hfb6cda713bf3481297634185f12d241af520;1"
+data "Icon" "ShadeCloakofPain600004"
+data "Boosts" "UnlockSpell(Shade_Mortal_Blow_E00002);ActionResource(ViciousTrickeryRes,2,0)"
+
+new entry "Shade_Functionnal_TEST"
+type "PassiveData"
+data "DisplayName" "h15061c65cc4041d18d70920360a744cc258g;1"
+data "Description" "hfb6cda713bf3481297634185f12d241af520;1"
+data "Icon" "ShadeCloakofPain600004"
+data "Boosts" ""
 
 
 

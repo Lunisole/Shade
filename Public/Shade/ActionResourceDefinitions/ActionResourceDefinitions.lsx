@@ -13,6 +13,27 @@
                     <attribute id="UUID" type="guid" value="92a3b738-aeb5-486e-a884-7b5cc3ac8976"/>
                 </node>
                 <node id="ActionResourceDefinition">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h6baa18ade99e4d6592a8eeca336b678de8ga" version="1"/>
+                    <attribute id="IsHidden" type="bool" value="true"/>
+                    <attribute id="Name" type="FixedString" value="ViciousTrickeryRes"/>
+                    <attribute id="ReplenishType" type="FixedString" value="ShortRest"/>
+                    <attribute id="UUID" type="guid" value="53e78c08-0909-434d-9580-13ac50262892"/>
+                </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h48d5e6b53be6474faf702970469104d43789" version="1"/>
+                    <attribute id="IsHidden" type="bool" value="true"/>
+                    <attribute id="Name" type="FixedString" value="CautiousSubterfugeRes"/>
+                    <attribute id="ReplenishType" type="FixedString" value="ShortRest"/>
+                    <attribute id="UUID" type="guid" value="81090735-92a9-4269-a684-d97ea363a97e"/>
+                </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="DisplayName" type="TranslatedString" handle="heb87bcd11aa548f1823cb0f19eed22dda08b" version="1"/>
+                    <attribute id="IsHidden" type="bool" value="true"/>
+                    <attribute id="Name" type="FixedString" value="MurdersArtRes"/>
+                    <attribute id="ReplenishType" type="FixedString" value="ShortRest"/>
+                    <attribute id="UUID" type="guid" value="0a2ed15c-08c3-4f9a-8d6b-cca292fdd7d8"/>
+                </node>
+                <node id="ActionResourceDefinition">
                     <attribute id="Description" type="TranslatedString" handle="99d7b8be73b16957796985f19d597e5b6cb0c" version="1"/>
 					<attribute id="DiceType" type="uint32" value="0"/> If the resource has any dice type, like Superiority die from BM
                     <attribute id="DisplayName" type="TranslatedString" handle="99d7b8be73b16957796985f19d597e5b6cb0c" version="1"/>

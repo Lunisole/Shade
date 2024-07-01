@@ -34,10 +34,10 @@
                     <attribute id="Boosts" type="LSString" value=""/>
                     <attribute id="Level" type="uint8" value="2"/>
                     <attribute id="Name" type="LSString" value="Shade"/>
-                    <attribute id="PassivesAdded" type="LSString" value="Shade_Nights_Veil_100014"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Shade_Nights_Veil_100014;Shade_Vicious_Trickery_F00005"/>
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value=""/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(ce3d3cdb-2c75-4fef-892a-0052b0de09ea,3,Vicious_Trickery)"/>
 					<attribute id="TableUUID" type="guid" value="8282ed5a-dda0-4484-8688-33a7f839afce"/>
                     <attribute id="UUID" type="guid" value="31c2b7c8-b518-45fd-8eaf-886095be2e40"/>
                 </node>
