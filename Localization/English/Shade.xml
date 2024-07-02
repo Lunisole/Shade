@@ -19,14 +19,21 @@
     <content contentuid="hfb6cda713bf3481297634185f12d241af520" version="1">You dodge light and blend into obscurity, gaining &lt;LSTag Type="Status" Tooltip="CLOAK_OF_PAIN_300004"&gt;Cloak of Pain&lt;/LSTag&gt; for [1] turns. Usable twice per long rest.</content>
     <content contentuid="he09cc42802224629aea607a8b5132976g08a" version="1">Shadow Stride</content>
     <content contentuid="h9925041e6edd42abbf6eb241971ffe60a48d" version="1">You take a shortcut through darkness and teleport instantly to the target location. Upon arrival, you create a [1] radius cloud of darkness that lasts for [2] turns.</content>
-    <content contentuid="h0153a514d61746049840667167d6e2b50157" version="1">Vicious Trickery : Black Lotus Infusion</content>
-    <content contentuid="hd052b443e1404c4ca42643bb3ce85925e131" version="1">You crack open a vial of &lt;LSTag Type="Status" Tooltip="BLACK_LOTUS_DIPPED_200035"&gt;Black Lotus&lt;/LSTag&gt; essence and coat your weapons with it. The coating persists for [1] turns.</content>
-    <content contentuid="hc04525387bd34365999832320d65489fdcaa" version="1">Vicious Trickery : Feint Stabbing</content>
-    <content contentuid="h2267dcb79de24d1286f9e34a4dfbf5eca759" version="1">You feint at your target and hit it in the back. This always &lt;LSTag Type="Passive" Tooltip="Shade_Innate_Backstabbing_100001"&gt;backstabs&lt;/LSTag&gt;.</content>
-    <content contentuid="h5c58f43e766b4ae1bda023d4560a5718a24a" version="1">Vicious Trickery : Mortal Blow</content>
-    <content contentuid="hf000515b1c2947d8ba523ab26ecc4030fgc8" version="1">You deliver a deadly strike to your target that ignores &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Slashing and Piercing damage. On a &lt;LSTag Type="Passive" Tooltip="Shade_Innate_Backstabbing_100001"&gt;backstab&lt;/LSTag&gt;, this also ignores &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt;.</content>   
-    <content contentuid="h8415926b9a74481b86b992f086119ab9cg2e" version="1">Vicious Trickery : Surgical Assault</content>
-    <content contentuid="h050f1a7763c7441a81767c47564bde79aed7" version="1">You hit your victim in the eye, &lt;LSTag Type="Status" Tooltip="SURGICAL_ASSAULT_BLINDED_200037"&gt;Blinding&lt;/LSTag&gt; it for [1] turns if it fails a Constitution &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;. On a &lt;LSTag Type="Passive" Tooltip="Shade_Innate_Backstabbing_100001"&gt;backstab&lt;/LSTag&gt;, you blind your target without a &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; for [2] turns.</content>
+    <content contentuid="h0153a514d61746049840667167d6e2b50157" version="1">Black Lotus Infusion</content>
+    <content contentuid="hd052b443e1404c4ca42643bb3ce85925e131" version="1">&lt;LSTag Type="Spell" Tooltip="Shade_Vicious_Trickery_C00001"&gt;Vicious Trickery&lt;/LSTag&gt;. You crack open a vial of &lt;LSTag Type="Status" Tooltip="BLACK_LOTUS_DIPPED_200035"&gt;Black Lotus&lt;/LSTag&gt; essence and coat your weapons with it. The coating persists for [1] turns.</content>
+    <content contentuid="hc04525387bd34365999832320d65489fdcaa" version="1">Feint Stabbing</content>
+    <content contentuid="h2267dcb79de24d1286f9e34a4dfbf5eca759" version="1">&lt;LSTag Type="Spell" Tooltip="Shade_Vicious_Trickery_C00001"&gt;Vicious Trickery&lt;/LSTag&gt;. You feint at your target and hit it in the back. This always &lt;LSTag Type="Passive" Tooltip="Shade_Innate_Backstabbing_100001"&gt;backstabs&lt;/LSTag&gt;.</content>
+    <content contentuid="h5c58f43e766b4ae1bda023d4560a5718a24a" version="1">Mortal Blow</content>
+    <content contentuid="hf000515b1c2947d8ba523ab26ecc4030fgc8" version="1">&lt;LSTag Type="Spell" Tooltip="Shade_Vicious_Trickery_C00001"&gt;Vicious Trickery&lt;/LSTag&gt;. You deliver a deadly strike to your target that ignores &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Slashing and Piercing damage. On a &lt;LSTag Type="Passive" Tooltip="Shade_Innate_Backstabbing_100001"&gt;backstab&lt;/LSTag&gt;, this also ignores &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt;.</content>   
+    <content contentuid="h8415926b9a74481b86b992f086119ab9cg2e" version="1">Surgical Assault</content>
+    <content contentuid="h050f1a7763c7441a81767c47564bde79aed7" version="1">&lt;LSTag Type="Spell" Tooltip="Shade_Vicious_Trickery_C00001"&gt;Vicious Trickery&lt;/LSTag&gt;. You hit your victim in the eye, &lt;LSTag Type="Status" Tooltip="SURGICAL_ASSAULT_BLINDED_200037"&gt;Blinding&lt;/LSTag&gt; it for [1] turns if it fails a Constitution &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;. On a &lt;LSTag Type="Passive" Tooltip="Shade_Innate_Backstabbing_100001"&gt;backstab&lt;/LSTag&gt;, you blind your target without a &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; for [2] turns.</content>
+    <content contentuid="h35e68b90263f4f35b89c205dda094f3af6b8" version="1">Mist of Midnight</content>
+    <content contentuid="h281b04ab236b4e9fbeeddd93faa5e81eaaec" version="1">&lt;LSTag Type="Spell" Tooltip="Shade_Cautious_Subterfuge_C00002"&gt;Cautious Subterfuge&lt;/LSTag&gt;. Ladrielle veils you with an ominous mist, making you &lt;LSTag Tooltip="Resistant"&gt;Resistant&lt;/LSTag&gt; to all types of non-magical damage until the start of your next turn.</content>
+
+    <!--Interrupts-->
+    <content contentuid="h82aefa8abcf24fa98e2bf68f8f5ed7d44gb0" version="1">Smoke Cover</content>
+    <content contentuid="hf7f62c41e0c744be8797767d7f663e194b5d" version="1">&lt;LSTag Type="Spell" Tooltip="Shade_Cautious_Subterfuge_C00002"&gt;Cautious Subterfuge&lt;/LSTag&gt;. Impose &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on an attacker and creates a fog cloud for 1 turn.</content>
+
 
     <!--Generic Spells-->
     <content contentuid="ha1d4f0f3efe346579df403ad6694ea999ga3" version="1">Execute the action with your main hand melee weapon.</content>
@@ -82,7 +89,7 @@
     <content contentuid="hdcbef7a5148a48f786a859e7dd8c39eb35bb" version="1">Spring-Heeled Assassin</content>
     <content contentuid="h13028066f0cc42b7afd0577b3256c9aa1gad" version="1">The further your target is from where you started your turn, the more damage you inflict, up to a maximum of [1].</content>
     <content contentuid="h1e017a005d1444e788bff53ded5b41750gf2" version="1">Black Lotus Toxin</content>
-    <content contentuid="ha5453e0d52794d279d40da5f97f5ed53fd09" version="1">Affected entity must succeed a Constitution &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; or be &lt;LSTag Type="Status" Tooltip="BLACK_LOTUS_POISONED_D00001"&gt;Poisoned&lt;/LSTag&gt; for [1].</content>
+    <content contentuid="ha5453e0d52794d279d40da5f97f5ed53fd09" version="1">Affected entity must succeed a Constitution &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; or be &lt;LSTag Type="Status" Tooltip="BLACK_LOTUS_POISONED_200036"&gt;Poisoned&lt;/LSTag&gt; for [1].</content>
 
     <!--Status-->
     <content contentuid="h3a541c53de7d430ab9615aaaed1fd52234c2" version="1">Infiltrated</content>
@@ -107,9 +114,11 @@
     <content contentuid="h33efd53738bb4b0d8418c8b9bcc8473f8983" version="1">Cloak of Pain</content>
     <content contentuid="h77694ca5698e4812a203066577049bf73c97" version="1">You are invisible and your &lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; is increased by [1]. You automatically &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; on &lt;LSTag Type="Passive" Tooltip="Shade_Innate_Backstabbing_100001"&gt;backstabbing&lt;/LSTag&gt; and deal an additionnal [2].</content>
     <content contentuid="h1791db0906074dc0878fa07d53e311e15385" version="1">Black Lotus Coating</content>
-    <content contentuid="h5539ff622a1c40d4afe728e80cec1e7agbeb" version="1">Deals an additionnal [1]. When an entity is damaged, it must succeed a Constitution &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; or be &lt;LSTag Type="Status" Tooltip="BLACK_LOTUS_POISONED_D00001"&gt;Poisoned&lt;/LSTag&gt; for [2].</content>
+    <content contentuid="h5539ff622a1c40d4afe728e80cec1e7agbeb" version="1">Deals an additionnal [1]. When an entity is damaged, it must succeed a Constitution &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; or be &lt;LSTag Type="Status" Tooltip="BLACK_LOTUS_POISONED_200036"&gt;Poisoned&lt;/LSTag&gt; for [2].</content>
     <content contentuid="hc2a10e8bb7b1487fa1bac369c6c31f72e2c9" version="1">Black Lotus Toxin</content>
     <content contentuid="hf2d4229cf0864b78a6045e2038f8b5390c4b" version="1">Takes [1] and can't take bonus actions.</content>
+    <content contentuid="hcae9fe2069e5487b9e46b5c1bc209624d161" version="1">Mist of Midnight</content>
+    <content contentuid="h28285b5b8e1d41958a09011cbf872204g1c6" version="1">You are shrouded by a mystic fog, you have &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to all types of non-magical damage.</content>
 
     <!--Progression Descriptions-->
     <content contentuid="h00a489a604684906868fa10f71ceb6eb100f" version="1">Dusk's Favor</content>
@@ -122,8 +131,6 @@
     <content contentuid="h4373db4750474fb8a6f012e0966873050ffg" version="1">Only the very best shades are such murderous machines, and only those have access to the legacy of their kind.</content>
     <content contentuid="h43a410da7d504bd0b910f79d12a5374313d9" version="1">Boon of Ladrielle</content>
     <content contentuid="hdaa2f8e4553a4b1e9633526dedbb7943686a" version="1">The first and most important skill of an assassin is stealth, and now you mastered it. This replace &lt;LSTag Type="Spell" Tooltip="Shade_Infiltrate_600001"&gt;Infiltrate&lt;/LSTag&gt; with an upgraded version.</content>
-    <content contentuid="hb9b7b76aa8f649fa8161c3d6dd1c17cc523f" version="1">Vicious Trickeries</content>
-    <content contentuid="h59baff21750c44fb9557b383fbfba8ddb081" version="1">You can only use two Vicious Trickeries per short rest.</content>
 
     <!--Tooltip Extras-->
     <content contentuid="hfef462359ccf48a39227272f6d7f79366eb5" version="1">Invisibility ends early if the invisible entity attacks, casts another spell, takes an action, or takes damage.</content>
@@ -141,4 +148,13 @@
     <!--Errors-->
     <content contentuid="h7493affbd8d74168b6e285c8e037c2a5eaed" version="1">You can't use infiltrate again until &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
     <content contentuid="he39fa6480e3348f99c77fecb473652d2b43e" version="1">Must take a &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+    
+    
+    <!--Tooltip Only-->
+    <content contentuid="haf192f33e43d4dd2aede08085d670275bgd3" version="1">Vicious Trickery</content>
+    <content contentuid="hb1529ca66a6c481d934cdf51cfa89e373e13" version="1">Vicious trickeries are aggressive Shade-specific techniques. You can only use two of them per short rest.</content>
+    <content contentuid="hbee0f48fceba426c91306bfbef392c15b6d1" version="1">Cautious Subterfuges</content>
+    <content contentuid="hc89aba601b494d76b9510e241f8edd62b341" version="1">Defensive actions usually used by Shades to avoid imminent demise. You can only use one of them per short rest.</content>
+    <content contentuid="h813e3f83eff24b429fd2d82b7f814231c278" version="1">Murder's Art</content>
+    <content contentuid="h09653c6078394b46ba907979748fb563edff" version="1">Aces in the Shades arsenal, Murder's Art are powerful techniques only the very best can dare to try. You can only use of them per long rest.</content>
 </contentList>

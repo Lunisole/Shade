@@ -32,12 +32,17 @@ function BackstabbingAngle(spell)
     return anglemin, anglemax
 end 
 
+function charactersteeringvector(target)
+    local targetzsteering = math.cos(Ext.Entity.Get(target).Steering.field_C)
+    local targetxsteering = math.sin(Ext.Entity.Get(target).Steering.field_C)
+    orient = {targetxsteering,0,targetzsteering}
+    return orient
+end 
+
 -- The absolute core function of the class. It's this function wich determines if a character is in the back of another one or not.
 function BackstabbingCheck(target, caster, distance)
     -- If the character doesn't have backstab extended passive then use those anglemin/max
-    targetzsteering = math.cos(Ext.Entity.Get(target).Steering.field_C)
-    targetxsteering = math.sin(Ext.Entity.Get(target).Steering.field_C)
-    orient = {targetxsteering,0,targetzsteering}
+    charactersteeringvector(target)
     local normalized = Ext.Math.Normalize(distance)
     local DP = Ext.Math.Dot(orient,normalized)
     local result = Ext.Math.Acos(DP)
@@ -87,7 +92,9 @@ function SpringHeeledAssassinApply(shade,posatturnstartx,posatturnstarty,posattu
     end
 end
 
-
+function shadeteleportto()
+    Osi.TeleportToPosition(shdtotp, positionrectified[1], positionrectified[2], positionrectified[3], "", 0, 0, 0)
+end
 
 -- The main listening. This is the one which applies backstabbing.
 Ext.Osiris.RegisterListener("StartedPreviewingSpell", 4, "before", function (caster, spell, _, _, _)
@@ -165,17 +172,40 @@ Ext.Osiris.RegisterListener("TurnStarted", 1, "before", function(shade)
     end
 end)
 
-Ext.Osiris.RegisterListener("StartedPreviewingSpell", 4, "before", function (shade, _, _, _, _)
+Ext.Osiris.RegisterListener("StartedPreviewingSpell", 4, "before", function(shade, _, _, _, _)
     if HasPassive(shade,"Shade_Spring_Heeled_Assassin_100021") == 1 then
         SpringHeeledAssassinApply(shade,posatstartx,posatstarty,posatstartz)
     end
 end)
 
-Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function (marked4death, status, _, _)
+Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function(shade, status, _, _)
+	if status == "SMOKE_COVER_EFFECT_A00001" then
+        Ext.Timer.WaitFor(1500, function(shade)
+            Osi.ApplyStatus(shade,"SMOKE_COVER_FOGCLOUD_200040",-1.0,1,shade)
+        end)
+    end
+end)
+
+Ext.Osiris.RegisterListener("AttackedBy",7,"after", function(shade,attacker,_,_,_,_,_)
+    if HasPassive(shade,"Test_testLUL") then
+        charactersteeringvector(attacker)
+        local posx,posy,posz = Osi.GetPosition(attacker)
+        positionrectified = {posx+orient[1],posy+orient[2],posz+orient[3]}
+    end
+end)
+
+Ext.Osiris.RegisterListener("UsingSpell", 5, "after", function (shade, spell, _, _, _)
+    if spell == "Shade_Gap_Close_700008" then
+        shdtotp = shade
+        Ext.Timer.WaitFor(1300, shadeteleportto)
+    end
+end)
+
+Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function(marked4death, status, _, _)
 	if status == "" then
-        startinghp = Ext.Entity.Get(marked4death).Health.Hp
-        startingthp = Ext.Entity.Get(marked4death).Health.TemporaryHp
-        startingvalue = startinghp + startingthp
+        local startinghp = Ext.Entity.Get(marked4death).Health.Hp
+        local startingthp = Ext.Entity.Get(marked4death).Health.TemporaryHp
+        local startingvalue = startinghp + startingthp
         _P(startinghp,startingthp,startingvalue)
     end
 end)

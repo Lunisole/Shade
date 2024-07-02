@@ -30,7 +30,7 @@
                     <attribute id="DisplayName" type="TranslatedString" handle="heb87bcd11aa548f1823cb0f19eed22dda08b" version="1"/>
                     <attribute id="IsHidden" type="bool" value="true"/>
                     <attribute id="Name" type="FixedString" value="MurdersArtRes"/>
-                    <attribute id="ReplenishType" type="FixedString" value="ShortRest"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
                     <attribute id="UUID" type="guid" value="0a2ed15c-08c3-4f9a-8d6b-cca292fdd7d8"/>
                 </node>
                 <node id="ActionResourceDefinition">

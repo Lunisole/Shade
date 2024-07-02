@@ -1,0 +1,5 @@
+new entry "SMOKE_COVER_EFFECT_A00001"
+type "StatusData"
+data "StatusType" "EFFECT"
+data "StatusPropertyFlags" "DisableCombatlog;DisablePortraitIndicator;DisableOverhead;IgnoreResting;ApplyToDead"
+data "StatusEffect" "bcb8586f-b17d-42f6-8ea9-210952604780"

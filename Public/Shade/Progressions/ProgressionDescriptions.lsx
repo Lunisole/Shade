@@ -41,12 +41,6 @@
                     <attribute id="SelectorId" type="FixedString" value="Boon_of_Ladrielle"/>
                     <attribute id="UUID" type="guid" value="e84982da-caf0-4868-80d3-d2e4677798f1"/>
                 </node>
-                <node id="ProgressionDescription">
-                    <attribute id="Description" type="TranslatedString" handle="h59baff21750c44fb9557b383fbfba8ddb081" version="1"/>
-                    <attribute id="DisplayName" type="TranslatedString" handle="hb9b7b76aa8f649fa8161c3d6dd1c17cc523f" version="1"/>
-                    <attribute id="SelectorId" type="FixedString" value="Vicious_Trickery"/>
-                    <attribute id="UUID" type="guid" value="436e3992-4976-4802-8b60-10700ac22108"/>
-                </node>
             </children>
         </node>
     </region>

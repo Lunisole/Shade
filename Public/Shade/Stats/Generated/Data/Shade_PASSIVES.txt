@@ -211,10 +211,26 @@ data "Boosts" "IF(HasStatus('SRING_HEELED_ASSASSIN_TECHNICAL_1_200029',context.T
 
 new entry "Shade_Black_Lotus_Passive_100022"
 type "PassiveData"
+data "Properties" "IsHidden"
 data "DisplayName" "h1e017a005d1444e788bff53ded5b41750gf2;1"
 data "Description" "ha5453e0d52794d279d40da5f97f5ed53fd09;1"
 data "DescriptionParams" "DealDamage(1d4,Poison);2"
-data "Properties" "IsHidden"
 data "StatsFunctorContext" "OnDamage"
 data "Conditions" "AttackedWithPassiveSourceWeapon()"
 data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution,13)):ApplyStatus(BLACK_LOTUS_POISONED_200036,100,2,AdvantageOnPoisoned())"
+
+new entry "Shade_Vicious_Trickery_Mortal_Blow_100023"
+type "PassiveData"
+data "Properties" "IsHidden"
+data "DisplayName" "h5c58f43e766b4ae1bda023d4560a5718a24a;1"
+data "Boosts" "IF(IsMortalBlow()):IgnoreResistance(Slashing,Resistant);IF(IsMortalBlow()):IgnoreResistance(Piercing,Resistant)"
+
+new entry "Shade_Vicious_Trickery_Surgical_Assault_100024"
+type "PassiveData"
+data "Properties" "IsHidden"
+data "DisplayName" "h8415926b9a74481b86b992f086119ab9cg2e;1"
+data "DescriptionParams" "3;4"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "not Self() and not HasStatus('BACKSTABBING_TECHNICAL_200001',context.Target) and IsSurgicalAssault()"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, SourceSpellDC())):ApplyStatus(SURGICAL_ASSAULT_BLINDED_200037,100,3)"
+

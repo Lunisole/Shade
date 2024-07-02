@@ -1,0 +1,17 @@
+new entry "Shade_Vicious_Trickery_C00001"
+type "SpellData"
+data "SpellType" "Shout"
+data "DisplayName" "haf192f33e43d4dd2aede08085d670275bgd3;1"
+data "Description" "hb1529ca66a6c481d934cdf51cfa89e373e13;1"
+
+new entry "Shade_Cautious_Subterfuge_C00002"
+type "SpellData"
+data "SpellType" "Shout"
+data "DisplayName" "hbee0f48fceba426c91306bfbef392c15b6d1;1"
+data "Description" "hc89aba601b494d76b9510e241f8edd62b341;1"
+
+new entry "Shade_Murders_Art_C00003"
+type "SpellData"
+data "SpellType" "Shout"
+data "DisplayName" "h813e3f83eff24b429fd2d82b7f814231c278;1"
+data "Description" "h09653c6078394b46ba907979748fb563edff;1"

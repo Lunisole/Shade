@@ -9,7 +9,7 @@
                     <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Wisdom);Proficiency(LightArmor);Proficiency(Longswords);Proficiency(Scimitars);Proficiency(Shortswords);Proficiency(SimpleWeapons);Proficiency(Tridents)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Shade"/>
-                    <attribute id="PassivesAdded" type="LSString" value="Shade_Innate_Backstabbing_100001;Shade_Innate_Dual_Blades_100002;Shade_Innate_Burdened_100003;Shade_Infiltrate_F00001"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Shade_Innate_Backstabbing_100001;Shade_Innate_Dual_Blades_100002;Shade_Innate_Burdened_100003;Shade_Infiltrate_F00001;Test_testLUL"/>
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="Selectors" type="LSString" value="SelectSkills(36e6804d-128d-4216-99ae-435521d3fced,2);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);SelectPassives(f12b280c-434c-4879-85d7-abf692dfec6e,1,Dusks_Favor)"/>
@@ -34,10 +34,10 @@
                     <attribute id="Boosts" type="LSString" value=""/>
                     <attribute id="Level" type="uint8" value="2"/>
                     <attribute id="Name" type="LSString" value="Shade"/>
-                    <attribute id="PassivesAdded" type="LSString" value="Shade_Nights_Veil_100014;Shade_Vicious_Trickery_F00005"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Shade_Nights_Veil_100014;Shade_Vicious_Trickery_F00005;Shade_Vicious_Trickery_Mortal_Blow_100023;Shade_Vicious_Trickery_Surgical_Assault_100024"/>
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="SelectPassives(ce3d3cdb-2c75-4fef-892a-0052b0de09ea,3,Vicious_Trickery)"/>
+                    <attribute id="Selectors" type="LSString" value=""/>
 					<attribute id="TableUUID" type="guid" value="8282ed5a-dda0-4484-8688-33a7f839afce"/>
                     <attribute id="UUID" type="guid" value="31c2b7c8-b518-45fd-8eaf-886095be2e40"/>
                 </node>
