@@ -33,20 +33,6 @@
                     <attribute id="ReplenishType" type="FixedString" value="Rest"/>
                     <attribute id="UUID" type="guid" value="0a2ed15c-08c3-4f9a-8d6b-cca292fdd7d8"/>
                 </node>
-                <node id="ActionResourceDefinition">
-                    <attribute id="Description" type="TranslatedString" handle="99d7b8be73b16957796985f19d597e5b6cb0c" version="1"/>
-					<attribute id="DiceType" type="uint32" value="0"/> If the resource has any dice type, like Superiority die from BM
-                    <attribute id="DisplayName" type="TranslatedString" handle="99d7b8be73b16957796985f19d597e5b6cb0c" version="1"/>
-                    <attribute id="IsSpellResource" type="bool" value="false"/> 
-                    <attribute id="MaxLevel" type="uint32" value="0"/>
-                    <attribute id="MaxValue" type="uint32" value="0"/>
-                    <attribute id="Name" type="FixedString" value="ExampleResource"/>
-                    <attribute id="PartyActionResource" type="bool" value="false"/>
-                    <attribute id="ReplenishType" type="FixedString" value="Rest"/> Rest = Long Rest, ShortRest = ShortRest
-                    <attribute id="ShowOnActionResourcePanel" type="bool" value="false"/>
-                    <attribute id="UUID" type="guid" value="8c0d6da2-8465-4895-8aaa-0f40e379771e"/>
-                    <attribute id="UpdatesSpellPowerLevel" type="bool" value="false"/>
-                </node>
             </children>
         </node>
     </region>

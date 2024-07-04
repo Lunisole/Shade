@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="328" lslib_meta="v1,bswap_guids" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="CanBeMoved" type="bool" value="False" />
+					<attribute id="CanClickThrough" type="bool" value="True" />
+					<attribute id="CanShootThrough" type="bool" value="True" />
+					<attribute id="AttackableWhenClickThrough" type="bool" value="False" />
+					<attribute id="MapKey" type="FixedString" value="e8462fe5-2c4b-4bce-8396-c94168bfafc7" />
+					<attribute id="Name" type="LSString" value="Lu_UmBld_Shadow_Character" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h9484addecb5f4d6bbe21ec2bbf9874e4eaec" version="1" />
+					<attribute id="Icon" type="FixedString" value="Portrait_Unknown" />
+					<attribute id="PortraitVisualResourceID" type="FixedString" value="" />
+					<attribute id="Race" type="guid" value="c84eb303-1e40-4c0e-8513-2c1e50a2e10f" />
+					<attribute id="CharacterVisualResourceID" type="FixedString" value="" />
+					<attribute id="Equipment" type="FixedString" value="Lu_UmBld_Shdw_Equipement" />
+					<attribute id="Stats" type="FixedString" value="Lu_UmBld_Shadow_Stats" />
+					<attribute id="CanFight" type="bool" value="False" />
+					<attribute id="BloodSurfaceType" type="FixedString" value="SurfaceNone" />
+					<attribute id="BloodType" type="FixedString" value="" />
+					<attribute id="Faction" type="guid" value="a1542c81-6895-929e-4522-10ce218bb360" />
+					<attribute id="ForceLifetimeDeath" type="bool" value="True" />
+					<attribute id="IsEquipmentLootable" type="bool" value="False" />
+					<attribute id="IsInspector" type="bool" value="True" />
+					<attribute id="IsPlayer" type="bool" value="False" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="ParentTemplateId" type="FixedString" value="e87dd6f0-22f4-4cd5-914f-adddd2595941" />
+					<attribute id="WalkThrough" type="bool" value="True" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<children>
+						<node id="LocomotionParams" />
+						<node id="OnDeathActions" />
+						<node id="SpeakerGroupList">
+							<children>
+								<node id="SpeakerGroup">
+									<attribute id="Object" type="guid" value="02cdc15e-1dc3-5eb4-f73c-9458b4f90b9f" />
+								</node>
+								<node id="SpeakerGroup">
+									<attribute id="Object" type="guid" value="e0d1ff71-04a8-4340-ae64-9684d846eb83" />
+								</node>
+							</children>
+						</node>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="6a7679f1-84fb-4008-a014-6afd377a9f73" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="0c506445-fba0-404c-a169-41af0912e618" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="0c51e3ee-d735-4566-a1f6-3c5de4c0b5a1" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="0c525858-b100-4e2b-9556-44b50d664a4d" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="b47643e0-583c-4808-b108-f6d3b605b0a9" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="ff16e8ab-e8e6-4acb-a105-aae53a9d510e" />
+								</node>
+							</children>
+						</node>
+						<node id="StatusList" />
+						<node id="TradeTreasures">
+							<children>
+								<node id="TreasureItem">
+									<attribute id="Object" type="FixedString" value="Empty" />
+								</node>
+							</children>
+						</node>
+						<node id="Treasures">
+							<children>
+								<node id="TreasureItem">
+									<attribute id="Object" type="FixedString" value="Empty" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

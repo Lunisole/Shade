@@ -8,6 +8,13 @@
     <content contentuid="h92670ef443c8488fa2748b66d508e483613c" version="1">Umbral Blade</content>
     <content contentuid="h2d73609c9beb490bab54d7a75a8831eb3d47" version="1"></content>
 
+    <!--Lingering Umbra-->
+    <content contentuid="h9484addecb5f4d6bbe21ec2bbf9874e4eaec" version="1">Lingering Umbra</content>
+    <content contentuid="h66cd533d30b14f1f858cd2b4f2af1f397a51" version="1">The residual shadow of the Umbral Blade.</content>
+    <content contentuid="h1182f9fcfb9b45fc85442efd3a3afcc06c7a" version="1">Umbra</content>
+    <content contentuid="hd13be8082b80492998c7883365e7f9eb0bbc" version="1">An entity of pure shadow without physical presence.</content>
+
+
     <!--Spells-->
     <content contentuid="he532834a9e294966b775dae69c06f4f14ff9" version="1">Infiltrate</content>
     <content contentuid="hb200975155454b3295d77aeecf9e62b82775" version="1">You dodge light and blend into obscurity, gaining &lt;LSTag Type="Status" Tooltip="INFILTRATE_300001"&gt;Infiltrated&lt;/LSTag&gt; for [1] turns.</content>
@@ -27,13 +34,20 @@
     <content contentuid="hf000515b1c2947d8ba523ab26ecc4030fgc8" version="1">&lt;LSTag Type="Spell" Tooltip="Shade_Vicious_Trickery_C00001"&gt;Vicious Trickery&lt;/LSTag&gt;. You deliver a deadly strike to your target that ignores &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Slashing and Piercing damage. On a &lt;LSTag Type="Passive" Tooltip="Shade_Innate_Backstabbing_100001"&gt;backstab&lt;/LSTag&gt;, this also ignores &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt;.</content>   
     <content contentuid="h8415926b9a74481b86b992f086119ab9cg2e" version="1">Surgical Assault</content>
     <content contentuid="h050f1a7763c7441a81767c47564bde79aed7" version="1">&lt;LSTag Type="Spell" Tooltip="Shade_Vicious_Trickery_C00001"&gt;Vicious Trickery&lt;/LSTag&gt;. You hit your victim in the eye, &lt;LSTag Type="Status" Tooltip="SURGICAL_ASSAULT_BLINDED_200037"&gt;Blinding&lt;/LSTag&gt; it for [1] turns if it fails a Constitution &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;. On a &lt;LSTag Type="Passive" Tooltip="Shade_Innate_Backstabbing_100001"&gt;backstab&lt;/LSTag&gt;, you blind your target without a &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; for [2] turns.</content>
-    <content contentuid="h35e68b90263f4f35b89c205dda094f3af6b8" version="1">Mist of Midnight</content>
-    <content contentuid="h281b04ab236b4e9fbeeddd93faa5e81eaaec" version="1">&lt;LSTag Type="Spell" Tooltip="Shade_Cautious_Subterfuge_C00002"&gt;Cautious Subterfuge&lt;/LSTag&gt;. Ladrielle veils you with an ominous mist, making you &lt;LSTag Tooltip="Resistant"&gt;Resistant&lt;/LSTag&gt; to all types of non-magical damage until the start of your next turn.</content>
+    <content contentuid="hc0c353b5069f4e758375548c1536b1b0dg7c" version="1">Heart Seeker</content>
+    <content contentuid="h19fda02c97394ebd92a94483141ad0548c8f" version="1">&lt;LSTag Type="Spell" Tooltip="Shade_Murders_Art_C00003"&gt;Murder's Art&lt;/LSTag&gt;. You shoot a powerful arrow from shadows. It deals an additionnal [1] damage as it pierces the heart of your target. On a &lt;LSTag Type="Passive" Tooltip="Shade_Innate_Backstabbing_100001"&gt;backstab&lt;/LSTag&gt; and if your target has [2]% &lt;LSTag Tooltip="HitPoints"&gt;hit points&lt;/LSTag&gt; or less, you kill it instantly.</content>
+    <content contentuid="h0e295a3ca2b941c88be389d7fbed57f567d7" version="1">Mark of Death</content>
+    <content contentuid="hb6fb0ded4afa44329b998a3eef597750c06f" version="1">&lt;LSTag Type="Spell" Tooltip="Shade_Murders_Art_C00003"&gt;Murder's Art&lt;/LSTag&gt;. You curse a target with a &lt;LSTag Type="Status" Tooltip="MARK_OF_DEATH_200042"&gt;Khainite Mark&lt;/LSTag&gt; for [1] turns.</content>
+    <content contentuid="hf44c80bd09e4474db1b96ae51e7fb25eg984" version="1">Umbral Rip</content>
+    <content contentuid="ha9a9bc5925f14dbd9668e3956be122fda570" version="1">&lt;LSTag Type="Spell" Tooltip="Shade_Murders_Art_C00003"&gt;Murder's Art&lt;/LSTag&gt;. You unleash a dark blade, tearing through your surroundings in all directions. If used with your main hand, the blade travels fruther and thus affects a [1] area. If you use it with your offhand, it only affects a [2] area but it deals more damage. On &lt;LSTag Type="Passive" Tooltip="Shade_Innate_Backstabbing_100001"&gt;backstabs&lt;/LSTag&gt;, The number you need to &lt;LSTag Tooltip="AttackRoll"&gt;roll&lt;/LSTag&gt; a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; is reduced by [3].</content>
 
     <!--Interrupts-->
+    <content contentuid="h87e1abd92b684d08ae97b5f2ae5b86759278" version="1">Mist of Midnight</content>
+    <content contentuid="hd9290a17bbf8439da14461188cff4837c315" version="1">&lt;LSTag Type="Spell" Tooltip="Shade_Cautious_Subterfuge_C00002"&gt;Cautious Subterfuge&lt;/LSTag&gt;. About to get damaged, Ladrielle veils you with an ominous mist, making you &lt;LSTag Tooltip="Resistant"&gt;Resistant&lt;/LSTag&gt; to all types of non-magical damage until the start of your next turn.</content> 
     <content contentuid="h82aefa8abcf24fa98e2bf68f8f5ed7d44gb0" version="1">Smoke Cover</content>
     <content contentuid="hf7f62c41e0c744be8797767d7f663e194b5d" version="1">&lt;LSTag Type="Spell" Tooltip="Shade_Cautious_Subterfuge_C00002"&gt;Cautious Subterfuge&lt;/LSTag&gt;. Impose &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on an attacker and creates a fog cloud for 1 turn.</content>
-
+    <content contentuid="h65216c0b24fe4dbba914077b1f8fd662326e" version="1">Gap Close</content>
+    <content contentuid="habbf6fa4e13141a2812a373b3787e7c2fg34" version="1">&lt;LSTag Type="Spell" Tooltip="Shade_Cautious_Subterfuge_C00002"&gt;Cautious Subterfuge&lt;/LSTag&gt;. You quickly respond to being damaged and blink in the back of your attacker.</content>
 
     <!--Generic Spells-->
     <content contentuid="ha1d4f0f3efe346579df403ad6694ea999ga3" version="1">Execute the action with your main hand melee weapon.</content>
@@ -52,6 +66,12 @@
     <content contentuid="h461e711059044ff9a8aab08109c25356e49d" version="1">Surgical Assault (Melee Off Hand)</content>
     <content contentuid="h36f1b794e1914a9a94cc0513bacbfa34792d" version="1">Surgical Assault (Ranged Main Hand)</content>
     <content contentuid="h1c7c4520a7174845a89cd098fdd5a80e5a6b" version="1">Surgical Assault (Ranged Off Hand)</content>
+    <content contentuid="h8625c7e65e954e5592c4f8afa2d3a17b6af0" version="1">Heart Seeker (Ranged Main Hand)</content>
+    <content contentuid="h046f1401c27a43bbbb10898813b5d48a2862" version="1">Heart Seeker (Ranged Off Hand)</content>
+    <content contentuid="hf2fb230464b9446c906810b74e6115408d1c" version="1">Mark of Death (Action)</content>
+    <content contentuid="hf84f9753b2c041b6b4f838b4734a7ae5cedb" version="1">Mark of Death (Bonus Action)</content>
+    <content contentuid="hfc82a5054cb946e39a8811668d05544688f3" version="1">Umbral Rip (Melee Main Hand)</content>
+    <content contentuid="he35a5b5de2ab4fa9b4619689c73ff72140g0" version="1">Umbral Rip (Melee Off Hand)</content>
 
     <!--Passives-->
     <content contentuid="h3644f8331e50451f9ca322c9cbc0ee71cdad" version="1">Backstabbing</content>
@@ -79,7 +99,7 @@
     <content contentuid="he98252a20fe949a9ba88e22204a313490d72" version="1">Blood Drinker</content>
     <content contentuid="he58cf66399a94440930436101c3ecfc4e91f" version="1">When you deal a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;, you gain [1] &lt;LSTag Type="Status" Tooltip="BLOOD_SHROUD_200024"&gt;Blood Shrouds&lt;/LSTag&gt;.</content>
     <content contentuid="hdda269b2c028460099cb61aa173ada1bfgf3" version="1">Wraith-Shape</content>
-    <content contentuid="h3d7325cbfc884417a047fb9eca2ac7dc6f3e" version="1">You gain [1] more use of &lt;LSTag Type="Spell" Tooltip="Shade_Infiltrate_600001"&gt;Infiltrate&lt;/LSTag&gt; per long rest.</content>
+    <content contentuid="h3d7325cbfc884417a047fb9eca2ac7dc6f3e" version="1">You gain [1] more use of &lt;LSTag Type="Spell" Tooltip="Shade_Vicious_Trickery_C00001"&gt;Vicious Trickery&lt;/LSTag&gt; and &lt;LSTag Type="Spell" Tooltip="Shade_Cautious_Subterfuge_C00002"&gt;Cautious Subterfuge&lt;/LSTag&gt;. per short rest.</content>
     <content contentuid="h704832ac7a404f9f82dac8ae1da6a36fdd5e" version="1">Gladerunner</content>
     <content contentuid="hbd09906ea1304faa8b1d42af42af17c49b9g" version="1">When you start your turn within melee range of a foe, your &lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; is increased by [1] and you do not provoke opportunity attacks when moving away from an enemy for [2] turns.</content>
     <content contentuid="hf8fdc6aea4594c1eb814e1cea9cfc6147gec" version="1">Chain Killer</content>
@@ -119,6 +139,8 @@
     <content contentuid="hf2d4229cf0864b78a6045e2038f8b5390c4b" version="1">Takes [1] and can't take bonus actions.</content>
     <content contentuid="hcae9fe2069e5487b9e46b5c1bc209624d161" version="1">Mist of Midnight</content>
     <content contentuid="h28285b5b8e1d41958a09011cbf872204g1c6" version="1">You are shrouded by a mystic fog, you have &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to all types of non-magical damage.</content>
+    <content contentuid="h26eaf9a14c7343f18d2d59ad1859801eb287" version="1">Death Marked</content>
+    <content contentuid="h56a2757a2db64656932cb041443b323fg9bd" version="1">You are marked by Khaine. All damage dealt to you by the spellcaster is stored. When it expires, all the stored damage is increased by [1]% and inflicted on you as Piercing damage. Damage dealt on &lt;LSTag Type="Passive" Tooltip="Shade_Innate_Backstabbing_100001"&gt;backstabs&lt;/LSTag&gt; counts for [2]% more.</content>
 
     <!--Progression Descriptions-->
     <content contentuid="h00a489a604684906868fa10f71ceb6eb100f" version="1">Dusk's Favor</content>
@@ -156,5 +178,7 @@
     <content contentuid="hbee0f48fceba426c91306bfbef392c15b6d1" version="1">Cautious Subterfuges</content>
     <content contentuid="hc89aba601b494d76b9510e241f8edd62b341" version="1">Defensive actions usually used by Shades to avoid imminent demise. You can only use one of them per short rest.</content>
     <content contentuid="h813e3f83eff24b429fd2d82b7f814231c278" version="1">Murder's Art</content>
-    <content contentuid="h09653c6078394b46ba907979748fb563edff" version="1">Aces in the Shades arsenal, Murder's Art are powerful techniques only the very best can dare to try. You can only use of them per long rest.</content>
+    <content contentuid="h09653c6078394b46ba907979748fb563edff" version="1">Aces in the Shades arsenal, Murder's Art are powerful techniques only the very best can dare to try. You can only use one per long rest.</content>
+    <content contentuid="h35e68b90263f4f35b89c205dda094f3af6b8" version="1">Mist of Midnight</content>    
+    <content contentuid="he0a4a533751247cca4ea43889a8d27260feg" version="1">Gap Close</content>
 </contentList>

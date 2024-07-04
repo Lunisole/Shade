@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+  <version major="4" minor="0" revision="9" build="328" />
+  <region id="Races">
+    <node id="root">
+      <children>
+        <node id="Race">
+					<attribute id="DisplayName" type="TranslatedString" handle="h1182f9fcfb9b45fc85442efd3a3afcc06c7a" version="1" />
+					<attribute id="Description" type="TranslatedString" handle="hd13be8082b80492998c7883365e7f9eb0bbc" version="1" />
+					<attribute id="Name" type="FixedString" value="Lu_UmBld_Shadow_Race_Type" />
+					<attribute id="UUID" type="guid" value="b07d61ff-4180-4700-b03f-50dc87b61550" />
+				</node>
+        <node id="Race">
+					<attribute id="DisplayName" type="TranslatedString" handle="h9484addecb5f4d6bbe21ec2bbf9874e4eaec" version="1" />
+					<attribute id="Description" type="TranslatedString" handle="h66cd533d30b14f1f858cd2b4f2af1f397a51" version="1" />
+					<attribute id="DisplayTypeUUID" type="guid" value="b07d61ff-4180-4700-b03f-50dc87b61550" />
+					<attribute id="Name" type="FixedString" value="Lu_UmBld_Shadow_Race" />
+					<attribute id="ParentGuid" type="guid" value="b07d61ff-4180-4700-b03f-50dc87b61550" />
+					<attribute id="UUID" type="guid" value="c84eb303-1e40-4c0e-8513-2c1e50a2e10f" />
+					<children>
+						<node id="Tags">
+							<attribute id="Object" type="guid" value="6a7679f1-84fb-4008-a014-6afd377a9f73" />
+						</node>
+					</children>
+				</node>
+      </children>
+    </node>
+  </region>
+</save>

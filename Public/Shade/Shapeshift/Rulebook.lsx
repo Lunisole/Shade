@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+	<version major="4" minor="0" revision="10" build="400"/>
+	<region id="Rulebook">
+		<node id="root">
+			<children>
+				<node id="Rule">
+					<attribute id="ApplySpellsFromTemplate" type="bool" value="false"/>
+					<attribute id="ApplyVisual" type="bool" value="true"/>
+					<attribute id="ChangeBodyType" type="bool" value="true"/>
+					<attribute id="ChangeIcon" type="bool" value="false"/>
+					<attribute id="ChangeRace" type="bool" value="false"/>
+					<attribute id="DisableEquipmentSlots" type="bool" value="true"/>
+					<attribute id="IgnoreCustomLooks" type="bool" value="false"/>
+					<attribute id="MuteEquipmentSound" type="bool" value="true"/>
+					<attribute id="RemovePrevSpells" type="bool" value="false"/>
+					<attribute id="RetainDisplayName" type="bool" value="true"/>
+					<attribute id="RuleName" type="LSString" value="DWE_EK_ShapeshiftEcho_KeepIcon"/>
+					<attribute id="UUID" type="guid" value="585ee1db-2c04-4e6f-874a-2b45fd554052"/>
+					<attribute id="UseShapeshiftIdentity" type="bool" value="false"/>
+					<attribute id="WildShapeHotBar" type="bool" value="true"/>
+					<children>
+						<node id="ActionsCapabilities">
+							<children>
+								<node id="ActionCapabilities">
+									<attribute id="Name" type="LSString" value="CastSpell"/>
+								</node>
+								<node id="ActionCapabilities">
+									<attribute id="Name" type="LSString" value="Attack"/>
+								</node>
+							</children>
+						</node>
+						<node id="AwarenessCapabilities">
+							<children>
+							</children>
+						</node>
+						<node id="InteractionsCapabilities">
+							<children>
+								<node id="InteractionsCapabilities">
+									<attribute id="Name" type="LSString" value="UseLadders"/>
+								</node>
+							</children>
+						</node>
+						<node id="SpeakingCapabilities">
+							<children>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

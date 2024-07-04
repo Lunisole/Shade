@@ -9,7 +9,7 @@
                     <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Wisdom);Proficiency(LightArmor);Proficiency(Longswords);Proficiency(Scimitars);Proficiency(Shortswords);Proficiency(SimpleWeapons);Proficiency(Tridents)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Shade"/>
-                    <attribute id="PassivesAdded" type="LSString" value="Shade_Innate_Backstabbing_100001;Shade_Innate_Dual_Blades_100002;Shade_Innate_Burdened_100003;Shade_Infiltrate_F00001;Test_testLUL"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Shade_Innate_Backstabbing_100001;Shade_Innate_Dual_Blades_100002;Shade_Innate_Burdened_100003;Shade_Infiltrate_F00001;TEST_test_TEST"/>
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="Selectors" type="LSString" value="SelectSkills(36e6804d-128d-4216-99ae-435521d3fced,2);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);SelectPassives(f12b280c-434c-4879-85d7-abf692dfec6e,1,Dusks_Favor)"/>
@@ -70,7 +70,7 @@
                     <attribute id="Boosts" type="LSString" value=""/>
                     <attribute id="Level" type="uint8" value="5"/>
                     <attribute id="Name" type="LSString" value="Shade"/>
-                    <attribute id="PassivesAdded" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value="Shade_Cautious_Subterfuge_F00006;Shade_Mist_Of_Midnight_F00007;Shade_Smoke_Cover_F00008;Shade_Gap_Close_F00009"/>
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="Selectors" type="LSString" value="SelectPassives(90ad594e-d738-4533-aea2-30c251e6e12c,1,Assassination_Method)"/>
@@ -130,7 +130,7 @@
                     <attribute id="Boosts" type="LSString" value=""/>
                     <attribute id="Level" type="uint8" value="10"/>
                     <attribute id="Name" type="LSString" value="Shade"/>
-                    <attribute id="PassivesAdded" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value="Shade_Murders_Art_F00010"/>
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="Selectors" type="LSString" value=""/>

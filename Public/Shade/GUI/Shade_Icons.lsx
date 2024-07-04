@@ -86,7 +86,7 @@
                     <attribute id="V2" type="float" value="0.03125" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="ShadeMistOfMidnight600006" />
+                    <attribute id="MapKey" type="FixedString" value="ShadeMistOfMidnightB00003" />
                     <attribute id="U1" type="float" value="0.28125" />
                     <attribute id="U2" type="float" value="0.3125" />
                     <attribute id="V1" type="float" value="0.0" />
@@ -100,28 +100,28 @@
                     <attribute id="V2" type="float" value="0.03125" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="" />
+                    <attribute id="MapKey" type="FixedString" value="ShadeGapCloseB00002" />
                     <attribute id="U1" type="float" value="0.34375" />
                     <attribute id="U2" type="float" value="0.375" />
                     <attribute id="V1" type="float" value="0.0" />
                     <attribute id="V2" type="float" value="0.03125" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="" />
+                    <attribute id="MapKey" type="FixedString" value="ShadeHeartSeekerE00004" />
                     <attribute id="U1" type="float" value="0.375" />
                     <attribute id="U2" type="float" value="0.40625" />
                     <attribute id="V1" type="float" value="0.0" />
                     <attribute id="V2" type="float" value="0.03125" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="" />
+                    <attribute id="MapKey" type="FixedString" value="ShadeMarkOfDeathE00005" />
                     <attribute id="U1" type="float" value="0.40625" />
                     <attribute id="U2" type="float" value="0.4375" />
                     <attribute id="V1" type="float" value="0.0" />
                     <attribute id="V2" type="float" value="0.03125" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="" />
+                    <attribute id="MapKey" type="FixedString" value="ShadeUmbralRipE00006" />
                     <attribute id="U1" type="float" value="0.4375" />
                     <attribute id="U2" type="float" value="0.46875" />
                     <attribute id="V1" type="float" value="0.0" />
@@ -1010,7 +1010,7 @@
                     <attribute id="V2" type="float" value="0.15625" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="" />
+                    <attribute id="MapKey" type="FixedString" value="MarkOfDeath200042" />
                     <attribute id="U1" type="float" value="0.40625" />
                     <attribute id="U2" type="float" value="0.4375" />
                     <attribute id="V1" type="float" value="0.125" />

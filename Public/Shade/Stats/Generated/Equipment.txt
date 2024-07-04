@@ -1,3 +1,20 @@
+new equipment "Lu_UmBld_Shdw_Equipement"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "MAG_Justiciar_Scimitar"
+add equipmentgroup
+add equipment entry "MAG_Justiciar_Scimitar"
+add equipmentgroup
+add equipment entry "UND_DrowDisguiseCowl"
+add equipmentgroup
+add equipment entry "UNI_DarkUrge_Bhaal_Cloak"
+add equipmentgroup
+add equipment entry "MAG_Bhaalist_Armor"
+add equipmentgroup
+add equipment entry "MAG_Bhaalist_Gloves"
+add equipmentgroup
+add equipment entry "FOR_NightWalkers"
+
 new equipment "EQP_CC_EXAMPLE"
 add initialweaponset "Melee"
 add equipmentgroup
@@ -28,5 +45,3 @@ add equipmentgroup
 add equipment entry "OBJ_Bag_AlchemyPouch"
 add equipmentgroup
 add equipment entry "OBJ_Backpack_CampSupplies"
-
-// follow the same pattern //

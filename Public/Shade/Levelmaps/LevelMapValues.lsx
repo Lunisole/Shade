@@ -295,6 +295,7 @@
                 </node>
                 <node id="LevelMapSeries">
                     <attribute id="Level1" type="LSString" value="1d4"/>
+                    <attribute id="Level9" type="LSString" value="1d4"/>
                     <attribute id="Level10" type="LSString" value="1d4"/>
                     <attribute id="Level11" type="LSString" value="1d4"/>
                     <attribute id="Level12" type="LSString" value="1d6"/>
@@ -311,6 +312,7 @@
                 </node>
                 <node id="LevelMapSeries">
                     <attribute id="Level1" type="LSString" value="1"/>
+                    <attribute id="Level9" type="LSString" value="2"/>
                     <attribute id="Level10" type="LSString" value="2"/>
                     <attribute id="Level11" type="LSString" value="2"/>
                     <attribute id="Level12" type="LSString" value="2"/>
@@ -327,6 +329,7 @@
                 </node>
                 <node id="LevelMapSeries">
                     <attribute id="Level1" type="LSString" value="1"/>
+                    <attribute id="Level9" type="LSString" value="3"/>
                     <attribute id="Level10" type="LSString" value="3"/>
                     <attribute id="Level11" type="LSString" value="3"/>
                     <attribute id="Level12" type="LSString" value="3"/>
@@ -343,6 +346,7 @@
                 </node>
                 <node id="LevelMapSeries">
                     <attribute id="Level1" type="LSString" value="1"/>
+                    <attribute id="Level9" type="LSString" value="4"/>
                     <attribute id="Level10" type="LSString" value="4"/>
                     <attribute id="Level11" type="LSString" value="4"/>
                     <attribute id="Level12" type="LSString" value="4"/>
@@ -359,6 +363,7 @@
                 </node>
                 <node id="LevelMapSeries">
                     <attribute id="Level1" type="LSString" value="1"/>
+                    <attribute id="Level9" type="LSString" value="5"/>
                     <attribute id="Level10" type="LSString" value="5"/>
                     <attribute id="Level11" type="LSString" value="5"/>
                     <attribute id="Level12" type="LSString" value="5"/>
@@ -375,6 +380,7 @@
                 </node>
                 <node id="LevelMapSeries">
                     <attribute id="Level1" type="LSString" value="1"/>
+                    <attribute id="Level9" type="LSString" value="6"/>
                     <attribute id="Level10" type="LSString" value="6"/>
                     <attribute id="Level11" type="LSString" value="6"/>
                     <attribute id="Level12" type="LSString" value="6"/>
@@ -388,6 +394,36 @@
                     <attribute id="Level20" type="LSString" value="7"/>
                     <attribute id="Name" type="FixedString" value="SPAssassinMax"/>
                     <attribute id="UUID" type="guid" value="d837e70d-0ee9-4ed3-9949-70a0d1a194e0"/>
+                </node>
+                <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="1"/>
+                    <attribute id="Level10" type="LSString" value="2d6"/>
+                    <attribute id="Level11" type="LSString" value="2d6"/>
+                    <attribute id="Level12" type="LSString" value="3d6"/>
+                    <attribute id="Level13" type="LSString" value="3d6"/>
+                    <attribute id="Level14" type="LSString" value="3d6"/>
+                    <attribute id="Level15" type="LSString" value="4d6"/>
+                    <attribute id="Level16" type="LSString" value="4d6"/>
+                    <attribute id="Level17" type="LSString" value="4d6"/>
+                    <attribute id="Level18" type="LSString" value="4d6"/>
+                    <attribute id="Level19" type="LSString" value="4d6"/>
+                    <attribute id="Level20" type="LSString" value="5d6"/>
+                    <attribute id="Name" type="FixedString" value="HeartSeeker"/>
+                    <attribute id="UUID" type="guid" value="4723d696-44dd-4a3a-80d9-bc1f638f98c6"/>
+                </node>
+                <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="1"/>
+                    <attribute id="Level10" type="LSString" value="1d6"/>
+                    <attribute id="Level12" type="LSString" value="1d10"/>
+                    <attribute id="Name" type="FixedString" value="UmbralRipLarge"/>
+                    <attribute id="UUID" type="guid" value="1379d46c-1da5-40f1-8a13-e7a27215f2d7"/>
+                </node>
+                <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="1"/>
+                    <attribute id="Level10" type="LSString" value="1d12"/>
+                    <attribute id="Level12" type="LSString" value="1d20"/>
+                    <attribute id="Name" type="FixedString" value="UmbralRipSmall"/>
+                    <attribute id="UUID" type="guid" value="98a0c7f6-eefd-4a7f-b061-fd594730d73e"/>
                 </node>
             </children>
         </node>

@@ -17,6 +17,16 @@ function IsSurgicalAssault()
     | SpellId ('Shade_Ranged_OH_Surgical_Assault_800006')
 end
 
+function IsHeartSeeker()
+	return SpellId ('Shade_Ranged_MH_Heart_Seeker_800007')
+    | SpellId ('Shade_Ranged_OH_Heart_Seeker_800008')
+end
+
+function IsUmbralRip()
+	return SpellId ('Shade_Melee_MH_Umbral_Rip_600006')
+    | SpellId ('Shade_Melee_OH_Umbral_Rip_600007')
+end
+
 function IsHeavyWeapon()
     local weapon = context.AttackWeapon
     local isHeavy = HasWeaponProperty(WeaponProperties.Heavy, weapon)

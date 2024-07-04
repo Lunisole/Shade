@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="328" />
+	<region id="Tags">
+		<node id="Tags">
+			<attribute id="Description" type="LSString" value="Manifest Echo" />
+			<attribute id="DisplayDescription" type="TranslatedString" handle="h66cd533d30b14f1f858cd2b4f2af1f397a51" version="1" />
+			<attribute id="DisplayName" type="TranslatedString" handle="h9484addecb5f4d6bbe21ec2bbf9874e4eaec" version="1" />
+			<attribute id="Icon" type="FixedString" value="" />
+			<attribute id="Name" type="FixedString" value="Lu_UmBld_Shadow_Tag" />
+			<attribute id="UUID" type="guid" value="6a7679f1-84fb-4008-a014-6afd377a9f73" />
+			<children>
+				<node id="Categories">
+					<children>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Code" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="CharacterSheet" />
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>
