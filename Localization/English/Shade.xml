@@ -199,7 +199,6 @@
     <content contentuid="h7493affbd8d74168b6e285c8e037c2a5eaed" version="1">You can't use infiltrate again until &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
     <content contentuid="he39fa6480e3348f99c77fecb473652d2b43e" version="1">Must take a &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
     
-    
     <!--Tooltip Only-->
     <content contentuid="haf192f33e43d4dd2aede08085d670275bgd3" version="1">Vicious Trickery</content>
     <content contentuid="hb1529ca66a6c481d934cdf51cfa89e373e13" version="1">Vicious trickeries are aggressive Shade-specific techniques. You can only use two of them per short rest.</content>

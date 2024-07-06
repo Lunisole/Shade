@@ -330,6 +330,12 @@ Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function(shade,status,_
     end
 end)
 
+Ext.Osiris.RegisterListener("StatusRemoved", 4, "after", function(shadow,status,_,_)
+    if status == "LINGERING_UMBRA_TIMER_210002" then
+        Osi.Die(shadow)
+    end
+end)
+
 Ext.Osiris.RegisterListener("UsingSpell", 5, "after", function (shade,spell,_,_,_)
     if spell == "UmbralBlade_Shadow_Recall_610001" then
         Lu_UmBld_ShdwSwap(shade)
