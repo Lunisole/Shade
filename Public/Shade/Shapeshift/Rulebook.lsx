@@ -15,7 +15,7 @@
 					<attribute id="MuteEquipmentSound" type="bool" value="true"/>
 					<attribute id="RemovePrevSpells" type="bool" value="false"/>
 					<attribute id="RetainDisplayName" type="bool" value="true"/>
-					<attribute id="RuleName" type="LSString" value="DWE_EK_ShapeshiftEcho_KeepIcon"/>
+					<attribute id="RuleName" type="LSString" value="Lu_Shde_ShadowMorph"/>
 					<attribute id="UUID" type="guid" value="585ee1db-2c04-4e6f-874a-2b45fd554052"/>
 					<attribute id="UseShapeshiftIdentity" type="bool" value="false"/>
 					<attribute id="WildShapeHotBar" type="bool" value="true"/>

@@ -12,15 +12,27 @@
                 </node>
                 <node id="DefaultValue">
                     <attribute id="Add" type="LSString" value="Shade_Cruelty_100007"/>
-                    <attribute id="Level" type="int32" value="4"/>
+                    <attribute id="Level" type="int32" value="5"/>
                     <attribute id="TableUUID" type="guid" value="8282ed5a-dda0-4484-8688-33a7f839afce"/>
                     <attribute id="UUID" type="guid" value="c0a98217-3b63-4009-aa28-0cd143df6879"/>
                 </node>
                 <node id="DefaultValue">
                     <attribute id="Add" type="LSString" value="Shade_Wraith_Shape_100016"/>
-                    <attribute id="Level" type="int32" value="8"/>
+                    <attribute id="Level" type="int32" value="7"/>
                     <attribute id="TableUUID" type="guid" value="8282ed5a-dda0-4484-8688-33a7f839afce"/>
-                    <attribute id="UUID" type="guid" value="17954472-d946-4ab1-bbf5-cae16799c7d2"/>
+                    <attribute id="UUID" type="guid" value="e9859a1f-ce09-45cd-bd4b-a905dbdfa5c2"/>
+                </node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Shade_Chain_Killer_100018"/>
+                    <attribute id="Level" type="int32" value="9"/>
+                    <attribute id="TableUUID" type="guid" value="8282ed5a-dda0-4484-8688-33a7f839afce"/>
+                    <attribute id="UUID" type="guid" value="7db1df74-ff76-4dec-a98e-bc996a5699be"/>
+                </node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Shade_Cloak_of_Pain_F00004"/>
+                    <attribute id="Level" type="int32" value="11"/>
+                    <attribute id="TableUUID" type="guid" value="8282ed5a-dda0-4484-8688-33a7f839afce"/>
+                    <attribute id="UUID" type="guid" value="09f6034e-fed0-430c-af1f-671007885aaf"/>
                 </node>
             </children>
         </node>

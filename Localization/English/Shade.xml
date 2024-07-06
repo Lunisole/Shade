@@ -3,17 +3,16 @@
 	<!--Class & Subclasses-->
     <content contentuid="hecc7903e5f784e9486c400153d416825f085" version="1">Shade</content>
     <content contentuid="hf82f23950a1b4615813d3682f6cd8dbf9g1b" version="1">Shades are exiles, scions of a forbidden art too dangerous to be tolerated. They haunt the nights, moving through shadows with agility to murder their target, their gift allowing them to blend into the dark as if it was themselves. They are fleet-footed death, come to claim the blood of the living.</content>
-    <content contentuid="h86e7edab7581440097ec22f129090540d582" version="1">Khaine's Hand</content>
-    <content contentuid="h1bc4da228cc04ac9b3390346d633076250c5" version="1"></content>
     <content contentuid="h92670ef443c8488fa2748b66d508e483613c" version="1">Umbral Blade</content>
-    <content contentuid="h2d73609c9beb490bab54d7a75a8831eb3d47" version="1"></content>
+    <content contentuid="h2d73609c9beb490bab54d7a75a8831eb3d47" version="1">An artisan of shadows, Umbral Blades are the true heir of Shades. They blink in and out of foe's reach, at each movement another deadly cut. They are lurking in the dark, unseen, untouchable, waiting for the proper moment to unleash their murderous expertise.</content>
+    <content contentuid="h86e7edab7581440097ec22f129090540d582" version="1">Khaine's Hand</content>
+    <content contentuid="h1bc4da228cc04ac9b3390346d633076250c5" version="1">They have become the hand of Khaela Mensha Khaine out of pure devotion and faith. They fight with a blade in each hand, slicing through their opponent's flesh, dancing through the spilling guts and streams of blood, relishing the feeling of true terror they inspire. Only long afterwards do they look back and see the trail of death in their wake.</content>
 
     <!--Lingering Umbra-->
     <content contentuid="h9484addecb5f4d6bbe21ec2bbf9874e4eaec" version="1">Lingering Umbra</content>
     <content contentuid="h66cd533d30b14f1f858cd2b4f2af1f397a51" version="1">The residual shadow of the Umbral Blade.</content>
     <content contentuid="h1182f9fcfb9b45fc85442efd3a3afcc06c7a" version="1">Umbra</content>
     <content contentuid="hd13be8082b80492998c7883365e7f9eb0bbc" version="1">An entity of pure shadow without physical presence.</content>
-
 
     <!--Spells-->
     <content contentuid="he532834a9e294966b775dae69c06f4f14ff9" version="1">Infiltrate</content>
@@ -40,38 +39,50 @@
     <content contentuid="hb6fb0ded4afa44329b998a3eef597750c06f" version="1">&lt;LSTag Type="Spell" Tooltip="Shade_Murders_Art_C00003"&gt;Murder's Art&lt;/LSTag&gt;. You curse a target with a &lt;LSTag Type="Status" Tooltip="MARK_OF_DEATH_200042"&gt;Khainite Mark&lt;/LSTag&gt; for [1] turns.</content>
     <content contentuid="hf44c80bd09e4474db1b96ae51e7fb25eg984" version="1">Umbral Rip</content>
     <content contentuid="ha9a9bc5925f14dbd9668e3956be122fda570" version="1">&lt;LSTag Type="Spell" Tooltip="Shade_Murders_Art_C00003"&gt;Murder's Art&lt;/LSTag&gt;. You unleash a dark blade, tearing through your surroundings in all directions. If used with your main hand, the blade travels fruther and thus affects a [1] area. If you use it with your offhand, it only affects a [2] area but it deals more damage. On &lt;LSTag Type="Passive" Tooltip="Shade_Innate_Backstabbing_100001"&gt;backstabs&lt;/LSTag&gt;, The number you need to &lt;LSTag Tooltip="AttackRoll"&gt;roll&lt;/LSTag&gt; a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; is reduced by [3].</content>
+    <content contentuid="hadaa1e6507ee4457a2a70654ccee593f5aab" version="1">Shadow Recall</content>
+    <content contentuid="h767ec8d73cb2491eb80151a9ae2947d238b9" version="1">You instantly teleport back to your shadow and make it fade away.</content>
+    <content contentuid="h7bc1194327224706a06971860d429f433d51" version="1">Flurry of Shadows</content>
+    <content contentuid="h6f0e6fa1ab0b4cfcbf1971124484936340d4" version="1">&lt;LSTag Type="Spell" Tooltip="Shade_Murders_Art_C00003"&gt;Murder's Art&lt;/LSTag&gt;. You fade out of this world for [1] turns. You are invulnerable and cannot directly act but at the end of each turn you deliver [2] blows to enemies standing in the dark.</content>
+    <content contentuid="h0cfc6197bc2c4a8494ead9e095acbc80ddgb" version="1">Quick Stab</content>
+    <content contentuid="ha27571bf43034b01a885e6c5de1f7ef97bd1" version="1">Quick Shot</content>
+    <content contentuid="h2ce524e3dd6945f086456e0da8dc75f4475a" version="1">Violent Retaliation</content>
+    <content contentuid="habf3d320e9ab4da2a60cd077baae65ac23a4" version="1">A cruel strike that deals an additional [1] damage.</content> 
 
     <!--Interrupts-->
     <content contentuid="h87e1abd92b684d08ae97b5f2ae5b86759278" version="1">Mist of Midnight</content>
     <content contentuid="hd9290a17bbf8439da14461188cff4837c315" version="1">&lt;LSTag Type="Spell" Tooltip="Shade_Cautious_Subterfuge_C00002"&gt;Cautious Subterfuge&lt;/LSTag&gt;. About to get damaged, Ladrielle veils you with an ominous mist, making you &lt;LSTag Tooltip="Resistant"&gt;Resistant&lt;/LSTag&gt; to all types of non-magical damage until the start of your next turn.</content> 
     <content contentuid="h82aefa8abcf24fa98e2bf68f8f5ed7d44gb0" version="1">Smoke Cover</content>
-    <content contentuid="hf7f62c41e0c744be8797767d7f663e194b5d" version="1">&lt;LSTag Type="Spell" Tooltip="Shade_Cautious_Subterfuge_C00002"&gt;Cautious Subterfuge&lt;/LSTag&gt;. Impose &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on an attacker and creates a fog cloud for 1 turn.</content>
+    <content contentuid="hf7f62c41e0c744be8797767d7f663e194b5d" version="1">&lt;LSTag Type="Spell" Tooltip="Shade_Cautious_Subterfuge_C00002"&gt;Cautious Subterfuge&lt;/LSTag&gt;. Impose &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on an attacker and creates a fog cloud for 2 turn.</content>
     <content contentuid="h65216c0b24fe4dbba914077b1f8fd662326e" version="1">Gap Close</content>
     <content contentuid="habbf6fa4e13141a2812a373b3787e7c2fg34" version="1">&lt;LSTag Type="Spell" Tooltip="Shade_Cautious_Subterfuge_C00002"&gt;Cautious Subterfuge&lt;/LSTag&gt;. You quickly respond to being damaged and blink in the back of your attacker.</content>
+    <content contentuid="haa6ad0f577814955ab6f640e60c0332181d0" version="1">Deadly Repartee</content>
+    <content contentuid="hdda13d5417294139ab4ac1c5b81ac2952c28" version="1">&lt;LSTag Type="Spell" Tooltip="Shade_Vicious_Trickery_C00001"&gt;Vicious Trickery&lt;/LSTag&gt;. When a creature misses you with a melee attack, you can retaliate with a &lt;LSTag Type="Spell" Tooltip="KhainesHand_Retaliate_720002"&gt;Quick Stab&lt;/LSTag&gt; that deals an additional [1] damage if you are wielding a melee weapon in your offhand.</content>
 
     <!--Generic Spells-->
     <content contentuid="ha1d4f0f3efe346579df403ad6694ea999ga3" version="1">Execute the action with your main hand melee weapon.</content>
-    <content contentuid="h1bac48be14d4427b89a91838e18b79db0988" version="1">Execute the action with your off hand melee weapon.</content>
+    <content contentuid="h1bac48be14d4427b89a91838e18b79db0988" version="1">Execute the action with your offhand melee weapon.</content>
     <content contentuid="heab5c71d0bbe4ecb9c6adea327b4e283f87f" version="1">Execute the action with your main hand ranged weapon.</content>
-    <content contentuid="ha6bcb3533f6944eb912ee5e18ad9a1513dfa" version="1">Execute the action with your off hand ranged weapon.</content>
+    <content contentuid="ha6bcb3533f6944eb912ee5e18ad9a1513dfa" version="1">Execute the action with your offhand ranged weapon.</content>
     <content contentuid="hf6bc5cd1a3b94540953ff28f3c8840b1c343" version="1">Feint Stabbing (Melee Main Hand)</content>
-    <content contentuid="h202929abc0b84e559fdc5aaaf9acdbe6b9dc" version="1">Feint Stabbing (Melee Off Hand)</content>
+    <content contentuid="h202929abc0b84e559fdc5aaaf9acdbe6b9dc" version="1">Feint Stabbing (Melee offhand)</content>
     <content contentuid="hb6afa2d107074186ae7bdcda817bdadc38c7" version="1">Feint Stabbing (Ranged Main Hand)</content>
-    <content contentuid="hab47d9900ade41b9884e1c7e35f4af2aabga" version="1">Feint Stabbing (Ranged Off Hand)</content>
+    <content contentuid="hab47d9900ade41b9884e1c7e35f4af2aabga" version="1">Feint Stabbing (Ranged offhand)</content>
     <content contentuid="h599ddb542eed4d1f9fccfdcd201f860f1def" version="1">Mortal Blow (Melee Main Hand)</content>
-    <content contentuid="h014a495f2b3e46b6b6d64e747a835dfc5e9a" version="1">Mortal Blow (Melee Off Hand)</content>
+    <content contentuid="h014a495f2b3e46b6b6d64e747a835dfc5e9a" version="1">Mortal Blow (Melee offhand)</content>
     <content contentuid="h6cdde6a9707c48b6adab3a9aa9fc65aaaee1" version="1">Mortal Blow (Ranged Main Hand)</content>
-    <content contentuid="heb100fbfac4f480e8819473a1eea1f0f8b2e" version="1">Mortal Blow (Ranged Off Hand)</content>
+    <content contentuid="heb100fbfac4f480e8819473a1eea1f0f8b2e" version="1">Mortal Blow (Ranged offhand)</content>
     <content contentuid="hc42ae9c6ef9b406a91245bbdd00a0b4f747f" version="1">Surgical Assault (Melee Main Hand)</content>
-    <content contentuid="h461e711059044ff9a8aab08109c25356e49d" version="1">Surgical Assault (Melee Off Hand)</content>
+    <content contentuid="h461e711059044ff9a8aab08109c25356e49d" version="1">Surgical Assault (Melee offhand)</content>
     <content contentuid="h36f1b794e1914a9a94cc0513bacbfa34792d" version="1">Surgical Assault (Ranged Main Hand)</content>
-    <content contentuid="h1c7c4520a7174845a89cd098fdd5a80e5a6b" version="1">Surgical Assault (Ranged Off Hand)</content>
+    <content contentuid="h1c7c4520a7174845a89cd098fdd5a80e5a6b" version="1">Surgical Assault (Ranged offhand)</content>
     <content contentuid="h8625c7e65e954e5592c4f8afa2d3a17b6af0" version="1">Heart Seeker (Ranged Main Hand)</content>
-    <content contentuid="h046f1401c27a43bbbb10898813b5d48a2862" version="1">Heart Seeker (Ranged Off Hand)</content>
+    <content contentuid="h046f1401c27a43bbbb10898813b5d48a2862" version="1">Heart Seeker (Ranged offhand)</content>
     <content contentuid="hf2fb230464b9446c906810b74e6115408d1c" version="1">Mark of Death (Action)</content>
     <content contentuid="hf84f9753b2c041b6b4f838b4734a7ae5cedb" version="1">Mark of Death (Bonus Action)</content>
     <content contentuid="hfc82a5054cb946e39a8811668d05544688f3" version="1">Umbral Rip (Melee Main Hand)</content>
-    <content contentuid="he35a5b5de2ab4fa9b4619689c73ff72140g0" version="1">Umbral Rip (Melee Off Hand)</content>
+    <content contentuid="he35a5b5de2ab4fa9b4619689c73ff72140g0" version="1">Umbral Rip (Melee offhand)</content>
+    <content contentuid="hdef72f6b76b941faae0946a9ea24255adfee" version="1">Flurry of Shadows (Melee Main Hand)</content>
+    <content contentuid="hd750f8e9a0ba4bcba2eb25fd64010603aeb0" version="1">Flurry of Shadows (Ranged Main Hand)</content>
 
     <!--Passives-->
     <content contentuid="h3644f8331e50451f9ca322c9cbc0ee71cdad" version="1">Backstabbing</content>
@@ -81,7 +92,7 @@
     <content contentuid="h8524c95dfbec43cf8edba9c253bf7df0d351" version="1">Bleak Vigour</content>
     <content contentuid="h24291da1a38f49189c3c6e5b0c89aa4aab04" version="1">Your &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hits&lt;/LSTag&gt; saps their target's life to feed your inner shadow, granting you [1].</content>
     <content contentuid="hb89ba653a45348a2ac946db33b34d1d6f47d" version="1">Dual Blades</content>
-    <content contentuid="hb6947b990bc44b1c9e5dc67f5c13b0beb9gg" version="1">You're an innate master of dual-wielding. When you make an &lt;LSTag Tooltip="AttackRoll"&gt;attack&lt;/LSTag&gt; with your off-hand weapon, you can add your &lt;LSTag Tooltip="AbilityModifier"&gt;Ability Modifier&lt;/LSTag&gt; to the damage of the attack and the number you need to &lt;LSTag Tooltip="AttackRoll"&gt;roll&lt;/LSTag&gt; a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; is reduced by [1].</content>
+    <content contentuid="hb6947b990bc44b1c9e5dc67f5c13b0beb9gg" version="1">You're an innate master of dual-wielding. When you make an &lt;LSTag Tooltip="AttackRoll"&gt;attack&lt;/LSTag&gt; with your offhand weapon, you can add your &lt;LSTag Tooltip="AbilityModifier"&gt;Ability Modifier&lt;/LSTag&gt; to the damage of the attack and the number you need to &lt;LSTag Tooltip="AttackRoll"&gt;roll&lt;/LSTag&gt; a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; is reduced by [1].</content>
     <content contentuid="h2f2d52ff26e04dbe85d2bc65ac6f3359b6a3" version="1">Blood Kin</content>
     <content contentuid="h728398c10c6a4ca0be7436ff65acd8731gf1" version="1">Weakening your target grants you shadows's attention. When you &lt;LSTag Type="Status" Tooltip="POISONED"&gt;Poison&lt;/LSTag&gt; a target or make it &lt;LSTag Type="Status" Tooltip="BLEEDING"&gt;Bleed&lt;/LSTag&gt;, you regain [1] and gain [2].</content>
     <content contentuid="h6720abea3ddf4bb5b9fa975a25624ad0dbd8" version="1">Cruelty</content>
@@ -90,8 +101,6 @@
     <content contentuid="h8974f1dc99724f81b462ff6be422a3dd9g7b" version="1">On hitting a &lt;LSTag Type="Status" Tooltip="POISONED"&gt;Poisoned&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="BLEEDING"&gt;Bleeding&lt;/LSTag&gt; target with a weapon attack, you apply [1] turns of &lt;LSTag Type="Status" Tooltip="HAEMORRHAGING_200013"&gt;Haemorrhaging&lt;/LSTag&gt;.</content>
     <content contentuid="h87d611db888146bc89c4b390e0246bb10e1c" version="1">Exquisite Hunter</content>
     <content contentuid="h2ea5fa2e17164ef79526ac0b212c6a8106c9" version="1">You're a true predator, never letting your prey get away from you. You gain bonuses by attacking the same target, and each consecutive turn spent attacking the same victim increases the potency of these bonuses. The bonus resets instantly when you change target.</content>
-    <content contentuid="hef60dd2d26c74d0eaf68abcc60cef2493b6e" version="1">Unseen Blade</content>
-    <content contentuid="h3ca34c6d85fd44a3863d57b0e662d0fd7e74" version="1">While lightly obscured, you receive a +[1] bonus to &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;. While heavily obscured, you receive a +[2] bonus to &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; and the number you need to &lt;LSTag Tooltip="AttackRoll"&gt;roll&lt;/LSTag&gt; a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; is reduced by [3].</content>
     <content contentuid="h096a85422dce4acaaff4f9a2d21ce8898b2e" version="1">Murderous Prowess</content>
     <content contentuid="h9c6a9320b91a4b8d817f94788b1cb04b5380" version="1">You're even more efficient at killing. The number you need to &lt;LSTag Tooltip="AttackRoll"&gt;roll&lt;/LSTag&gt; a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; is reduced by [1] while &lt;LSTag Type="Passive" Tooltip="Shade_Innate_Backstabbing_100001"&gt;backstabbing&lt;/LSTag&gt;. Additionnaly, your &lt;LSTag Type="Passive" Tooltip="Shade_Innate_Backstabbing_100001"&gt;backstabs&lt;/LSTag&gt; can now &lt;LSTag Type="Status" Tooltip="MURDEROUS_PROWESS_POISON_200022"&gt;poison&lt;/LSTag&gt; their victim for [2] turns.</content>
     <content contentuid="haa823acba6fb42a7b7a07e67503668592gg2" version="1">Night's Veil</content>
@@ -110,6 +119,18 @@
     <content contentuid="h13028066f0cc42b7afd0577b3256c9aa1gad" version="1">The further your target is from where you started your turn, the more damage you inflict, up to a maximum of [1].</content>
     <content contentuid="h1e017a005d1444e788bff53ded5b41750gf2" version="1">Black Lotus Toxin</content>
     <content contentuid="ha5453e0d52794d279d40da5f97f5ed53fd09" version="1">Affected entity must succeed a Constitution &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; or be &lt;LSTag Type="Status" Tooltip="BLACK_LOTUS_POISONED_200036"&gt;Poisoned&lt;/LSTag&gt; for [1].</content>
+    <content contentuid="h5e7e752f69524fd6ae4218688f2a3fa35b96" version="1">Lingering Shadows</content>
+    <content contentuid="h30ec1347a12d4f37bdc9799682b762cd5015" version="1">At the start of your turn, you leave a shadow of yourself in place for [1] turns. As long as the shadow exists, you can &lt;LSTag Type="Spell" Tooltip="UmbralBlade_Shadow_Recall_610001"&gt;teleport&lt;/LSTag&gt; back to it. You can only have [2] shadow at any time.</content>
+    <content contentuid="hef60dd2d26c74d0eaf68abcc60cef2493b6e" version="1">Unseen Blade</content>
+    <content contentuid="h3ca34c6d85fd44a3863d57b0e662d0fd7e74" version="1">You cannot be &lt;LSTag Type="Status" Tooltip="BLINDED"&gt;Blinded&lt;/LSTag&gt;. While lightly obscured, you receive a +[1] bonus to &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;. While heavily obscured, you receive a +[2] bonus to &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; and the number you need to &lt;LSTag Tooltip="AttackRoll"&gt;roll&lt;/LSTag&gt; a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; is reduced by [3].</content>
+    <content contentuid="h86b27b0d6d3f401b9200220f1ed0c1873f51" version="1">Supreme Backstab</content>
+    <content contentuid="h25078625db0f46c2b6de3f2e185ee7e25f1g" version="1">The angle required for you to backstab a target is wider.</content>
+    <content contentuid="ha00d419818fb4f0eb6e516024fb76fdf4ea3" version="1">Bloody Dervish</content>
+    <content contentuid="h4a7ac7f3eb414f7f82530435e9cf8a11d8ad" version="1">You're a real master of dual wielding and thus are able to use Two-Weapon Fighting even if the weapons you are wielding aren't Light. You cannot dual-wield &lt;LSTag Tooltip="Heavy"&gt;Heavy&lt;/LSTag&gt; weapons. Furthermore, your offhand weapon &lt;LSTag Tooltip="AttackRoll"&gt;attacks&lt;/LSTag&gt; deal [1] bonus damage.</content>
+    <content contentuid="h876a254c05644c61bf13b96c4f55c3ae5e25" version="1">Rythmic Murder</content>
+    <content contentuid="hdb3c95ecb204438eb9f84cffe4c9a37c1gb6" version="1">You slay more efficiently when using both hands the same amount. On main hand &lt;LSTag Tooltip="AttackRoll"&gt;attacks&lt;/LSTag&gt; your next offhand &lt;LSTag Tooltip="AttackRoll"&gt;attack&lt;/LSTag&gt; will have &lt;LSTag Type="Status" Tooltip="RYTHMIC_MURDER_OFF_HAND_220002"&gt;bonuses&lt;/LSTag&gt; while on offhand &lt;LSTag Tooltip="AttackRoll"&gt;attacks&lt;/LSTag&gt; it is your next main hand &lt;LSTag Tooltip="AttackRoll"&gt;attack&lt;/LSTag&gt; that will have &lt;LSTag Type="Status" Tooltip="RYTHMIC_MURDER_MAIN_HAND_220001"&gt;bonuses&lt;/LSTag&gt;.</content>
+    <content contentuid="h29de5c135225456ba89b58b34436cf49c4bb" version="1">Deadly Mastery</content>
+    <content contentuid="h4bbf5894ab2e404f9d09efc1e14fac49f268" version="1">You've gone beyond your kind and the limits of your body. You can now use [1] &lt;LSTag Type="Spell" Tooltip="Shade_Murders_Art_C00003"&gt;Murder's Arts&lt;/LSTag&gt; per long rest.</content>
 
     <!--Status-->
     <content contentuid="h3a541c53de7d430ab9615aaaed1fd52234c2" version="1">Infiltrated</content>
@@ -141,6 +162,12 @@
     <content contentuid="h28285b5b8e1d41958a09011cbf872204g1c6" version="1">You are shrouded by a mystic fog, you have &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to all types of non-magical damage.</content>
     <content contentuid="h26eaf9a14c7343f18d2d59ad1859801eb287" version="1">Death Marked</content>
     <content contentuid="h56a2757a2db64656932cb041443b323fg9bd" version="1">You are marked by Khaine. All damage dealt to you by the spellcaster is stored. When it expires, all the stored damage is increased by [1]% and inflicted on you as Piercing damage. Damage dealt on &lt;LSTag Type="Passive" Tooltip="Shade_Innate_Backstabbing_100001"&gt;backstabs&lt;/LSTag&gt; counts for [2]% more.</content>
+    <content contentuid="ha8515c585f1944f699e59fff91ebac9cbaf7" version="1">Within Darkness</content>
+    <content contentuid="heae84ecd28774a17907685029bed78230d38" version="1">You are completely with the shadows, untouchable, unreachable.</content>
+    <content contentuid="hf4813f0f3a614769b4d95b54549f68feae96" version="1">Rythmic Murder : Main Hand</content>
+    <content contentuid="h4073142833304feca18a160d0949a1f247f0" version="1">Resonating in harmony, your next main hand &lt;LSTag Tooltip="AttackRoll"&gt;attack&lt;/LSTag&gt; deals an additionnal [1] and the number it needs to &lt;LSTag Tooltip="AttackRoll"&gt;roll&lt;/LSTag&gt; a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; is reduced by [2].</content>
+    <content contentuid="hf9be72aabd28410ba1908855a2a7639dd871" version="1">Rythmic Murder : offhand</content>
+    <content contentuid="he0116293489948fa8dfdd92bf92b17ef4018" version="1">Resonating in harmony, your next offhand &lt;LSTag Tooltip="AttackRoll"&gt;attack&lt;/LSTag&gt; deals an additionnal [1] and the number it needs to &lt;LSTag Tooltip="AttackRoll"&gt;roll&lt;/LSTag&gt; a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; is reduced by [2].</content>
 
     <!--Progression Descriptions-->
     <content contentuid="h00a489a604684906868fa10f71ceb6eb100f" version="1">Dusk's Favor</content>
@@ -156,7 +183,8 @@
 
     <!--Tooltip Extras-->
     <content contentuid="hfef462359ccf48a39227272f6d7f79366eb5" version="1">Invisibility ends early if the invisible entity attacks, casts another spell, takes an action, or takes damage.</content>
-
+    <content contentuid="hce515b99732d4e7dae6661f66217a1bd49ec" version="1">Strikes are evenly distributed across all enemies standing in the dark. A single entity can be hit [1] times if it is the only valid target.</content>
+    
     <!--Tags-->
     <content contentuid="h0dd2ec02711d4506a9ce00b8a1993fa4ea2f" version="1">Shade</content>
     <content contentuid="h2e3d8cf440434fa6b27fa709b88f220b814d" version="1">With both swords at hand, a Shade is always ready to satisfy Khaine's thirst with a glorious killing.</content>

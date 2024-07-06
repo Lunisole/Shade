@@ -3,22 +3,22 @@ add initialweaponset "Melee"
 add equipmentgroup
 add equipment entry "MAG_Justiciar_Scimitar"
 add equipmentgroup
-add equipment entry "MAG_Justiciar_Scimitar"
-add equipmentgroup
 add equipment entry "UND_DrowDisguiseCowl"
 add equipmentgroup
 add equipment entry "UNI_DarkUrge_Bhaal_Cloak"
 add equipmentgroup
-add equipment entry "MAG_Bhaalist_Armor"
+add equipment entry "MAG_EndGame_StuddedLeather_Armor"
 add equipmentgroup
 add equipment entry "MAG_Bhaalist_Gloves"
 add equipmentgroup
 add equipment entry "FOR_NightWalkers"
 
-new equipment "EQP_CC_EXAMPLE"
+new equipment "Lu_Shde_Base_Equipement"
 add initialweaponset "Melee"
 add equipmentgroup
-add equipment entry "WPN_Rapier"
+add equipment entry "WPN_Shortsword"
+add equipmentgroup
+add equipment entry "WPN_Dagger"
 add equipmentgroup
 add equipment entry "OBJ_Potion_Healing"
 add equipmentgroup
@@ -26,22 +26,16 @@ add equipment entry "OBJ_Potion_Healing"
 add equipmentgroup
 add equipment entry "ARM_Boots_Leather"
 add equipmentgroup
-add equipment entry "ARM_ScaleMail_Body"
-add equipmentgroup
-add equipment entry "ARM_Shield"
+add equipment entry "ARM_Leather_Body"
 add equipmentgroup
 add equipment entry "OBJ_Scroll_Revivify"
-add equipmentgroup
-add equipment entry "OBJ_Potion_Of_ChooseYourStats"
-add equipmentgroup
-add equipment entry "OBJ_Potion_Of_ChooseYourHomeBrew"
-add equipmentgroup
-add equipment entry "ARM_Camp_Body"
-add equipmentgroup
-add equipment entry "ARM_Camp_Shoes"
 add equipmentgroup
 add equipment entry "OBJ_Keychain"
 add equipmentgroup
 add equipment entry "OBJ_Bag_AlchemyPouch"
+add equipmentgroup
+add equipment entry "ARM_Camp_Body"
+add equipmentgroup
+add equipment entry "ARM_Camp_Shoes"
 add equipmentgroup
 add equipment entry "OBJ_Backpack_CampSupplies"

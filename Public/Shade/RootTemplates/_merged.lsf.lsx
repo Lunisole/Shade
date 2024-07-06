@@ -12,7 +12,7 @@
 					<attribute id="MapKey" type="FixedString" value="e8462fe5-2c4b-4bce-8396-c94168bfafc7" />
 					<attribute id="Name" type="LSString" value="Lu_UmBld_Shadow_Character" />
 					<attribute id="DisplayName" type="TranslatedString" handle="h9484addecb5f4d6bbe21ec2bbf9874e4eaec" version="1" />
-					<attribute id="Icon" type="FixedString" value="Portrait_Unknown" />
+					<attribute id="Icon" type="FixedString" value="Portrait_Creature_Shadow" />
 					<attribute id="PortraitVisualResourceID" type="FixedString" value="" />
 					<attribute id="Race" type="guid" value="c84eb303-1e40-4c0e-8513-2c1e50a2e10f" />
 					<attribute id="CharacterVisualResourceID" type="FixedString" value="" />
@@ -24,13 +24,41 @@
 					<attribute id="Faction" type="guid" value="a1542c81-6895-929e-4522-10ce218bb360" />
 					<attribute id="ForceLifetimeDeath" type="bool" value="True" />
 					<attribute id="IsEquipmentLootable" type="bool" value="False" />
-					<attribute id="IsInspector" type="bool" value="True" />
+					<attribute id="IsInspector" type="bool" value="False" />
 					<attribute id="IsPlayer" type="bool" value="False" />
 					<attribute id="LevelName" type="FixedString" value="" />
 					<attribute id="ParentTemplateId" type="FixedString" value="e87dd6f0-22f4-4cd5-914f-adddd2595941" />
 					<attribute id="WalkThrough" type="bool" value="True" />
 					<attribute id="Type" type="FixedString" value="character" />
 					<children>
+						<node id="Bounds">
+							<children>
+								<node id="Bound">
+									<attribute id="Height" type="float" value="0.5" />
+									<attribute id="Max" type="fvec3" value="0.81502 1.93354 0.126017" />
+									<attribute id="Min" type="fvec3" value="-0.81502 -0.00135875 -0.211717" />
+									<attribute id="Radius" type="float" value="0.1" />
+									<attribute id="Shape" type="uint8" value="2" />
+									<attribute id="Type" type="uint8" value="1" />
+								</node>
+								<node id="Bound">
+									<attribute id="Height" type="float" value="0.5" />
+									<attribute id="Max" type="fvec3" value="0.81502 1.93354 0.126017" />
+									<attribute id="Min" type="fvec3" value="-0.81502 -0.00135875 -0.211717" />
+									<attribute id="Radius" type="float" value="0.249" />
+									<attribute id="Shape" type="uint8" value="2" />
+									<attribute id="Type" type="uint8" value="2" />
+								</node>
+								<node id="Bound">
+									<attribute id="Height" type="float" value="0.5" />
+									<attribute id="Max" type="fvec3" value="0.40751 1.93354 0.0630085" />
+									<attribute id="Min" type="fvec3" value="-0.40751 -0.00135875 -0.1058585" />
+									<attribute id="Radius" type="float" value="0.1" />
+									<attribute id="Shape" type="uint8" value="2" />
+									<attribute id="Type" type="uint8" value="0" />
+								</node>
+							</children>
+						</node>
 						<node id="LocomotionParams" />
 						<node id="OnDeathActions" />
 						<node id="SpeakerGroupList">

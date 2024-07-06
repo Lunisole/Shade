@@ -29,18 +29,10 @@
                     <attribute id="UUID" type="guid" value="1dbed090-38ac-4bf9-8739-e3037f0cea75"/>
                 </node>
                 <node id="LevelMapSeries">
-                    <attribute id="Level1" type="LSString" value="2"/>
-                    <attribute id="Level2" type="LSString" value="2"/>
-                    <attribute id="Level3" type="LSString" value="2"/>
-                    <attribute id="Level4" type="LSString" value="2"/>
-                    <attribute id="Level5" type="LSString" value="2"/>
-                    <attribute id="Level6" type="LSString" value="2"/>
-                    <attribute id="Level7" type="LSString" value="2"/>
-                    <attribute id="Level8" type="LSString" value="2"/>
-                    <attribute id="Level9" type="LSString" value="2"/>
-                    <attribute id="Level10" type="LSString" value="2"/>
-                    <attribute id="Level11" type="LSString" value="2"/>
-                    <attribute id="Level12" type="LSString" value="2"/>
+                    <attribute id="Level3" type="LSString" value="1d4"/>
+                    <attribute id="Level6" type="LSString" value="1d6"/>
+                    <attribute id="Level9" type="LSString" value="1d8"/>
+                    <attribute id="Level12" type="LSString" value="1d10"/>
                     <attribute id="Level13" type="LSString" value="2"/>
                     <attribute id="Level14" type="LSString" value="2"/>
                     <attribute id="Level15" type="LSString" value="2"/>
@@ -49,22 +41,14 @@
                     <attribute id="Level18" type="LSString" value="2"/>
                     <attribute id="Level19" type="LSString" value="2"/>
                     <attribute id="Level20" type="LSString" value="2"/>
-                    <attribute id="Name" type="FixedString" value="NAME"/>
+                    <attribute id="Name" type="FixedString" value="BloodyDervish"/>
                     <attribute id="UUID" type="guid" value="8e1ec30a-399c-4ea4-9413-c9b1b4c9a95f"/>
                 </node>
                 <node id="LevelMapSeries">
-                    <attribute id="Level1" type="LSString" value="2d20"/>
-                    <attribute id="Level2" type="LSString" value="2d20"/>
-                    <attribute id="Level3" type="LSString" value="2d20"/>
-                    <attribute id="Level4" type="LSString" value="2d20"/>
-                    <attribute id="Level5" type="LSString" value="2d20"/>
-                    <attribute id="Level6" type="LSString" value="4d20"/>
-                    <attribute id="Level7" type="LSString" value="4d20"/>
-                    <attribute id="Level8" type="LSString" value="4d20"/>
-                    <attribute id="Level9" type="LSString" value="4d20"/>
-                    <attribute id="Level10" type="LSString" value="6d20"/>
-                    <attribute id="Level11" type="LSString" value="6d20"/>
-                    <attribute id="Level12" type="LSString" value="6d20"/>
+                    <attribute id="Level9" type="LSString" value="1d6"/>
+                    <attribute id="Level10" type="LSString" value="1d8"/>
+                    <attribute id="Level11" type="LSString" value="1d10"/>
+                    <attribute id="Level12" type="LSString" value="1d12"/>
                     <attribute id="Level13" type="LSString" value="3d20"/>
                     <attribute id="Level14" type="LSString" value="3d20"/>
                     <attribute id="Level15" type="LSString" value="3d20"/>
@@ -73,7 +57,7 @@
                     <attribute id="Level18" type="LSString" value="3d20"/>
                     <attribute id="Level19" type="LSString" value="3d20"/>
                     <attribute id="Level20" type="LSString" value="3d20"/>
-                    <attribute id="Name" type="FixedString" value="NAME"/>
+                    <attribute id="Name" type="FixedString" value="KhaineRetal"/>
                     <attribute id="UUID" type="guid" value="6d696e2f-8644-48d4-a6e8-6fa187675c89"/>
                 </node>
                 <node id="LevelMapSeries">

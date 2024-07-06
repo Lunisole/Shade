@@ -128,21 +128,21 @@
                     <attribute id="V2" type="float" value="0.03125" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="" />
+                    <attribute id="MapKey" type="FixedString" value="UmbralBladeShadowRecall610001" />
                     <attribute id="U1" type="float" value="0.46875" />
                     <attribute id="U2" type="float" value="0.5" />
                     <attribute id="V1" type="float" value="0.0" />
                     <attribute id="V2" type="float" value="0.03125" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="" />
+                    <attribute id="MapKey" type="FixedString" value="UmbralBladeLethalDarkness610002" />
                     <attribute id="U1" type="float" value="0.5" />
                     <attribute id="U2" type="float" value="0.53125" />
                     <attribute id="V1" type="float" value="0.0" />
                     <attribute id="V2" type="float" value="0.03125" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="" />
+                    <attribute id="MapKey" type="FixedString" value="KhainesHandRetaliateB20001" />
                     <attribute id="U1" type="float" value="0.53125" />
                     <attribute id="U2" type="float" value="0.5625" />
                     <attribute id="V1" type="float" value="0.0" />
@@ -583,42 +583,42 @@
                     <attribute id="V2" type="float" value="0.09375" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="" />
+                    <attribute id="MapKey" type="FixedString" value="UmbralBladeLingeringUmbra110001" />
                     <attribute id="U1" type="float" value="0.5" />
                     <attribute id="U2" type="float" value="0.53125" />
                     <attribute id="V1" type="float" value="0.0625" />
                     <attribute id="V2" type="float" value="0.09375" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="" />
+                    <attribute id="MapKey" type="FixedString" value="UmbralBladeSupremeBackstab110003" />
                     <attribute id="U1" type="float" value="0.53125" />
                     <attribute id="U2" type="float" value="0.5625" />
                     <attribute id="V1" type="float" value="0.0625" />
                     <attribute id="V2" type="float" value="0.09375" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="" />
+                    <attribute id="MapKey" type="FixedString" value="KhainesHandBloodyDervish120001" />
                     <attribute id="U1" type="float" value="0.5625" />
                     <attribute id="U2" type="float" value="0.59375" />
                     <attribute id="V1" type="float" value="0.0625" />
                     <attribute id="V2" type="float" value="0.09375" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="" />
+                    <attribute id="MapKey" type="FixedString" value="KhainesHandRythmicMurder120002" />
                     <attribute id="U1" type="float" value="0.59375" />
                     <attribute id="U2" type="float" value="0.625" />
                     <attribute id="V1" type="float" value="0.0625" />
                     <attribute id="V2" type="float" value="0.09375" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="" />
+                    <attribute id="MapKey" type="FixedString" value="KhainesHandRetaliateF20001" />
                     <attribute id="U1" type="float" value="0.625" />
                     <attribute id="U2" type="float" value="0.65625" />
                     <attribute id="V1" type="float" value="0.0625" />
                     <attribute id="V2" type="float" value="0.09375" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="" />
+                    <attribute id="MapKey" type="FixedString" value="KhainesHandDeadlyMastery120003" />
                     <attribute id="U1" type="float" value="0.65625" />
                     <attribute id="U2" type="float" value="0.6875" />
                     <attribute id="V1" type="float" value="0.0625" />
@@ -1017,21 +1017,21 @@
                     <attribute id="V2" type="float" value="0.15625" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="" />
+                    <attribute id="MapKey" type="FixedString" value="LethalDarknessSelf410001" />
                     <attribute id="U1" type="float" value="0.4375" />
                     <attribute id="U2" type="float" value="0.46875" />
                     <attribute id="V1" type="float" value="0.125" />
                     <attribute id="V2" type="float" value="0.15625" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="" />
+                    <attribute id="MapKey" type="FixedString" value="RythmicMurderMainHand220001" />
                     <attribute id="U1" type="float" value="0.46875" />
                     <attribute id="U2" type="float" value="0.5" />
                     <attribute id="V1" type="float" value="0.125" />
                     <attribute id="V2" type="float" value="0.15625" />
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="" />
+                    <attribute id="MapKey" type="FixedString" value="RythmicMurderOffHand220002" />
                     <attribute id="U1" type="float" value="0.5" />
                     <attribute id="U2" type="float" value="0.53125" />
                     <attribute id="V1" type="float" value="0.125" />

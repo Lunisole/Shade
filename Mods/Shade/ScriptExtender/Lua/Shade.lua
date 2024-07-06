@@ -33,10 +33,13 @@ Ext.Vars.RegisterUserVariable("Lu_UmBld_ShdwPosition", {
 })
 
 -- Determines the min/max angle required to backstab, depending on the spell.
-function Lu_Shde_BackstabbingAngle(spell)
+function Lu_Shde_BackstabbingAngle(shade,spell)
     if (spell == "Shade_Feint_Stabbing_E00001" or spell == "Shade_Melee_MH_Feint_Stabbing_700002" or spell == "Shade_Melee_OH_Feint_Stabbing_700003" or spell == "Shade_Ranged_MH_Feint_Stabbing_800001" or spell == "Shade_Ranged_OH_Feint_Stabbing_800002") then 
         anglemin = 0
         anglemax = 2*math.pi
+    elseif HasPassive(shade,"UmbralBlade_Supreme_Backstab_110003") == 1  then
+        anglemin = (2*math.pi)/3
+        anglemax = (4*math.pi)/3
     else
         anglemin = (3*math.pi)/4
         anglemax = (5*math.pi)/4
@@ -60,28 +63,51 @@ function Lu_Shde_BackstabbingCheck(target, caster, distance)
     local result = Ext.Math.Acos(DP)
     if (anglemin<=result and result<=anglemax) then
         isbackstabbing = 1
-        print("Backstabbing")
+        --rint("Backstabbing")
     else
         isbackstabbing = 0
-        print("Not Backstabbing")
+        --print("Not Backstabbing")
+    end
+end
+
+function Lu_Shde_BackstabbingInit(shade, target, spell, backstabbingmaxdistance)
+    backstabbingmaxdistance = backstabbingmaxdistance or 100
+    local selfx = Ext.Entity.Get(shade).Bound.Bound.Translate[1]
+    local selfz = Ext.Entity.Get(shade).Bound.Bound.Translate[3]
+    local targetx = Ext.Entity.Get(target).Bound.Bound.Translate[1]
+    local targetz = Ext.Entity.Get(target).Bound.Bound.Translate[3]
+    local distance = {targetx-selfx,0,targetz-selfz}
+    if Ext.Math.Length(distance) <= backstabbingmaxdistance then
+        Osi.RemoveStatus(target,"BACKSTABBING_TECHNICAL_200001")
+        Lu_Shde_BackstabbingAngle(shade,spell)
+        Lu_Shde_BackstabbingCheck(target,shade, distance)
+        if isbackstabbing == 1 then
+            Osi.ApplyStatus(target,"BACKSTABBING_TECHNICAL_200001",5.0,1)
+        end
     end
 end
 
 -- The second core function of the class. Iterates every entity in a combat with a character (shade) and calculates its distance to the character (shade).
 function Lu_Shde_BackstabbingApply(shade, spell, backstabbingmaxdistance)
     for k, v in pairs(Osi.DB_Is_InCombat:Get(nil, Osi.CombatGetGuidFor(Ext.Entity.Get(shade).Uuid.EntityUuid))) do
-        local selfx = Ext.Entity.Get(shade).Bound.Bound.Translate[1]
-        local selfz = Ext.Entity.Get(shade).Bound.Bound.Translate[3]
-        local targetx = Ext.Entity.Get(v[1]).Bound.Bound.Translate[1]
-        local targetz = Ext.Entity.Get(v[1]).Bound.Bound.Translate[3]
-        local distance = {targetx-selfx,0,targetz-selfz}
-        if Ext.Math.Length(distance) <= backstabbingmaxdistance then
-            Osi.RemoveStatus(v[1],"BACKSTABBING_TECHNICAL_200001")
-            Lu_Shde_BackstabbingAngle(spell)
-            Lu_Shde_BackstabbingCheck(v[1],shade, distance)
-            if isbackstabbing == 1 then
-                Osi.ApplyStatus(v[1],"BACKSTABBING_TECHNICAL_200001",5.0,1)
-            end
+        Lu_Shde_BackstabbingInit(shade, v[1], spell, backstabbingmaxdistance)  
+    end
+end
+
+function Lu_Shde_Cruelty(shade)
+    if (HasPassive(shade,"Shade_Cruelty_100007") == 1) then
+        local random = math.random(20)
+        if (random <= 5) then
+            Osi.ApplyStatus(shade,"CRUELTY_MIN_200009",1.0,1,shade)
+        end
+        if (6 <= random and random <= 13) then
+            Osi.ApplyStatus(shade,"CRUELTY_LOW_200010",1.0,1,shade)
+        end
+        if (14 <= random and random <= 17) then
+            Osi.ApplyStatus(shade,"CRUELTY_HIGH_200011",1.0,1,shade)
+        end
+        if (18 <= random and random <= 20) then
+            Osi.ApplyStatus(shade,"CRUELTY_MAX_200012",1.0,1,shade)
         end
     end
 end
@@ -123,11 +149,13 @@ end
 
 function Lu_Shde_DeathMarkInrmnt(marked4death, shade, DamageAmount)
     if Ext.Entity.Get(shade).Uuid.EntityUuid == Ext.Entity.Get(marked4death).Vars.Lu_Shde_DeathMark[2] then
+        local temp = Ext.Entity.Get(marked4death).Vars.Lu_Shde_DeathMark
         if Osi.HasActiveStatus(marked4death,"BACKSTABBING_TECHNICAL_200001") == 1 then
-            Ext.Entity.Get(marked4death).Vars.Lu_Shde_DeathMark[1] = (Ext.Entity.Get(marked4death).Vars.Lu_Shde_DeathMark[1]+math.floor(3/2*DamageAmount))
+            temp[1] = (Ext.Entity.Get(marked4death).Vars.Lu_Shde_DeathMark[1]+math.floor(3/2*DamageAmount))
         else 
-            Ext.Entity.Get(marked4death).Vars.Lu_Shde_DeathMark[1] = (Ext.Entity.Get(marked4death).Vars.Lu_Shde_DeathMark[1]+DamageAmount)
+            temp[1] = (Ext.Entity.Get(marked4death).Vars.Lu_Shde_DeathMark[1]+DamageAmount)
         end
+        Ext.Entity.Get(marked4death).Vars.Lu_Shde_DeathMark = temp
     end
 end
 
@@ -147,6 +175,33 @@ function Lu_UmBld_ShdwSwap(shade)
     positionrectified = {Ext.Entity.Get(shade).Vars.Lu_UmBld_ShdwPosition[1],Ext.Entity.Get(shade).Vars.Lu_UmBld_ShdwPosition[2],Ext.Entity.Get(shade).Vars.Lu_UmBld_ShdwPosition[3]}
     Osi.Die(Ext.Entity.Get(shade).Vars.Lu_UmBld_ShdwPosition[4])
     Ext.Timer.WaitFor(1150, Lu_Shde_TeleportTo)
+    Ext.Timer.WaitFor(1300, function()
+        Osi.ApplyStatus(shade,"SHADOW_RECALL_210009",1.0,1)
+        Osi.RemoveStatus(shade,"LINGERING_UMBRA_OWNER_210003")
+    end)
+end
+
+function Lu_UmBld_LethalDarkness(shade,status,hitnumber)
+    --_P("Correctly send to function:",status)
+    local hitnumber = hitnumber or 7
+    for hitindex = 1, hitnumber do
+        for k, v in pairs(Osi.DB_Is_InCombat:Get(nil, Osi.CombatGetGuidFor(Ext.Entity.Get(shade).Uuid.EntityUuid))) do
+            local obscurity = Osi.GetObscuredState(v[1])
+            local IsAlly = Osi.IsAlly(shade,v[1])
+            if (obscurity ~= "Clear" and IsAlly ~= 1 and hitnumber >0) then
+                Lu_Shde_BackstabbingInit(shade,v[1],"")
+                Lu_Shde_Cruelty(shade)
+                if status == "LETHAL_DARKNESS_DAMAGE_MELEE_210005" then
+                    Osi.CreateExplosion(v[1],"UmbralBlade_Lethal_Darkness_Damage_Melee_810001",-1,shade)
+                    --_P("Succesfully created explosion : Melee Lethal Darkness")
+                else
+                    Osi.CreateExplosion(v[1],"UmbralBlade_Lethal_Darkness_Damage_Ranged_810002",-1,shade)
+                    --_P("Succesfully created explosion : Ranged Lethal Darkness")
+                end
+                hitnumber = hitnumber - 1
+            end
+        end
+    end
 end
 
 -- The main listening. This is the one which applies backstabbing.
@@ -177,21 +232,7 @@ end)
 
 -- The listener for Cruelty
 Ext.Osiris.RegisterListener("UsingSpell", 5, "before", function (shade, _, _, _, _)
-    if (HasPassive(shade,"Shade_Cruelty_100007") == 1) then
-        local random = math.random(20)
-        if (random <= 5) then
-            Osi.ApplyStatus(shade,"CRUELTY_MIN_200009",1.0,1,shade)
-        end
-        if (6 <= random and random <= 13) then
-            Osi.ApplyStatus(shade,"CRUELTY_LOW_200010",1.0,1,shade)
-        end
-        if (14 <= random and random <= 17) then
-            Osi.ApplyStatus(shade,"CRUELTY_HIGH_200011",1.0,1,shade)
-        end
-        if (18 <= random and random <= 20) then
-            Osi.ApplyStatus(shade,"CRUELTY_MAX_200012",1.0,1,shade)
-        end
-    end
+    Lu_Shde_Cruelty(shade)
 end)
 
 -- The listener for Exquisite Hunter
@@ -275,15 +316,29 @@ Ext.Osiris.RegisterListener("StatusRemoved", 4, "after", function(marked4death,s
     end
 end)
 
-Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function(shadow,status,shade, _)
-    if status == "SHADOW_EFFECT_A00002" then
+Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function(shadow,status,shade,_)
+    if status == "LINGERING_UMBRA_EFFECT_210001" then
         Lu_UmBld_ShdwInit(shadow,shade)
     end
 end)
 
+Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function(shade,status,_,_)
+    if status == "LINGERING_UMBRA_TECHNICAL_210008" then
+        Ext.Timer.WaitFor(500, function()
+            Osi.RemoveStatus(shade,"LINGERING_UMBRA_TECHNICAL_210008")
+        end)
+    end
+end)
+
 Ext.Osiris.RegisterListener("UsingSpell", 5, "after", function (shade,spell,_,_,_)
-    if spell == "Shade_Swap_TEST" then
+    if spell == "UmbralBlade_Shadow_Recall_610001" then
         Lu_UmBld_ShdwSwap(shade)
     end
 end)
 
+Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function(shade,status,_,_)
+    if (status == "LETHAL_DARKNESS_DAMAGE_MELEE_210005" or status == "LETHAL_DARKNESS_DAMAGE_RANGED_210007") then
+        --_P(status)
+        Lu_UmBld_LethalDarkness(shade,status,7)
+    end
+end)
