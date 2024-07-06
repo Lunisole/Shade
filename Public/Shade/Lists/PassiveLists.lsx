@@ -28,14 +28,6 @@
                     <attribute id="Passives" type="LSString" value="Shade_Vicious_Trickery_Lotus_Infusion_F00006,Shade_Vicious_Trickery_Feint_Stabbing_F00007,Shade_Vicious_Trickery_Mortal_Blow_F00008,Shade_Vicious_Trickery_Surgical_Assault_F00009"/>
                     <attribute id="UUID" type="guid" value="ce3d3cdb-2c75-4fef-892a-0052b0de09ea"/>
                 </node>
-                <node id="PassiveList">
-                    <attribute id="Passives" type="LSString" value="Passive1,Passive2,Passive3"/>
-                    <attribute id="UUID" type="guid" value="e6a6d53f-2f03-4e9b-ab4e-f45555555555"/>
-                </node>
-				<node id="PassiveList">
-                    <attribute id="Passives" type="LSString" value="Passive1,Passive2,Passive3"/>
-                    <attribute id="UUID" type="guid" value="e6a6d53f-2f03-4e9b-ab4e-f45555555555"/>
-                </node>
             </children>
         </node>
     </region>

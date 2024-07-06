@@ -8,10 +8,6 @@
                     <attribute id="Skills" type="LSString" value="Acrobatics, Arcana, Deception, History, Insight, Investigation, Medicine, Perception, SleightOfHand, Stealth"/>
                     <attribute id="UUID" type="guid" value="36e6804d-128d-4216-99ae-435521d3fced"/>
                 </node>
-				<node id="SkillList"> Class Skills
-                    <attribute id="Skills" type="LSString" value=""/>
-                    <attribute id="UUID" type="guid" value="cf2af2a2-a7c3-4a21-b8c4-f45555555555"/>
-                </node>
             </children>
         </node>
     </region>
