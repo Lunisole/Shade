@@ -33,20 +33,3 @@ data "Hearing" "1"
 data "FOV" "1"
 data "DifficultyStatuses" ""
 data "PersonalStatusImmunities" "SG_Condition;SG_Blinded;SG_Charmed;SG_Cursed;SG_Disease;SG_Exhausted;SG_Frightened;SG_Incapacitated;SG_Invisible;SG_Poisoned;SG_Prone;SG_Restrained;SG_Stunned;SG_Unconscious;SG_Polymorph;SG_Paralyzed;SG_Petrified;SG_Drunk;SG_Sleeping;SG_Approaching;SG_Taunted;SG_Dominated;SG_Fleeing;SG_Confused;SG_Mad;SG_DifficultTerrain;SG_Surface;SG_Helpable_Condition;HASTE;HASTE_SURFACE;MAG_CELESTIAL_HASTE;POTION_OF_SPEED;CONS_DRUG_STIMULANT;LONGSTRIDER;MAG_END_GAME_LONGSTRIDER;PACK_HOWL_WOLF_DIRE;PACK_HOWL_WOLF_DIRE_NPC;ASPECT_OF_THE_ELK_AURA;ALCH_ELIXIR_BLOODLUST_TEMPAP;TAD_MIND_SANCTUARY_HASTE;DISARM;DISARM_STEAL"
-
-
-new entry "DWE_EK_Echo_Stats_Dex8"
-using "DWE_EK_Echo_Stats"
-data "Dexterity" "8"
-
-new entry "DWE_EK_Echo_Stats_Dex12"
-using "DWE_EK_Echo_Stats_Dex8"
-data "Dexterity" "12"
-
-new entry "DWE_EK_Echo_Stats_Dex16"
-using "DWE_EK_Echo_Stats_Dex8"
-data "Dexterity" "16"
-
-new entry "DWE_EK_Echo_Stats_Dex20"
-using "DWE_EK_Echo_Stats_Dex8"
-data "Dexterity" "20"

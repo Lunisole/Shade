@@ -129,10 +129,14 @@
     <content contentuid="h4a7ac7f3eb414f7f82530435e9cf8a11d8ad" version="1">You're a real master of dual wielding and thus are able to use Two-Weapon Fighting even if the weapons you are wielding aren't Light. You cannot dual-wield &lt;LSTag Tooltip="Heavy"&gt;Heavy&lt;/LSTag&gt; weapons. Furthermore, your offhand weapon &lt;LSTag Tooltip="AttackRoll"&gt;attacks&lt;/LSTag&gt; deal [1] bonus damage.</content>
     <content contentuid="h876a254c05644c61bf13b96c4f55c3ae5e25" version="1">Rythmic Murder</content>
     <content contentuid="hdb3c95ecb204438eb9f84cffe4c9a37c1gb6" version="1">You slay more efficiently when using both hands the same amount. On main hand &lt;LSTag Tooltip="AttackRoll"&gt;attacks&lt;/LSTag&gt; your next offhand &lt;LSTag Tooltip="AttackRoll"&gt;attack&lt;/LSTag&gt; will have &lt;LSTag Type="Status" Tooltip="RYTHMIC_MURDER_OFF_HAND_220002"&gt;bonuses&lt;/LSTag&gt; while on offhand &lt;LSTag Tooltip="AttackRoll"&gt;attacks&lt;/LSTag&gt; it is your next main hand &lt;LSTag Tooltip="AttackRoll"&gt;attack&lt;/LSTag&gt; that will have &lt;LSTag Type="Status" Tooltip="RYTHMIC_MURDER_MAIN_HAND_220001"&gt;bonuses&lt;/LSTag&gt;.</content>
+    <content contentuid="h4e258081ef2c480fb152edcd03e86b76f9gb" version="1">Khaine's Glory</content>
+    <content contentuid="h55205c2a7eb540b08c86a6870ca5f0c3gee2" version="1">On hit with your offhand, you deal an additionnal [1] damage but take the same amount as slashing damage. On hit with your main hand, you heal [2] but your damage is reduced by [3].</content>
     <content contentuid="h29de5c135225456ba89b58b34436cf49c4bb" version="1">Deadly Mastery</content>
     <content contentuid="h4bbf5894ab2e404f9d09efc1e14fac49f268" version="1">You've gone beyond your kind and the limits of your body. You can now use [1] &lt;LSTag Type="Spell" Tooltip="Shade_Murders_Art_C00003"&gt;Murder's Arts&lt;/LSTag&gt; per long rest.</content>
 
     <!--Status-->
+    <content contentuid="h95dbce5c326f4e0cbdc1a4a7b04aac9c7455" version="1">Backstabbed</content>
+    <content contentuid="h6b1a7435314641c2bdfe02c4e95ac7af41b9" version="1">Shade is in the back of the entity and can backstab it.</content>
     <content contentuid="h3a541c53de7d430ab9615aaaed1fd52234c2" version="1">Infiltrated</content>
     <content contentuid="he3170aac7d204f46a516e449d6e74bb6f378" version="1">You are invisible and your &lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; is increased by [1]. You automatically &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; on &lt;LSTag Type="Passive" Tooltip="Shade_Innate_Backstabbing_100001"&gt;backstabbing&lt;/LSTag&gt; and deal an additionnal [2].</content>
     <content contentuid="h6c742f5487ff43bc9e1343a9b3f4ba6ed04e" version="1">Haemorrhaging</content>

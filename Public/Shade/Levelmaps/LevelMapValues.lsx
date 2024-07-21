@@ -409,6 +409,20 @@
                     <attribute id="Name" type="FixedString" value="UmbralRipSmall"/>
                     <attribute id="UUID" type="guid" value="98a0c7f6-eefd-4a7f-b061-fd594730d73e"/>
                 </node>
+                <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="1"/>
+                    <attribute id="Level9" type="LSString" value="6"/>
+                    <attribute id="Level11" type="LSString" value="8"/>
+                    <attribute id="Name" type="FixedString" value="KhaineBloodThirstBonus"/>
+                    <attribute id="UUID" type="guid" value="2395ad8a-4473-46c2-a438-68108ad30bdd"/>
+                </node>
+                <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="1"/>
+                    <attribute id="Level9" type="LSString" value="3"/>
+                    <attribute id="Level11" type="LSString" value="4"/>
+                    <attribute id="Name" type="FixedString" value="KhaineBloodThirstMalus"/>
+                    <attribute id="UUID" type="guid" value="88bb8398-d6d6-4f8a-96ad-8f47edea2e00"/>
+                </node>
             </children>
         </node>
     </region>

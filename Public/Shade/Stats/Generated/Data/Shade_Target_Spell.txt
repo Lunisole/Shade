@@ -148,6 +148,7 @@ using "Target_OffhandAttack"
 data "Icon" "ShadeMeleeOHGeneric"
 data "DisplayName" "h0cfc6197bc2c4a8494ead9e095acbc80ddgb;1"
 data "UseCosts" "ActionPoint:1"
+data "RequirementConditions" "not HasStatus('EXTRA_ATTACK_OFF') and not HasStatus('EXTRA_ATTACK_2_OFF') and not HasStatus('EXTRA_ATTACK') and not HasStatus('EXTRA_ATTACK_2')"
 data "SpellFlags" "IsMelee;IsHarmful;IsDefaultWeaponAction"
 
 new entry "KhainesHand_Retaliate_720002"

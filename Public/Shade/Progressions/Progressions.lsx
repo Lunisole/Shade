@@ -136,6 +136,70 @@
 					<attribute id="TableUUID" type="guid" value="8282ed5a-dda0-4484-8688-33a7f839afce"/>
                     <attribute id="UUID" type="guid" value="5e23335e-981b-4a50-94db-389915c19e94"/>
                 </node>
+                <node id="Progression"> Shade Level 13
+                    <attribute id="AllowImprovement" type="bool" value="false"/>
+                    <attribute id="Level" type="uint8" value="13"/>
+                    <attribute id="Name" type="LSString" value="Shade"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+					<attribute id="TableUUID" type="guid" value="8282ed5a-dda0-4484-8688-33a7f839afce"/>
+                    <attribute id="UUID" type="guid" value="0ed5ca07-4f6e-45bf-9e6c-e4412f64d155"/>
+                </node>
+                <node id="Progression"> Shade Level 14
+                    <attribute id="AllowImprovement" type="bool" value="false"/>
+                    <attribute id="Level" type="uint8" value="14"/>
+                    <attribute id="Name" type="LSString" value="Shade"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+					<attribute id="TableUUID" type="guid" value="8282ed5a-dda0-4484-8688-33a7f839afce"/>
+                    <attribute id="UUID" type="guid" value="2f761fa2-d40f-41e1-aa40-b04b604d057c"/>
+                </node>
+                <node id="Progression"> Shade Level 15
+                    <attribute id="AllowImprovement" type="bool" value="false"/>
+                    <attribute id="Level" type="uint8" value="15"/>
+                    <attribute id="Name" type="LSString" value="Shade"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+					<attribute id="TableUUID" type="guid" value="8282ed5a-dda0-4484-8688-33a7f839afce"/>
+                    <attribute id="UUID" type="guid" value="0b0649f7-e56d-4056-bf59-ece8cf74b3b0"/>
+                </node>
+                <node id="Progression"> Shade Level 16
+                    <attribute id="AllowImprovement" type="bool" value="true"/>
+                    <attribute id="Level" type="uint8" value="16"/>
+                    <attribute id="Name" type="LSString" value="Shade"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+					<attribute id="TableUUID" type="guid" value="8282ed5a-dda0-4484-8688-33a7f839afce"/>
+                    <attribute id="UUID" type="guid" value="2261ceac-6064-47a5-89c2-1dfe2db8967b"/>
+                </node>
+                <node id="Progression"> Shade Level 17
+                    <attribute id="AllowImprovement" type="bool" value="false"/>
+                    <attribute id="Level" type="uint8" value="17"/>
+                    <attribute id="Name" type="LSString" value="Shade"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+					<attribute id="TableUUID" type="guid" value="8282ed5a-dda0-4484-8688-33a7f839afce"/>
+                    <attribute id="UUID" type="guid" value="5618b379-edd3-4a3b-bd2b-4142dab8ff3c"/>
+                </node>
+                <node id="Progression"> Shade Level 18
+                    <attribute id="AllowImprovement" type="bool" value="false"/>
+                    <attribute id="Level" type="uint8" value="18"/>
+                    <attribute id="Name" type="LSString" value="Shade"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+					<attribute id="TableUUID" type="guid" value="8282ed5a-dda0-4484-8688-33a7f839afce"/>
+                    <attribute id="UUID" type="guid" value="99d289f7-b7e1-4ade-bda5-03fc6ed11413"/>
+                </node>
+                <node id="Progression"> Shade Level 19
+                    <attribute id="AllowImprovement" type="bool" value="true"/>
+                    <attribute id="Level" type="uint8" value="19"/>
+                    <attribute id="Name" type="LSString" value="Shade"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+					<attribute id="TableUUID" type="guid" value="8282ed5a-dda0-4484-8688-33a7f839afce"/>
+                    <attribute id="UUID" type="guid" value="f1fc8ba5-bee1-4e97-8260-d23667dc1cf3"/>
+                </node>
+                <node id="Progression"> Shade Level 20
+                    <attribute id="AllowImprovement" type="bool" value="false"/>
+                    <attribute id="Level" type="uint8" value="20"/>
+                    <attribute id="Name" type="LSString" value="Shade"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+					<attribute id="TableUUID" type="guid" value="8282ed5a-dda0-4484-8688-33a7f839afce"/>
+                    <attribute id="UUID" type="guid" value="2db2d9da-a506-40aa-9533-c7a39d9774f0"/>
+                </node>
                 <node id="Progression"> Umbral Blade 3
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="Umbral_Blade"/>
@@ -188,7 +252,7 @@
                 <node id="Progression"> Khaine's Hand 9
                     <attribute id="Level" type="uint8" value="9"/>
                     <attribute id="Name" type="LSString" value="Khaines_Hand"/>
-                    <attribute id="PassivesAdded" type="LSString" value="KhainesHand_Retaliate_F20001"/>
+                    <attribute id="PassivesAdded" type="LSString" value="KhainesHand_Bloodthirst_120004"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
 					<attribute id="TableUUID" type="guid" value="e5af91c0-31b1-4017-b94f-b72b58d63606"/>
                     <attribute id="UUID" type="guid" value="58344fa8-d508-4c79-8226-e9f7b7f2f377"/>

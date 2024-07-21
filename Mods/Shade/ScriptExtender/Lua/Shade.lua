@@ -34,12 +34,15 @@ Ext.Vars.RegisterUserVariable("Lu_UmBld_ShdwPosition", {
 
 -- Determines the min/max angle required to backstab, depending on the spell.
 function Lu_Shde_BackstabbingAngle(shade,spell)
+    -- if the spell is Feint Stabbing
     if (spell == "Shade_Feint_Stabbing_E00001" or spell == "Shade_Melee_MH_Feint_Stabbing_700002" or spell == "Shade_Melee_OH_Feint_Stabbing_700003" or spell == "Shade_Ranged_MH_Feint_Stabbing_800001" or spell == "Shade_Ranged_OH_Feint_Stabbing_800002") then 
         anglemin = 0
         anglemax = 2*math.pi
+    -- if the shade has the Supreme Backstab passive
     elseif HasPassive(shade,"UmbralBlade_Supreme_Backstab_110003") == 1  then
         anglemin = (2*math.pi)/3
         anglemax = (4*math.pi)/3
+    -- normal scenario
     else
         anglemin = (3*math.pi)/4
         anglemax = (5*math.pi)/4
@@ -47,6 +50,7 @@ function Lu_Shde_BackstabbingAngle(shade,spell)
     return anglemin, anglemax
 end 
 
+-- Determines the orientation vector (normalized) of a character
 function Lu_Shde_CharSteeringVec(target)
     local targetzsteering = math.cos(Ext.Entity.Get(target).Steering.field_C)
     local targetxsteering = math.sin(Ext.Entity.Get(target).Steering.field_C)
@@ -54,22 +58,22 @@ function Lu_Shde_CharSteeringVec(target)
     return orient
 end 
 
--- The absolute core function of the class. It's this function wich determines if a character is in the back of another one or not.
+-- Determines if a character is in the back of another one or not.
 function Lu_Shde_BackstabbingCheck(target, caster, distance)
-    -- If the character doesn't have backstab extended passive then use those anglemin/max
     Lu_Shde_CharSteeringVec(target)
     local normalized = Ext.Math.Normalize(distance)
     local DP = Ext.Math.Dot(orient,normalized)
     local result = Ext.Math.Acos(DP)
     if (anglemin<=result and result<=anglemax) then
         isbackstabbing = 1
-        --rint("Backstabbing")
+        --print("Backstabbing")
     else
         isbackstabbing = 0
         --print("Not Backstabbing")
     end
 end
 
+-- Determines the character (shade) to target vector and nomalize it. Then calls 2 others function and apply the Backstabbing status if requirements are met.
 function Lu_Shde_BackstabbingInit(shade, target, spell, backstabbingmaxdistance)
     backstabbingmaxdistance = backstabbingmaxdistance or 100
     local selfx = Ext.Entity.Get(shade).Bound.Bound.Translate[1]
@@ -87,7 +91,7 @@ function Lu_Shde_BackstabbingInit(shade, target, spell, backstabbingmaxdistance)
     end
 end
 
--- The second core function of the class. Iterates every entity in a combat with a character (shade) and calculates its distance to the character (shade).
+-- Iterates every entity in a combat with a character (shade) and calls Lu_Shde_BackstabbingInit to check if the character (shade) can backstab the entity.
 function Lu_Shde_BackstabbingApply(shade, spell, backstabbingmaxdistance)
     for k, v in pairs(Osi.DB_Is_InCombat:Get(nil, Osi.CombatGetGuidFor(Ext.Entity.Get(shade).Uuid.EntityUuid))) do
         Lu_Shde_BackstabbingInit(shade, v[1], spell, backstabbingmaxdistance)  
@@ -284,7 +288,7 @@ Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function(shade, status,
 end)
 
 Ext.Osiris.RegisterListener("AttackedBy",7,"after", function(shade,attacker,_,_,_,_,_)
-    if HasPassive(shade,"Shade_Gap_Close_F00004") then
+    if (HasPassive(shade,"Shade_Gap_Close_F00004") == 1 and IsCharacter(attacker) == 1) then
         Lu_Shde_CharSteeringVec(attacker)
         local posx,posy,posz = Osi.GetPosition(attacker)
         positionrectified = {posx+orient[1],posy+orient[2],posz+orient[3]}
