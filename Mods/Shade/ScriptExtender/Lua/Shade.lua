@@ -52,9 +52,12 @@ end
 
 -- Determines the orientation vector (normalized) of a character
 function Lu_Shde_CharSteeringVec(target)
+    print("Target is",target)
     local targetzsteering = math.cos(Ext.Entity.Get(target).Steering.field_C)
     local targetxsteering = math.sin(Ext.Entity.Get(target).Steering.field_C)
     orient = {targetxsteering,0,targetzsteering}
+    print("OrientVec")
+    _D(orient)
     return orient
 end 
 
@@ -288,7 +291,7 @@ Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function(shade, status,
 end)
 
 Ext.Osiris.RegisterListener("AttackedBy",7,"after", function(shade,attacker,_,_,_,_,_)
-    if (HasPassive(shade,"Shade_Gap_Close_F00004") == 1 and IsCharacter(attacker) == 1) then
+    if (HasPassive(shade,"Shade_Gap_Close_F00009") == 1 and IsCharacter(attacker) == 1) then
         Lu_Shde_CharSteeringVec(attacker)
         local posx,posy,posz = Osi.GetPosition(attacker)
         positionrectified = {posx+orient[1],posy+orient[2],posz+orient[3]}
