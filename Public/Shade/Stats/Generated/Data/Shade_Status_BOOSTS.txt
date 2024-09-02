@@ -1,12 +1,3 @@
-new entry "BACKSTABBING_TECHNICAL_200001"
-type "StatusData"
-data "StatusType" "BOOST"
-data "DisplayName" "h95dbce5c326f4e0cbdc1a4a7b04aac9c7455;1"
-data "Description" "h6b1a7435314641c2bdfe02c4e95ac7af41b9;1"
-data "Icon" "BackstabbingTechnical200001"
-data "StatusPropertyFlags" "DisableCombatlog;ApplyToDead"
-//data "StatusEffect" "a340c5c1-31ac-4c01-b617-724a9e8d6913"
-
 new entry "SHADOW_THIRST_3_200002"
 type "StatusData"
 data "StatusType" "BOOST"

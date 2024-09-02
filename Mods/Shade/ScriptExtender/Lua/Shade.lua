@@ -32,74 +32,12 @@ Ext.Vars.RegisterUserVariable("Lu_UmBld_ShdwPosition", {
     Server = true
 })
 
--- Determines the min/max angle required to backstab, depending on the spell.
-function Lu_Shde_BackstabbingAngle(shade,spell)
-    -- if the spell is Feint Stabbing
-    if (spell == "Shade_Feint_Stabbing_E00001" or spell == "Shade_Melee_MH_Feint_Stabbing_700002" or spell == "Shade_Melee_OH_Feint_Stabbing_700003" or spell == "Shade_Ranged_MH_Feint_Stabbing_800001" or spell == "Shade_Ranged_OH_Feint_Stabbing_800002") then 
-        anglemin = 0
-        anglemax = 2*math.pi
-    -- if the shade has the Supreme Backstab passive
-    elseif HasPassive(shade,"UmbralBlade_Supreme_Backstab_110003") == 1  then
-        anglemin = (2*math.pi)/3
-        anglemax = (4*math.pi)/3
-    -- normal scenario
-    else
-        anglemin = (3*math.pi)/4
-        anglemax = (5*math.pi)/4
-    end
-    return anglemin, anglemax
-end 
-
--- Determines the orientation vector (normalized) of a character
 function Lu_Shde_CharSteeringVec(target)
-    print("Target is",target)
-    local targetzsteering = math.cos(Ext.Entity.Get(target).Steering.field_C)
-    local targetxsteering = math.sin(Ext.Entity.Get(target).Steering.field_C)
-    orient = {targetxsteering,0,targetzsteering}
-    print("OrientVec")
-    _D(orient)
+    local targetzsteering = math.cos(Ext.Entity.Get(target).Steering.TargetRotation)
+    local targetxsteering = math.sin(Ext.Entity.Get(target).Steering.TargetRotation)
+    local orient = {targetxsteering,0,targetzsteering}
     return orient
 end 
-
--- Determines if a character is in the back of another one or not.
-function Lu_Shde_BackstabbingCheck(target, caster, distance)
-    Lu_Shde_CharSteeringVec(target)
-    local normalized = Ext.Math.Normalize(distance)
-    local DP = Ext.Math.Dot(orient,normalized)
-    local result = Ext.Math.Acos(DP)
-    if (anglemin<=result and result<=anglemax) then
-        isbackstabbing = 1
-        --print("Backstabbing")
-    else
-        isbackstabbing = 0
-        --print("Not Backstabbing")
-    end
-end
-
--- Determines the character (shade) to target vector and nomalize it. Then calls 2 others function and apply the Backstabbing status if requirements are met.
-function Lu_Shde_BackstabbingInit(shade, target, spell, backstabbingmaxdistance)
-    backstabbingmaxdistance = backstabbingmaxdistance or 100
-    local selfx = Ext.Entity.Get(shade).Bound.Bound.Translate[1]
-    local selfz = Ext.Entity.Get(shade).Bound.Bound.Translate[3]
-    local targetx = Ext.Entity.Get(target).Bound.Bound.Translate[1]
-    local targetz = Ext.Entity.Get(target).Bound.Bound.Translate[3]
-    local distance = {targetx-selfx,0,targetz-selfz}
-    if Ext.Math.Length(distance) <= backstabbingmaxdistance then
-        Osi.RemoveStatus(target,"BACKSTABBING_TECHNICAL_200001")
-        Lu_Shde_BackstabbingAngle(shade,spell)
-        Lu_Shde_BackstabbingCheck(target,shade, distance)
-        if isbackstabbing == 1 then
-            Osi.ApplyStatus(target,"BACKSTABBING_TECHNICAL_200001",5.0,1)
-        end
-    end
-end
-
--- Iterates every entity in a combat with a character (shade) and calls Lu_Shde_BackstabbingInit to check if the character (shade) can backstab the entity.
-function Lu_Shde_BackstabbingApply(shade, spell, backstabbingmaxdistance)
-    for k, v in pairs(Osi.DB_Is_InCombat:Get(nil, Osi.CombatGetGuidFor(Ext.Entity.Get(shade).Uuid.EntityUuid))) do
-        Lu_Shde_BackstabbingInit(shade, v[1], spell, backstabbingmaxdistance)  
-    end
-end
 
 function Lu_Shde_Cruelty(shade)
     if (HasPassive(shade,"Shade_Cruelty_100007") == 1) then
@@ -157,7 +95,7 @@ end
 function Lu_Shde_DeathMarkInrmnt(marked4death, shade, DamageAmount)
     if Ext.Entity.Get(shade).Uuid.EntityUuid == Ext.Entity.Get(marked4death).Vars.Lu_Shde_DeathMark[2] then
         local temp = Ext.Entity.Get(marked4death).Vars.Lu_Shde_DeathMark
-        if Osi.HasActiveStatus(marked4death,"BACKSTABBING_TECHNICAL_200001") == 1 then
+        if Osi.HasActiveStatus(marked4death,"BACKSTABBING_FRAMEWORK_MAIN_STATUS_200001") == 1 then
             temp[1] = (Ext.Entity.Get(marked4death).Vars.Lu_Shde_DeathMark[1]+math.floor(3/2*DamageAmount))
         else 
             temp[1] = (Ext.Entity.Get(marked4death).Vars.Lu_Shde_DeathMark[1]+DamageAmount)
@@ -196,7 +134,6 @@ function Lu_UmBld_LethalDarkness(shade,status,hitnumber)
             local obscurity = Osi.GetObscuredState(v[1])
             local IsAlly = Osi.IsAlly(shade,v[1])
             if (obscurity ~= "Clear" and IsAlly ~= 1 and hitnumber >0) then
-                Lu_Shde_BackstabbingInit(shade,v[1],"")
                 Lu_Shde_Cruelty(shade)
                 if status == "LETHAL_DARKNESS_DAMAGE_MELEE_210005" then
                     Osi.CreateExplosion(v[1],"UmbralBlade_Lethal_Darkness_Damage_Melee_810001",-1,shade)
@@ -211,16 +148,9 @@ function Lu_UmBld_LethalDarkness(shade,status,hitnumber)
     end
 end
 
--- The main listening. This is the one which applies backstabbing.
-Ext.Osiris.RegisterListener("StartedPreviewingSpell", 4, "before", function (caster, spell, _, _, _)
-    if HasPassive(caster,"Shade_Innate_Backstabbing_100001") == 1 then
-        Lu_Shde_BackstabbingApply(caster,spell,15)
-    end
-end)
-
 -- The listener for Shadow Thirst.
 Ext.Osiris.RegisterListener("KilledBy", 4, "after", function (killed, killer, _, _)
-    -- Potential Additionnal Condition : and Osi.HasActiveStatus(killed,"BACKSTABBING_TECHNICAL_200001") == 1
+    -- Potential Additionnal Condition : and Osi.HasActiveStatus(killed,"BACKSTABBING_FRAMEWORK_MAIN_STATUS_200001") == 1
     if (HasPassive(killer,"Shade_Shadow_Thirst_100005") == 1) then
         local maxhp = Ext.Entity.Get(killed).Health.MaxHp
         if (maxhp <= 20) then
@@ -292,7 +222,7 @@ end)
 
 Ext.Osiris.RegisterListener("AttackedBy",7,"after", function(shade,attacker,_,_,_,_,_)
     if (HasPassive(shade,"Shade_Gap_Close_F00009") == 1 and IsCharacter(attacker) == 1) then
-        Lu_Shde_CharSteeringVec(attacker)
+        local orient = Lu_Shde_CharSteeringVec(attacker)
         local posx,posy,posz = Osi.GetPosition(attacker)
         positionrectified = {posx+orient[1],posy+orient[2],posz+orient[3]}
     end

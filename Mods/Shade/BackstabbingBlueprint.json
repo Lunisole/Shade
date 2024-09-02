@@ -1,0 +1,29 @@
+{
+  "Enabling" : 
+	{
+		"Spells" : [
+		],
+		"Passives": [
+			"Shade_Innate_Backstabbing_100001"	
+		]
+	},
+  "Custom" : 
+	{
+		"Spells" : [
+			["Shade_Melee_MH_Feint_Stabbing_700002",360],
+			["Shade_Melee_OH_Feint_Stabbing_700003",360],
+			["Shade_Ranged_MH_Feint_Stabbing_800001",360],
+			["Shade_Ranged_OH_Feint_Stabbing_800002",360]
+		],
+		"Passives": [
+		]
+	},
+  "Modifiers" : 
+	{
+		"Spells" : [
+		],
+		"Passives" : [
+			["UmbralBlade_Supreme_Backstab_110003",30]
+		]
+	}
+}
