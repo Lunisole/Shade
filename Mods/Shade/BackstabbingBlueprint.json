@@ -25,5 +25,14 @@
 		"Passives" : [
 			["UmbralBlade_Supreme_Backstab_110003",30]
 		]
+	},
+	"Flanking" :
+	{
+		"Spells" : [
+			"Dummy_Flanking_Spell"
+		],
+		"Passives" : [
+			"Dummy_Flanking_Passive"
+		]
 	}
 }

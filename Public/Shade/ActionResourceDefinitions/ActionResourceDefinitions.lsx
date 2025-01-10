@@ -5,11 +5,13 @@
         <node id="root">
             <children>
                 <node id="ActionResourceDefinition">
+                    <attribute id="Description" type="TranslatedString" handle="hff2f05a575c749f69c7fd36ddcacec8baga8" version="1"/>
                     <attribute id="DisplayName" type="TranslatedString" handle="h946f0809d1484950b36fe208ce3a5e9c72d0" version="1"/>
                     <attribute id="Error" type="TranslatedString" handle="h7493affbd8d74168b6e285c8e037c2a5eaed" version="1"/>
-                    <attribute id="IsHidden" type="bool" value="true"/>
+                    <attribute id="MaxLevel" type="uint32" value="0"/>
                     <attribute id="Name" type="FixedString" value="InfiltrateRes"/>
                     <attribute id="ReplenishType" type="FixedString" value="Rest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
                     <attribute id="UUID" type="guid" value="92a3b738-aeb5-486e-a884-7b5cc3ac8976"/>
                 </node>
                 <node id="ActionResourceDefinition">

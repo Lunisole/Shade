@@ -88,7 +88,7 @@
     <content contentuid="h3644f8331e50451f9ca322c9cbc0ee71cdad" version="1">Backstabbing</content>
     <content contentuid="h0954c7b854164c37b9c01d19ddae22a4ad75" version="1">Shades are marvelous murderers. When you attack a target from the back with a weapon, you deal [1] additionnal damage. Shade's unique actions have special effects when backstabbing.</content>
     <content contentuid="hcfc9d6f00ff54e5b93efc41c3dfb0780851e" version="1">Shadow Thirst</content>
-    <content contentuid="hd4af3dada84343b78e965dda910d91321e60" version="1">You absorb the shadow of foes who fall under your strikes, which gives you &lt;LSTag Tooltip="TemporaryHitPoints"&gt;temporary hit points&lt;/LSTag&gt; based on the health of foe you killed.</content>
+    <content contentuid="hd4af3dada84343b78e965dda910d91321e60" version="1">You absorb the shadow of foes who fall under your strikes, which gives you &lt;LSTag Tooltip="TemporaryHitPoints"&gt;temporary hit points&lt;/LSTag&gt; based on the health of the foe you killed.</content>
     <content contentuid="h8524c95dfbec43cf8edba9c253bf7df0d351" version="1">Bleak Vigour</content>
     <content contentuid="h24291da1a38f49189c3c6e5b0c89aa4aab04" version="1">Your &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hits&lt;/LSTag&gt; saps their target's life to feed your inner shadow, granting you [1].</content>
     <content contentuid="hb89ba653a45348a2ac946db33b34d1d6f47d" version="1">Dual Blades</content>
@@ -177,7 +177,7 @@
     <content contentuid="h00a489a604684906868fa10f71ceb6eb100f" version="1">Dusk's Favor</content>
 	<content contentuid="h087812b53af049689ecc59bf91dd7e3696g6" version="1">Night gives you one of three gifts to protect you from harm.</content>
     <content contentuid="h6bd84a65304c435f9e8896ae60ccb7bfe4e6" version="1">Assassination Method</content>
-    <content contentuid="h639974bf31854f0591ee35f8b6f28d4cb996" version="1">The way your kind fulfil a mission is always the same: it is by killing, but each shade has his own unique style of execution.</content>
+    <content contentuid="h639974bf31854f0591ee35f8b6f28d4cb996" version="1">The way your kind fulfil a mission is always the same: it is by killing, but each shade has its own unique style of execution.</content>
     <content contentuid="h450c20eef15f481e940a80b3d98a9aae2e8c" version="1">Khaine's Gift</content>
     <content contentuid="haecb788189544d7f81d43789fbd19513db71" version="1">As long as you live and make blood spill, Khaine will not allow your death.</content>
     <content contentuid="h548b8125b61248f3a0a695c934da897745ad" version="1">Killer Prodigy</content>
@@ -195,6 +195,7 @@
     
     <!--Action Resources-->
     <content contentuid="h946f0809d1484950b36fe208ce3a5e9c72d0" version="1">Infiltrate Charge</content>
+    <content contentuid="hff2f05a575c749f69c7fd36ddcacec8baga8" version="1">The Resource of the Shade</content>
     <content contentuid="h6baa18ade99e4d6592a8eeca336b678de8ga" version="1">Vicious Trickery Charge</content>
     <content contentuid="h48d5e6b53be6474faf702970469104d43789" version="1">Cautious Subterfuge Charge</content>
     <content contentuid="heb87bcd11aa548f1823cb0f19eed22dda08b" version="1">Murder's Art Charge</content>

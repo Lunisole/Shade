@@ -1,5 +1,6 @@
 
 new entry "Lu_UmBld_Shadow_Stats"
+type "Character"
 using "_Summons"
 data "Level" "1"
 data "Vitality" "1"

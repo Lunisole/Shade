@@ -44,14 +44,11 @@ function Lu_Shde_Cruelty(shade)
         local random = math.random(20)
         if (random <= 5) then
             Osi.ApplyStatus(shade,"CRUELTY_MIN_200009",1.0,1,shade)
-        end
-        if (6 <= random and random <= 13) then
+        elseif (6 <= random and random <= 13) then
             Osi.ApplyStatus(shade,"CRUELTY_LOW_200010",1.0,1,shade)
-        end
-        if (14 <= random and random <= 17) then
+        elseif (14 <= random and random <= 17) then
             Osi.ApplyStatus(shade,"CRUELTY_HIGH_200011",1.0,1,shade)
-        end
-        if (18 <= random and random <= 20) then
+        elseif (18 <= random and random <= 20) then
             Osi.ApplyStatus(shade,"CRUELTY_MAX_200012",1.0,1,shade)
         end
     end
